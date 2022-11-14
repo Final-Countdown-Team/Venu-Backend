@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import validator from "validator";
+import bcrypt from "bcryptjs";
 
 import { hasingPassword } from "../utils/hasingPassword.js";
 
@@ -18,7 +19,21 @@ const venueSchema = mongoose.Schema({
   },
   photo: {
     type: String,
-    // default: "default.jpg",
+    default: "default.jpg",
+  },
+  address: {
+    street: {
+      type: String,
+      required: [true, "Please enter your street"],
+    },
+    city: {
+      type: String,
+      required: [true, "Please enter your city"],
+    },
+    zipcode: {
+      type: String,
+      required: [true, "Please enter your zipcode"],
+    },
   },
   password: {
     type: String,
@@ -35,6 +50,7 @@ const venueSchema = mongoose.Schema({
       },
     },
   },
+  description: String,
   passwordChangedAt: Date,
   passwordResetToken: String,
   passwordResetExpires: Date,
@@ -45,8 +61,23 @@ const venueSchema = mongoose.Schema({
   },
 });
 
-venueSchema.pre("save", function (next) {
+// Hashing password before saving to database
+venueSchema.pre("save", async function (next) {
   if (!this.isModified("password")) return next();
-  hasingPassword(this);
+  await hasingPassword(this);
   next();
 });
+// Updating passwordChanged at when password is modified
+venueSchema.pre("save", function (next) {
+  if (!this.isModified("password") || this.isNew) return next();
+  this.passwordChangedAt = Date.now() - 1000;
+  next();
+});
+// Comparing password when loggin in
+venueSchema.methods.correctPassword = async function (candidatePW) {
+  return await bcrypt.compare(candidatePW, this.password);
+};
+
+const Venue = mongoose.model("Venue", venueSchema);
+
+export default Venue;
