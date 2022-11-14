@@ -10,6 +10,7 @@ const DB = process.env.DATABASE.replace(
 ).replace("<USERNAME>", process.env.DATABASE_USERNAME);
 
 mongoose.connect(DB).then(() => console.log("DB connection successul"));
+// test
 
 const port = process.env.PORT || 6969;
 const server = app.listen(port, () => console.log("Listening on port " + port));
