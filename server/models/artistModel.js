@@ -24,7 +24,7 @@ const artistSchema = mongoose.Schema({
 	password: {
 		type: String,
 		required: [true, "Please provide a password"],
-		minlength: 4,
+		minLength: 4,
 		select: false,
 	},
 	passwordConfirm: {
@@ -46,10 +46,7 @@ const artistSchema = mongoose.Schema({
 		default: true,
 		select: false,
 	},
-	role: {
-		type: String,
-		required: [true, "Please provide a role"],
-	},
+	
 	genre: {
 		type: String,
 		required: [true, "Please provide a genre"],
@@ -71,24 +68,20 @@ const artistSchema = mongoose.Schema({
 	medialLinks: {
 		facebookUrl: {
 			type: String,
-			required: [true, "Please provide a facebook"],
 		},
 		twitterUrl: {
 			type: String,
-			required: [true, "Please provide a twitter"],
 		},
 		instagramUrl: {
 			type: String,
-			required: [true, "Please provide a instagram"],
 		},
 		youtubeUrl: {
 			type: String,
-			required: [true, "Please provide a youtube"],
 		},
 	},
 	imageUrl: {
 		type: String,
-		required: [true, "Please provide an image"],
+		default: "default.jpeg",
 	},
 	albums: [
 		{
@@ -97,11 +90,10 @@ const artistSchema = mongoose.Schema({
 	],
 	description: {
 		type: String,
-		required: [true, "Please provide a description"],
 	},
 	createdAt: {
 		type: Date,
-		default: Date.now,
+		default: Date.now()
 	},
 });
 

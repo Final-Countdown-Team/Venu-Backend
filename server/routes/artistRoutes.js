@@ -6,13 +6,13 @@ import {
 	createArtist,
 	updateArtist,
 	deleteArtist,
-} from "../controllers/artistController";
+} from "../controllers/artistController.js";
 
 const router = express.Router();
 
-router.get('/').get(getArtists).post(createArtist);
+router.route('/').get(getArtists).post(createArtist);
 
-router.get('/:id').get(getArtist).patch(updateArtist).delete(deleteArtist);
+router.route('/:id').get(getArtist).patch(updateArtist).delete(deleteArtist);
 
 
 export default router;
