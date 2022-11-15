@@ -24,13 +24,13 @@ export const getArtist = catchAsync(async (req, res, next) => {
 });
 
 export const createArtist = catchAsync(async (req, res, next) => {
-	const artist = req.body;
-	const newArtist = new Artist(artist);
-	await newArtist.save();
+	const artist = await Artist.create(req.body);
 
+	console.log(artist);
+	console.log(req);
 	res.status(200).json({
 		status: "success",
-		data: newArtist,
+		data: artist,
 	});
 });
 
