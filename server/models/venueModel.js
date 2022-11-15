@@ -19,7 +19,7 @@ const venueSchema = mongoose.Schema({
   },
   profileImage: {
     type: String,
-    default: "default.jpg",
+    default: "default.jpeg",
   },
   address: {
     street: {
@@ -86,6 +86,13 @@ venueSchema.pre("save", function (next) {
 venueSchema.methods.correctPassword = async function (candidatePW) {
   return await bcrypt.compare(candidatePW, this.password);
 };
+
+// // Query middleware
+// artistSchema.pre(/^find/, function (next) {
+//   // this points to the current query
+//   this.find({ active: { $ne: false } });
+//   next();
+// });
 
 const Venue = mongoose.model("Venue", venueSchema);
 
