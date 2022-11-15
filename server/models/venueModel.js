@@ -17,7 +17,7 @@ const venueSchema = mongoose.Schema({
     validate: [validator.isEmail, "Please provide a valid email address"],
     unique: true,
   },
-  photo: {
+  profileImage: {
     type: String,
     default: "default.jpg",
   },
@@ -50,6 +50,10 @@ const venueSchema = mongoose.Schema({
       },
     },
   },
+  images: {
+    type: [String],
+    validate: [imageArrayLimit, "The maximum amount of images cannot exceed 3"],
+  },
   description: String,
   passwordChangedAt: Date,
   passwordResetToken: String,
@@ -60,6 +64,11 @@ const venueSchema = mongoose.Schema({
     select: false,
   },
 });
+
+// Limit length of if image array to <= 3.
+function imageArrayLimit(val) {
+  return val.length <= 3;
+}
 
 // Hashing password before saving to database
 venueSchema.pre("save", async function (next) {

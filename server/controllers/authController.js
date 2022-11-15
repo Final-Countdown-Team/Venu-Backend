@@ -28,7 +28,7 @@ const createSendToken = (venue, statusCode, res) => {
     data: venue,
   });
 };
-// --- EXPORTS ---
+// --- EXPORTS FOR VENUES ---
 // SIGNUP
 export const signup = catchAsync(async (req, res, next) => {
   const venue = await Venue.create({
