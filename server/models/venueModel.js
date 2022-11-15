@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import validator from "validator";
 import bcrypt from "bcryptjs";
 
-import { hasingPassword } from "../utils/hasingPassword.js";
+import { hashingPassword } from "../utils/hashingPassword.js";
 
 const venueSchema = mongoose.Schema({
   name: {
@@ -73,7 +73,7 @@ function imageArrayLimit(val) {
 // Hashing password before saving to database
 venueSchema.pre("save", async function (next) {
   if (!this.isModified("password")) return next();
-  await hasingPassword(this);
+  await hashingPassword(this);
   next();
 });
 // Updating passwordChanged at when password is modified

@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import validator from "validator";
 import bcrypt from "bcryptjs";
 
-import { hasingPassword } from "../utils/hasingPassword.js";
+import { hashingPassword } from "../utils/hashingPassword.js";
 
 const artistSchema = mongoose.Schema({
   name: {
@@ -15,12 +15,7 @@ const artistSchema = mongoose.Schema({
     required: [true, "Please provide an email"],
     unique: true,
     lowercase: true,
-    validator: [validator.isEmail, "Please provide a valid email"],
-  },
-  // Why do we need this one?
-  emailConfirmed: {
-    type: Boolean,
-    default: false,
+    validate: [validator.isEmail, "Please provide a valid email"],
   },
   password: {
     type: String,
@@ -102,7 +97,7 @@ artistSchema.pre("save", async function (next) {
   if (!this.isModified("password")) return next();
 
   // Hash the password with cost of 12
-  this.password = await hasingPassword(this.password);
+  this.password = await hashingPassword(this);
   this.passwordConfirm = undefined;
   next();
 });
