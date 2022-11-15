@@ -1,80 +1,97 @@
 import Artist from "../models/artistModel";
+import AppError from "../utils/appError";
+import catchAsync from "../utils/catchAsync";
 
-export const getArtists = async (req, res) => {
-	try {
-		const artists = await Artist.find();
-		res.status(200).json({ artists });
-	} catch (error) {
-		res.status(404).json({ message: error.message });
-	}
-};
+export const getArtists = catchAsync(async (req, res, next) => {
+	const artists = await Artist.find();
+	res.status(200).json({
+		status: "success",
+		results: artists.length,
+		data: artists,
+	});
+});
 
-export const getArtist = async (req, res) => {
+export const getArtist = catchAsync(async (req, res, next) => {
 	const { id } = req.params;
-	try {
-		const artist = await Artist.findById(id);
-		res.status(200).json(artist);
-	} catch (error) {
-		res.status(404).json({ message: error.message });
-	}
-};
+	const artist = await Artist.findById(id);
 
-export const createArtist = async (req, res) => {
+	if (!artist) throw new AppError("No artist found with that ID", 404);
+
+	res.status(200).json({
+		status: "success",
+		data: artist,
+	});
+});
+
+export const createArtist = catchAsync(async (req, res, next) => {
 	const artist = req.body;
 	const newArtist = new Artist(artist);
-	try {
-		await newArtist.save();
-		res.status(200).json(newArtist);
-	} catch (error) {
-		res.status(409).json({ message: error.message });
-	}
-};
+	await newArtist.save();
 
-export const updateArtist = async (req, res) => {
+	res.status(200).json({
+		status: "success",
+		data: newArtist,
+	});
+});
+
+
+export const updateArtist = catchAsync(async (req, res, next) => {
 	const filter = { _id: req.params.updateId }; // filter by id
 	const options = {
-		upsert: true, // Create a document if one isn't found
 		new: true,
 		runValidators: true,
 	};
 	const artist = req.body;
-	try {
-		const updatedArtist = await Artist.findOneAndUpdate(
-			filter,
-			{
-				// update the artist
-				name: artist.name,
-				genre: artist.genre,
-				role: artist.role,
-				genre: artist.genre,
-				medialLinks: {
-					facebookUrl: artist.medialLinks.facebookUrl,
-					twitterUrl: artist.medialLinks.twitterUrl,
-					instagramUrl: artist.medialLinks.instagramUrl,
-					youtubeUrl: artist.medialLinks.youtubeUrl,
-				},
-				imageUrl: artist.imageUrl,
-				albums: artist.albums,
-				description: artist.description,
-				address: {
-					street: artist.address.street,
-					city: artist.address.city,
-					zipcode: artist.address.zipcode,
-				},
+	const updatedArtist = await Artist.findByIdAndUpdate(
+		filter,
+		{
+			// update the artist
+			name: artist.name,
+			genre: artist.genre,
+			role: artist.role,
+			genre: artist.genre,
+			medialLinks: {
+				facebookUrl: artist.medialLinks.facebookUrl,
+				twitterUrl: artist.medialLinks.twitterUrl,
+				instagramUrl: artist.medialLinks.instagramUrl,
+				youtubeUrl: artist.medialLinks.youtubeUrl,
 			},
-			options
-		);
-		res.status(200).json(updatedArtist);
-	} catch (error) {
-		res.status(409).json({ message: error.message });
-	}
-};
+			imageUrl: artist.imageUrl,
+			albums: artist.albums,
+			description: artist.description,
+			address: {
+				street: artist.address.street,
+				city: artist.address.city,
+				zipcode: artist.address.zipcode,
+			},
+		},
+		options
+	);
+	res.status(200).json({
+		status: "success",
+		data: updatedArtist
+	});
 
-export const deleteArtist = async (req, res) => {
+	if (!updatedArtist) throw new AppError("No artist found with that ID", 404);
+
+	res.status(200).json({
+		status: "success",
+		data: updatedArtist,
+	});
+});
+
+
+export const deleteArtist = catchAsync(async (req, res, next) => {
 	const { id } = req.params;
-	if (!mongoose.Types.ObjectId.isValid(id))
-		// check if id is not valid
-		return res.status(404).send(`No artist with id: ${id}`);
-	await Artist.findByIdAndRemove(id); // remove the artist if id is valid
-	res.json({ message: "Artist deleted successfully." });
-};
+	const artist = await Artist.findByIdAndDelete(id);
+
+	if (!artist) throw new AppError("No artist found with that ID", 404);
+
+	res.status(204).json({
+		status: "success",
+		message: "Artist deleted successfully",
+		data: null,
+	});
+});
+
+
