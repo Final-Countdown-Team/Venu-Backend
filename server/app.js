@@ -3,6 +3,7 @@ import morgan from "morgan";
 import cors from "cors";
 
 import venueRouter from "./routes/venueRoutes.js";
+import artistRouter from "./routes/artistRoutes.js";
 
 const app = express();
 
@@ -17,6 +18,7 @@ app.get("/", (req, res) => {
   res.status(200).json({ msg: "Welcome to main page" });
 });
 app.use("/venues", venueRouter);
+app.use("/artists", artistRouter);
 
 // GLOBAL ERROR HANDLER
 app.use((err, req, res, next) => {

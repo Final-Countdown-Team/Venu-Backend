@@ -1,6 +1,6 @@
-import Artist from "../models/artistModel";
-import AppError from "../utils/appError";
-import catchAsync from "../utils/catchAsync";
+import Artist from "../models/artistModel.js";
+import AppError from "../utils/appError.js";
+import catchAsync from "../utils/catchAsync.js";
 
 export const getArtists = catchAsync(async (req, res, next) => {
 	const artists = await Artist.find();
