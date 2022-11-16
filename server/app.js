@@ -14,9 +14,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // ROUTES
-app.get("/", (req, res) => {
-  res.status(200).json({ msg: "Welcome to main page" });
-});
 app.use("/venues", venueRouter);
 app.use("/artists", artistRouter);
 
@@ -28,7 +25,7 @@ app.use((err, req, res, next) => {
     status: err.status,
     message: err.message,
     error: err,
-    // stack: err.stack,
+    stack: err.stack,
   });
 });
 

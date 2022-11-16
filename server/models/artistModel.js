@@ -5,6 +5,11 @@ import bcrypt from "bcryptjs";
 import { hashingPassword } from "../utils/hashingPassword.js";
 
 const artistSchema = mongoose.Schema({
+  type: {
+    type: String,
+    enum: ["artist"],
+    default: "artist",
+  },
   name: {
     type: String,
     required: [true, "Please provide a name"],
@@ -16,31 +21,6 @@ const artistSchema = mongoose.Schema({
     unique: true,
     lowercase: true,
     validate: [validator.isEmail, "Please provide a valid email"],
-  },
-  password: {
-    type: String,
-    required: [true, "Please provide a password"],
-    minLength: 4,
-    select: false,
-  },
-  passwordConfirm: {
-    type: String,
-    required: [true, "Please confirm your password"],
-    validate: {
-      // This only works on CREATE and SAVE!!!
-      validator: function (el) {
-        return el === this.password;
-      },
-      message: "Passwords are not the same!",
-    },
-  },
-  passwordChangedAt: Date,
-  passwordResetToken: String,
-  passwordResetExpires: Date,
-  active: {
-    type: Boolean,
-    default: true,
-    select: false,
   },
   genre: {
     type: String,
@@ -60,7 +40,33 @@ const artistSchema = mongoose.Schema({
       required: [true, "Please provide a zip"],
     },
   },
-  medialLinks: {
+  password: {
+    type: String,
+    required: [true, "Please provide a password"],
+    minLength: 4,
+    select: false,
+  },
+  passwordConfirm: {
+    type: String,
+    required: [true, "Please confirm your password"],
+    validate: {
+      // This only works on CREATE and SAVE!!!
+      validator: function (el) {
+        return el === this.password;
+      },
+      message: "Passwords are not the same!",
+    },
+  },
+  profileImage: {
+    type: String,
+    default: "default.jpg",
+  },
+  images: {
+    type: [String],
+    validate: [imageArrayLimit, "The maximum amount of images cannot exceed 3"],
+  },
+  description: String,
+  mediaLinks: {
     facebookUrl: {
       type: String,
     },
@@ -74,23 +80,24 @@ const artistSchema = mongoose.Schema({
       type: String,
     },
   },
-  imageUrl: {
-    type: String,
-    default: "default.jpg",
-  },
-  albums: [
-    {
-      albumId: String,
-    },
-  ],
-  description: {
-    type: String,
+  passwordChangedAt: Date,
+  passwordResetToken: String,
+  passwordResetExpires: Date,
+  active: {
+    type: Boolean,
+    default: true,
+    select: false,
   },
   createdAt: {
     type: Date,
     default: Date.now(),
   },
 });
+
+// Limit length of if image array to <= 3.
+function imageArrayLimit(val) {
+  return val.length <= 3;
+}
 
 artistSchema.pre("save", async function (next) {
   // Only run this function if password was actually modified
