@@ -12,14 +12,6 @@ export const getAllVenues = catchAsync(async (req, res, next) => {
   });
 });
 
-export const createVenue = catchAsync(async (req, res, next) => {
-  const venue = await Venue.create(req.body);
-  res.status(201).json({
-    status: "success",
-    data: venue,
-  });
-});
-
 export const getVenue = catchAsync(async (req, res, next) => {
   const venue = await Venue.findById(req.params.id);
 
@@ -28,6 +20,14 @@ export const getVenue = catchAsync(async (req, res, next) => {
   res.status(200).json({
     status: "success",
     data: { venue },
+  });
+});
+
+export const createVenue = catchAsync(async (req, res, next) => {
+  const venue = await Venue.create(req.body);
+  res.status(201).json({
+    status: "success",
+    data: venue,
   });
 });
 
