@@ -1,5 +1,16 @@
 import express from "express";
-import { login, signup } from "../controllers/authController.js";
+import app from "../app.js";
+import {
+  forgotPassword,
+  login,
+  logout,
+  protect,
+  resetPassword,
+  restrictTo,
+  signup,
+  updatePassword,
+} from "../controllers/authController.js";
+import { deleteMe, getMe, updateMe } from "../controllers/userController.js";
 import {
   createVenue,
   deleteVenue,
@@ -7,15 +18,32 @@ import {
   getVenue,
   updateVenue,
 } from "../controllers/venueController.js";
+import Venue from "../models/venueModel.js";
 
 const router = express.Router();
 
-router.route("/signup").post(signup);
-router.route("/login").post(login);
-// router.route("/logout").get(logout);
+// PUBLIC ROUTES
+router.post("/signup", signup(Venue));
+router.post("/login", login(Venue));
+router.get("/logout", logout);
 
-router.route("/").get(getAllVenues).post(createVenue);
+router.post("/forgotPassword", forgotPassword(Venue));
+router.patch("/resetPassword/:token", resetPassword(Venue));
 
-router.route("/:id").get(getVenue).patch(updateVenue).delete(deleteVenue);
+router.get("/", getAllVenues);
+router.get("/:id", getVenue);
+
+// PROTECTED AND RESTRICTED ROUTES
+router.use(protect(Venue));
+router.use(restrictTo("venue"));
+
+router.get("/user/me", getMe, getVenue);
+router.patch("/user/updateMyPassword", updatePassword(Venue));
+router.patch("/user/updateMe", updateMe(Venue));
+router.delete("/user/deleteMe", deleteMe(Venue));
+
+// TODO: RESTRICT TO ADMINS
+/* router.post("/", createVenue);
+router.route("/:id").patch(updateVenue).delete(deleteVenue); */
 
 export default router;
