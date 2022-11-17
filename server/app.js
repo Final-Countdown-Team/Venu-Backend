@@ -4,8 +4,7 @@ import cors from "cors";
 
 import venueRouter from "./routes/venueRoutes.js";
 import artistRouter from "./routes/artistRoutes.js";
-
-
+import adminRouter from "./routes/adminRoutes.js";
 
 const app = express();
 
@@ -18,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 // ROUTES
 app.use("/venues", venueRouter);
 app.use("/artists", artistRouter);
-
+app.use("/admins", adminRouter);
 
 // GLOBAL ERROR HANDLER
 app.use((err, req, res, next) => {
