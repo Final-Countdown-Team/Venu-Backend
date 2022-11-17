@@ -2,7 +2,7 @@ import Artist from "../models/artistModel.js";
 import AppError from "../utils/appError.js";
 import catchAsync from "../utils/catchAsync.js";
 
-export const getArtists = catchAsync(async (req, res, next) => {
+export const getAllArtists = catchAsync(async (req, res, next) => {
   const artists = await Artist.find();
   res.status(200).json({
     status: "success",

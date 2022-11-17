@@ -5,6 +5,8 @@ import cors from "cors";
 import venueRouter from "./routes/venueRoutes.js";
 import artistRouter from "./routes/artistRoutes.js";
 
+
+
 const app = express();
 
 // GLOBAL MIDDLEWARE
@@ -16,6 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 // ROUTES
 app.use("/venues", venueRouter);
 app.use("/artists", artistRouter);
+
 
 // GLOBAL ERROR HANDLER
 app.use((err, req, res, next) => {
