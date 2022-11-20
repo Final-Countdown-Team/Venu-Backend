@@ -41,6 +41,18 @@ const artistSchema = mongoose.Schema({
       required: [true, "Please provide a zip"],
     },
   },
+  biography: {
+    type: String,
+    required: [true, "Please provide a biography"],
+  },
+  price: {
+    type: Number,
+    required: [true, "Please provide a price"],
+  },
+  availability: {
+    type: Boolean,
+    default: true,
+  },
   password: {
     type: String,
     required: [true, "Please provide a password"],

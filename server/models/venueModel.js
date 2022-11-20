@@ -60,6 +60,13 @@ const venueSchema = mongoose.Schema({
     type: [String],
     validate: [imageArrayLimit, "The maximum amount of images cannot exceed 3"],
   },
+  price: {
+    type: Number
+  },
+  availability: {
+    type: Boolean,
+    default: true,
+  },
   description: String,
   website: String,
   passwordChangedAt: Date,
