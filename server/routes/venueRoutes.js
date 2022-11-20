@@ -18,6 +18,7 @@ import {
   getVenue,
   updateVenue,
 } from "../controllers/venueController.js";
+import Admin from "../models/adminModel.js";
 import Venue from "../models/venueModel.js";
 
 const router = express.Router();
@@ -43,7 +44,7 @@ router.patch("/user/updateMe", updateMe(Venue));
 router.delete("/user/deleteMe", deleteMe(Venue));
 
 // TODO: RESTRICT TO ADMINS
-/* router.post("/", createVenue);
-router.route("/:id").patch(updateVenue).delete(deleteVenue); */
+router.use(protect(Admin));
+router.use(restrictTo("admin"));
 
 export default router;

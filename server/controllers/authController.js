@@ -90,11 +90,11 @@ export const protect = (Model) =>
     if (!currentUser) throw new AppError("The user does no longer exists", 404);
     // NOT WORKING BECAUSE OF DAYLIGHT SAVING TIMES
     // Check if user changed password after token was issued
-    /*     if (currentUser.changedPasswordAfter(decoded.iat)) {
+    if (currentUser.changedPasswordAfter(decoded.iat)) {
       return next(
         new AppError("User recently changed password. Please login again!", 401)
       );
-    } */
+    }
     // Grant access to protected route
     req.user = currentUser;
     next();
@@ -104,7 +104,6 @@ export const protect = (Model) =>
 export const restrictTo = (type) => {
   // type is either 'artist' or 'venue'
   return (req, res, next) => {
-    console.log(req.user.type);
     if (!type.includes(req.user.type)) {
       throw new AppError(
         "You do not have permission to perform this action",
@@ -131,16 +130,15 @@ export const forgotPassword = (Model) =>
     const resetURL = `${req.protocol}://${req.get(
       "host"
     )}/${modelURLString}/resetPassword/${resetToken}`;
-    console.log(resetURL);
 
     const message = `Forgot your password? Submit a PATCH request with your new password and passwordConfirm to: \n\n${resetURL}\n\nIf you did't forget your password, please ignore this eamil! `;
 
     try {
-      // await sendEmail({
-      //   email: user.email,
-      //   subject: "Your password reset token (valid for 10 minutes)",
-      //   message,
-      // });
+      await sendEmail({
+        email: user.email,
+        subject: "Your password reset token (valid for 10 minutes)",
+        message,
+      });
 
       // Nodemailer works, but I'm sending it to mailtrap, which is only registered to my github account and I cannot invite any team members. So before setting up mailgun for production, we simply log the email to the console here.
       console.log(message);
@@ -170,7 +168,6 @@ export const resetPassword = (Model) =>
       passwordResetToken: hashedToken,
       passwordResetExpires: { $gt: Date.now() },
     });
-    console.log(user);
     if (!user) throw new AppError("Token is invalid or has expired", 400);
 
     user.password = req.body.password;

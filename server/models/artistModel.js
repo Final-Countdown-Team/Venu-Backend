@@ -5,95 +5,97 @@ import crypto from "crypto";
 
 import { hashingPassword } from "../utils/hashingPassword.js";
 
-const artistSchema = mongoose.Schema({
-  type: {
-    type: String,
-    enum: ["artist"],
-    default: "artist",
-  },
-  name: {
-    type: String,
-    required: [true, "Please provide a name"],
-    trim: true,
-  },
-  email: {
-    type: String,
-    required: [true, "Please provide an email"],
-    unique: true,
-    lowercase: true,
-    validate: [validator.isEmail, "Please provide a valid email"],
-  },
-  genre: {
-    type: String,
-    required: [true, "Please provide a genre"],
-  },
-  address: {
-    street: {
+const artistSchema = mongoose.Schema(
+  {
+    type: {
       type: String,
-      required: [true, "Please provide a street"],
+      enum: ["artist"],
+      default: "artist",
     },
-    city: {
+    name: {
       type: String,
-      required: [true, "Please provide a city"],
+      required: [true, "Please provide a name"],
+      trim: true,
     },
-    zipcode: {
+    email: {
       type: String,
-      required: [true, "Please provide a zip"],
+      required: [true, "Please provide an email"],
+      unique: true,
+      lowercase: true,
+      validate: [validator.isEmail, "Please provide a valid email"],
     },
-  },
-  password: {
-    type: String,
-    required: [true, "Please provide a password"],
-    minLength: 4,
-    select: false,
-  },
-  passwordConfirm: {
-    type: String,
-    required: [true, "Please confirm your password"],
-    validate: {
-      // This only works on CREATE and SAVE!!!
-      validator: function (el) {
-        return el === this.password;
+    genre: {
+      type: String,
+      required: [true, "Please provide a genre"],
+    },
+    address: {
+      street: {
+        type: String,
+        required: [true, "Please provide a street"],
       },
-      message: "Passwords are not the same!",
+      city: {
+        type: String,
+        required: [true, "Please provide a city"],
+      },
+      zipcode: {
+        type: String,
+        required: [true, "Please provide a zip"],
+      },
     },
-  },
-  profileImage: {
-    type: String,
-    default: "default.jpg",
-  },
-  images: {
-    type: [String],
-    validate: [imageArrayLimit, "The maximum amount of images cannot exceed 3"],
-  },
-  description: String,
-  mediaLinks: {
-    facebookUrl: {
+    password: {
       type: String,
+      required: [true, "Please provide a password"],
+      minLength: 4,
+      select: false,
     },
-    twitterUrl: {
+    passwordConfirm: {
       type: String,
+      required: [true, "Please confirm your password"],
+      validate: {
+        // This only works on CREATE and SAVE!!!
+        validator: function (el) {
+          return el === this.password;
+        },
+        message: "Passwords are not the same!",
+      },
     },
-    instagramUrl: {
+    profileImage: {
       type: String,
+      default: "default.jpg",
     },
-    youtubeUrl: {
-      type: String,
+    images: {
+      type: [String],
+      validate: [
+        imageArrayLimit,
+        "The maximum amount of images cannot exceed 3",
+      ],
+    },
+    description: String,
+    mediaLinks: {
+      facebookUrl: {
+        type: String,
+      },
+      twitterUrl: {
+        type: String,
+      },
+      instagramUrl: {
+        type: String,
+      },
+      youtubeUrl: {
+        type: String,
+      },
+    },
+    passwordChangedAt: Date,
+    passwordResetToken: String,
+    passwordResetExpires: Date,
+    active: {
+      type: Boolean,
+      default: true,
+      select: false,
     },
   },
-  passwordChangedAt: Date,
-  passwordResetToken: String,
-  passwordResetExpires: Date,
-  active: {
-    type: Boolean,
-    default: true,
-    select: false,
-  },
-  createdAt: {
-    type: Date,
-    default: Date.now(),
-  },
-});
+  { timestamps: true }
+);
 
 // Limit length of if image array to <= 3.
 function imageArrayLimit(val) {
@@ -105,8 +107,7 @@ artistSchema.pre("save", async function (next) {
   if (!this.isModified("password")) return next();
 
   // Hash the password with cost of 12
-  this.password = await hashingPassword(this);
-  this.passwordConfirm = undefined;
+  await hashingPassword(this);
   next();
 });
 
@@ -118,14 +119,8 @@ artistSchema.pre("save", function (next) {
   next();
 });
 
-// Query middleware
-artistSchema.pre(/^find/, function (next) {
-  // this points to the current query
-  this.find({ active: { $ne: false } });
-  next();
-});
-
-// Instance method
+// INSTANCE METHODS
+// Comparing password when logging in
 artistSchema.methods.correctPassword = async function (candidatePassword) {
   return await bcrypt.compare(candidatePassword, this.Password);
 };
@@ -137,7 +132,7 @@ artistSchema.methods.createPasswordResetToken = function () {
     .createHash("sha256")
     .update(resetToken)
     .digest("hex");
-  
+
   this.passwordResetExpires = Date.now() + 10 * 60 * 1000;
 
   return resetToken;
@@ -155,6 +150,13 @@ artistSchema.methods.changedPasswordAfter = function (JWTTimestamp) {
   // False means NOT changed
   return false;
 };
+
+// Query middleware
+artistSchema.pre(/^find/, function (next) {
+  // this points to the current query
+  this.find({ active: { $ne: false } });
+  next();
+});
 
 const Artist = mongoose.model("Artist", artistSchema);
 
