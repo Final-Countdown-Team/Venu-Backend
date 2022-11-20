@@ -75,8 +75,41 @@ const venueSchema = mongoose.Schema(
       select: false,
     },
   },
+
+  profileImage: {
+    type: String,
+    default: "default.jpeg",
+  },
+  images: {
+    type: [String],
+    validate: [imageArrayLimit, "The maximum amount of images cannot exceed 3"],
+  },
+  price: {
+    type: Number
+  },
+  availability: {
+    type: Boolean,
+    default: true,
+  },
+  description: String,
+  website: String,
+  passwordChangedAt: Date,
+  passwordResetToken: String,
+  passwordResetExpires: Date,
+  active: {
+    type: Boolean,
+    default: true,
+    select: false,
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now(),
+  },
+});
+
   { timestamps: true }
 );
+
 
 // Limit length of if image array to <= 3.
 function imageArrayLimit(val) {

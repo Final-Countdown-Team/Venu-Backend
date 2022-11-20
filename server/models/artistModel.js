@@ -24,6 +24,34 @@ const artistSchema = mongoose.Schema(
       lowercase: true,
       validate: [validator.isEmail, "Please provide a valid email"],
     },
+
+  },
+  biography: {
+    type: String,
+    required: [true, "Please provide a biography"],
+  },
+  price: {
+    type: Number,
+    required: [true, "Please provide a price"],
+  },
+  availability: {
+    type: Boolean,
+    default: true,
+  },
+  password: {
+    type: String,
+    required: [true, "Please provide a password"],
+    minLength: 4,
+    select: false,
+  },
+  passwordConfirm: {
+    type: String,
+    required: [true, "Please confirm your password"],
+    validate: {
+      // This only works on CREATE and SAVE!!!
+      validator: function (el) {
+        return el === this.password;
+
     genre: {
       type: String,
       required: [true, "Please provide a genre"],
@@ -40,6 +68,7 @@ const artistSchema = mongoose.Schema(
       zipcode: {
         type: String,
         required: [true, "Please provide a zip"],
+
       },
     },
     password: {
