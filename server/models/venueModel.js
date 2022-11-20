@@ -5,53 +5,77 @@ import crypto from "crypto";
 
 import { hashingPassword } from "../utils/hashingPassword.js";
 
-const venueSchema = mongoose.Schema({
-  type: {
-    type: String,
-    enum: ["venue"],
-    default: "venue",
-  },
-  name: {
-    type: String,
-    required: [true, "Please enter a name for your venue"],
-    trim: true,
-  },
-  email: {
-    type: String,
-    required: [true, "Please enter your email address"],
-    lowercase: true,
-    validate: [validator.isEmail, "Please provide a valid email address"],
-    unique: true,
-  },
-  address: {
-    street: {
+const venueSchema = mongoose.Schema(
+  {
+    type: {
       type: String,
-      required: [true, "Please enter your street"],
+      enum: ["venue"],
+      default: "venue",
     },
-    city: {
+    name: {
       type: String,
-      required: [true, "Please enter your city"],
+      required: [true, "Please enter a name for your venue"],
+      trim: true,
     },
-    zipcode: {
+    email: {
       type: String,
-      required: [true, "Please enter your zipcode"],
+      required: [true, "Please enter your email address"],
+      lowercase: true,
+      validate: [validator.isEmail, "Please provide a valid email address"],
+      unique: true,
     },
-  },
-  password: {
-    type: String,
-    required: [true, "Please provide a password"],
-    minLength: 8,
-    select: false,
-  },
-  passwordConfirm: {
-    type: String,
-    required: [true, "Please confirm your password"],
-    validate: {
-      validator: function (el) {
-        return el === this.password;
+    address: {
+      street: {
+        type: String,
+        required: [true, "Please enter your street"],
+      },
+      city: {
+        type: String,
+        required: [true, "Please enter your city"],
+      },
+      zipcode: {
+        type: String,
+        required: [true, "Please enter your zipcode"],
       },
     },
+    password: {
+      type: String,
+      required: [true, "Please provide a password"],
+      minLength: 8,
+      select: false,
+    },
+    passwordConfirm: {
+      type: String,
+      required: [true, "Please confirm your password"],
+      validate: {
+        validator: function (el) {
+          return el === this.password;
+        },
+      },
+    },
+    profileImage: {
+      type: String,
+      default: "default.jpeg",
+    },
+    images: {
+      type: [String],
+      validate: [
+        imageArrayLimit,
+        "The maximum amount of images cannot exceed 3",
+      ],
+    },
+    description: String,
+    website: String,
+    passwordChangedAt: Date,
+    passwordResetToken: String,
+    passwordResetExpires: Date,
+    active: {
+      type: Boolean,
+      default: true,
+      select: false,
+    },
   },
+
   profileImage: {
     type: String,
     default: "default.jpeg",
@@ -83,6 +107,10 @@ const venueSchema = mongoose.Schema({
   },
 });
 
+  { timestamps: true }
+);
+
+
 // Limit length of if image array to <= 3.
 function imageArrayLimit(val) {
   return val.length <= 3;
@@ -97,15 +125,15 @@ venueSchema.pre("save", async function (next) {
 // Updating passwordChanged at when password is modified
 venueSchema.pre("save", function (next) {
   if (!this.isModified("password") || this.isNew) return next();
-  this.passwordChangedAt = Date.now() + 60 * 60 * 1000 - 1000;
+  this.passwordChangedAt = Date.now() - 1000;
   next();
 });
-// Comparing password when loggin in
+
+// INSTANCE METHODS
+// Comparing password when logging in
 venueSchema.methods.correctPassword = async function (candidatePW) {
   return await bcrypt.compare(candidatePW, this.password);
 };
-
-// INSTANCE METHODS
 // Generate and hash reset token and save it to current document
 venueSchema.methods.createPasswordResetToken = function () {
   const resetToken = crypto.randomBytes(32).toString("hex");
@@ -126,9 +154,6 @@ venueSchema.methods.changedPasswordAfter = function (JWTTimestamp) {
       this.passwordChangedAt.getTime() / 1000,
       10
     );
-    console.log(changedTimestamp);
-    console.log(JWTTimestamp);
-    console.log(JWTTimestamp < changedTimestamp);
     return JWTTimestamp < changedTimestamp;
   }
 
