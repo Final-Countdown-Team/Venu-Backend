@@ -30,26 +30,26 @@
   {
     "type": "Artist",
     "active": true,
-    "name": "",
-    "email": "",
+    "name": "Joanna Newsom",
+    "email": "jojo@harpy.com",
     "address": {
       "street": "",
-      "city": "",
+      "city": "San Francisco",
       "zip_code": ""
     },
-    "biography": "",
-    "genre": "",
+    "biography": "Joanna Newsom is an American singer-songwriter and actress. Born and raised in Northern California, Newsom was classically trained on the harp in her youth and began her musical career as a keyboardist in the San Francisco-based indie band the Pleased.",
+    "genre": "Folk",
     "facebook": "",
-    "instagram": "",
-    "youtube": "",
-    "twitter": "",
-    "profile_image": "",
+    "instagram": "@joannanewsom",
+    "youtube": "https://www.youtube.com/watch?v=ky9Ro9pP2gc",
+    "twitter": "@itsJoannaNewsom",
+    "profile_image": "https://assets.vogue.com/photos/5891c669dec09b18414539e4/master/w_2000,h_1333,c_limit/03-joanna-newsom.jpg",
     "images": [
-      "",
-      "",
-      ""
+      "https://i.guim.co.uk/img/media/bec8b3060a52c8909bdd9f24497abfb3106078e7/0_742_1920_1153/master/1920.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=dadc905dc5da533407618c88493d11d6",
+      "https://d1gdi8qinx8x49.cloudfront.net/940x535/55463.jpeg",
+      "https://images.mubicdn.net/images/cast_member/134486/cache-5539-1427520993/image-w856.jpg?size=800x"
     ],
-    "password": "",
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912",
     "availability": true,
     "dates": []
   },
