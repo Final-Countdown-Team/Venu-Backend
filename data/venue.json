@@ -9,7 +9,7 @@
       "city": "Berlin",
       "zip_code": "10967"
     },
-    "coordinates": [52.48974292539573, 13.421993895163576],
+    "coordinates": [13.421993895163576, 52.48974292539573],
     "password": "",
     "profile_image": "https://lh3.googleusercontent.com/p/AF1QipMPQjEgsqOgfmGyhGapsRcA3IEkO2pR6a94d5rW=s680-w680-h510",
     "images": [
@@ -29,23 +29,26 @@
   {
     "type": "Venue",
     "active": true,
-    "name": "",
-    "email": "",
+    "name": "Kantine am Berghain",
+    "email": "cantine@berghain.com",
     "address": {
-      "street": "",
-      "city": "",
-      "zip_code": ""
+      "street": "Am Wriezener Bahnhof",
+      "city": "Berlin",
+      "zip_code": "10243"
     },
-    "coordinates": [],
+    "coordinates": [13.441352772752857, 52.51461122159202],
     "password": "",
-    "profile_image": "",
-    "images": ["", "", ""],
-    "description": "",
+    "profile_image": "https://lh3.googleusercontent.com/p/AF1QipOpYqXvjV7tPfh59ZjW-CnXcDQZMzWFHoPpZDV2=s680-w680-h510",
+    "images": [
+      "https://lh3.googleusercontent.com/p/AF1QipMe68OHbTeyPQopJNLMs_x-oWpl_KiZS_YM1xpl=s680-w680-h510", 
+      "https://lh3.googleusercontent.com/p/AF1QipPH1WHJuDoDJLlFd-SG3IAlGFdSPRR0ZOc0yCM_=s680-w680-h510", 
+      "https://lh3.googleusercontent.com/p/AF1QipPF6sG4Z6L1eFk_WYseCN6U55c_uEXcbVwIlOhk=s680-w680-h510"],
+    "description": "Former heating plant canteen, now an industrial-style concert venue with a small outdoor area.",
     "facebook": "",
     "instagram": "",
     "twitter": "",
-    "website": "",
-    "capacity": "",
+    "website": "https://www.berghain.berlin/en/program/kantine-am-berghain",
+    "capacity": "200",
     "payment_type": "",
     "availability": true,
     "dates": []
