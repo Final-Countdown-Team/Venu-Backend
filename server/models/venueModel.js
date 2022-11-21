@@ -1,9 +1,12 @@
 import mongoose from "mongoose";
 import validator from "validator";
-import bcrypt from "bcryptjs";
-import crypto from "crypto";
 
 import { hashingPassword } from "../utils/hashingPassword.js";
+import {
+  changedPasswordAfterUtil,
+  correctPasswordUtil,
+  createPasswordResetTokenUtil,
+} from "./modelMiddleware/instanceMethods.js";
 
 const venueSchema = mongoose.Schema(
   {
@@ -117,6 +120,7 @@ const venueSchema = mongoose.Schema(
 venueSchema.index({ name: 1 });
 venueSchema.index({ location: "2dsphere" });
 
+// VALIDATE FUNCTIONS
 // Limit length of if image array to <= 3.
 function imageArrayLimit(val) {
   return val.length <= 3;
@@ -126,6 +130,7 @@ function checkCoordinates(val) {
   return val.length == 2;
 }
 
+// PRE HOOKS
 // Hashing password before saving to database
 venueSchema.pre("save", async function (next) {
   if (!this.isModified("password")) return next();
@@ -142,32 +147,14 @@ venueSchema.pre("save", function (next) {
 // INSTANCE METHODS
 // Comparing password when logging in
 venueSchema.methods.correctPassword = async function (candidatePW) {
-  return await bcrypt.compare(candidatePW, this.password);
+  return await correctPasswordUtil(candidatePW, this);
 };
 // Generate and hash reset token and save it to current document
 venueSchema.methods.createPasswordResetToken = function () {
-  const resetToken = crypto.randomBytes(32).toString("hex");
-
-  this.passwordResetToken = crypto
-    .createHash("sha256")
-    .update(resetToken)
-    .digest("hex");
-
-  this.passwordResetExpires = Date.now() + 10 * 60 * 1000;
-
-  return resetToken;
+  return createPasswordResetTokenUtil();
 };
-
 venueSchema.methods.changedPasswordAfter = function (JWTTimestamp) {
-  if (this.passwordChangedAt) {
-    const changedTimestamp = parseInt(
-      this.passwordChangedAt.getTime() / 1000,
-      10
-    );
-    return JWTTimestamp < changedTimestamp;
-  }
-
-  return false;
+  return changedPasswordAfterUtil(JWTTimestamp, this);
 };
 
 // Query middleware
