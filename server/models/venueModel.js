@@ -99,6 +99,7 @@ const venueSchema = mongoose.Schema(
     },
     dates: [Date],
     capacity: String,
+    slug: String,
     passwordChangedAt: Date,
     passwordResetToken: String,
     passwordResetExpires: Date,
@@ -141,6 +142,11 @@ venueSchema.pre("save", async function (next) {
 venueSchema.pre("save", function (next) {
   if (!this.isModified("password") || this.isNew) return next();
   this.passwordChangedAt = Date.now() - 1000;
+  next();
+});
+// Create URL slug from name
+venueSchema.pre("save", function (next) {
+  this.slug = slugify(this.name, { lower: true });
   next();
 });
 
