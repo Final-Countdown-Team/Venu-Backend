@@ -1,6 +1,11 @@
 import mongoose from "mongoose";
 import validator from "validator";
 
+import {
+  changedPasswordAfterUtil,
+  correctPasswordUtil,
+  createPasswordResetTokenUtil,
+} from "./modelMiddleware/instanceMethods.js";
 import { hashingPassword } from "../utils/hashingPassword.js";
 
 const adminSchema = new mongoose.Schema(
