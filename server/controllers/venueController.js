@@ -1,9 +1,18 @@
 import Venue from "../models/venueModel.js";
 import AppError from "../utils/appError.js";
 import catchAsync from "../utils/catchAsync.js";
+import APIFeatures from "../utils/APIFeatures.js";
 
 export const getAllVenues = catchAsync(async (req, res, next) => {
-  const venues = await Venue.find();
+  const features = new APIFeatures(Venue.find({}), req.query)
+    .searchName()
+    .searchZipCode()
+    .sort()
+    .limitFields()
+    .paginate()
+    .getWithinDistance();
+
+  const venues = await features.mongoQuery;
 
   res.status(200).json({
     status: "success",
