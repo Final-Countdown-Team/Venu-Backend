@@ -1,0 +1,25 @@
+[
+  {
+    "type": "",
+    "active": true,
+    "name": "Huxley's Neue Welt",
+    "email": "bookings@huxleys.gov",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "coordinates": [],
+    "password": "",
+    "profile_image": "",
+    "images": "",
+    "description": "",
+    "facebook": "",
+    "instagram": "",
+    "twitter": "",
+    "website": "",
+    "capacity": "",
+    "payment_type": "",
+    "availability": true
+  }
+]
