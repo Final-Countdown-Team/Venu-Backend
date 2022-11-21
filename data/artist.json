@@ -1,0 +1,24 @@
+[
+  {
+    "type": "",
+    "active": true,
+    "name": "Jimmy Jam",
+    "email": "@huxleys.gov",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "coordinates": [],
+    "biography": "",
+    "genre": "",
+    "facebook": "",
+    "instagram": "",
+    "youtube": "",
+    "twitter": "",
+    "profile_image": "",
+    "images": "",
+    "password": "",
+    "availability": true
+  }
+]
