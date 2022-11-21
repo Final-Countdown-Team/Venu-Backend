@@ -1,4 +1,3 @@
-import mongoose from "mongoose";
 import validator from "validator";
 
 import {
@@ -189,5 +188,4 @@ artistSchema.pre(/^find/, function (next) {
 });
 
 const Artist = mongoose.model("Artist", artistSchema);
-
 export default Artist;
