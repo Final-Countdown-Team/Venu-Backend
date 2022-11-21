@@ -118,6 +118,7 @@ const artistSchema = mongoose.Schema(
     price: {
       type: Number,
     },
+    slug: String,
     passwordChangedAt: Date,
     passwordResetToken: String,
     passwordResetExpires: Date,
@@ -158,6 +159,12 @@ artistSchema.pre("save", async function (next) {
 artistSchema.pre("save", function (next) {
   if (!this.isModified("password") || this.isNew) return next();
   this.passwordChangedAt = Date.now() - 1000;
+  next();
+});
+
+// Create URL slug from name
+artistSchema.pre("save", function (next) {
+  this.slug = slugify(this.name, { lower: true });
   next();
 });
 
