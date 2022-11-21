@@ -1,15 +1,42 @@
 [
+
+  //this is just for fun. teeeeeesssssttting!!!
   {
-    "type": "",
+    "type": "Artist",
     "active": true,
-    "name": "Jimmy Jam",
-    "email": "@huxleys.gov",
+    "name": "Kadavar",
+    "email": "kadavar@gmail.com",
+    "address": {
+      "street": "Saalestr. 32",
+      "city": "Berlin",
+      "zip_code": "12055"
+    },
+    "biography": "Kadavar is a German rock band from Berlin, founded in 2010. Their retro style, incorporating psychedelic rock and stoner rock, has been compared to bands of the 1970s hard rock/heavy metal era such as Led Zeppelin and Black Sabbath. Kadavar currently consists of guitarist/lead vocalist Christoph 'Lupus' Lindemann, drummer Christoph 'Tiger' Bartelt and bassist Simon 'Dragon' Bouteloup.",
+    "genre": "Stoner-rock",
+    "facebook": "https://www.facebook.com/KadavarOfficial/",
+    "instagram": "@kadavargram",
+    "youtube": "https://www.youtube.com/watch?v=N3PC1pJFNDE",
+    "twitter": "@kadavarofficial",
+    "profile_image": "https://www.spirit-of-metal.com/les%20goupes/K/Kadavar%20(DE)/pics/438f_1.jpg",
+    "images": [
+      "https://www.tagesspiegel.de/kultur/images/heprodimagesfotos86120181026kadavar475120181025102127498jpg/alternates/BASE_16_9_W1400/heprodimagesfotos86120181026kadavar475120181025102127498jpg.jpeg",
+      "https://www.spirit-of-metal.com/les%20goupes/K/Kadavar%20(DE)/pics/cbca_3.jpg",
+      "https://storage.googleapis.com/leitmotiv-multi/regio-image-2018-08/880996/xtralarge/20180818_sb_kadaver_2.jpg"
+    ],
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912",
+    "availability": true,
+    "dates": []
+  },
+  {
+    "type": "Artist",
+    "active": true,
+    "name": "",
+    "email": "",
     "address": {
       "street": "",
       "city": "",
       "zip_code": ""
     },
-    "coordinates": [],
     "biography": "",
     "genre": "",
     "facebook": "",
@@ -17,8 +44,256 @@
     "youtube": "",
     "twitter": "",
     "profile_image": "",
-    "images": "",
+    "images": [
+      "",
+      "",
+      ""
+    ],
     "password": "",
-    "availability": true
+    "availability": true,
+    "dates": []
+  },
+  {
+    "type": "Artist",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "biography": "",
+    "genre": "",
+    "facebook": "",
+    "instagram": "",
+    "youtube": "",
+    "twitter": "",
+    "profile_image": "",
+    "images": ["", "", ""],
+    "password": "",
+    "availability": true,
+    "dates": []
+  },
+  {
+    "type": "Artist",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "biography": "",
+    "genre": "",
+    "facebook": "",
+    "instagram": "",
+    "youtube": "",
+    "twitter": "",
+    "profile_image": "",
+    "images": ["", "", ""],
+    "password": "",
+    "availability": true,
+    "dates": []
+  },
+  {
+    "type": "Artist",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "biography": "",
+    "genre": "",
+    "facebook": "",
+    "instagram": "",
+    "youtube": "",
+    "twitter": "",
+    "profile_image": "",
+    "images": ["", "", ""],
+    "password": "",
+    "availability": true,
+    "dates": []
+  },
+  {
+    "type": "Artist",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "biography": "",
+    "genre": "",
+    "facebook": "",
+    "instagram": "",
+    "youtube": "",
+    "twitter": "",
+    "profile_image": "",
+    "images": ["", "", ""],
+    "password": "",
+    "availability": true,
+    "dates": []
+  },
+  {
+    "type": "Artist",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "biography": "",
+    "genre": "",
+    "facebook": "",
+    "instagram": "",
+    "youtube": "",
+    "twitter": "",
+    "profile_image": "",
+    "images": ["", "", ""],
+    "password": "",
+    "availability": true,
+    "dates": []
+  },
+  {
+    "type": "Artist",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "biography": "",
+    "genre": "",
+    "facebook": "",
+    "instagram": "",
+    "youtube": "",
+    "twitter": "",
+    "profile_image": "",
+    "images": ["", "", ""],
+    "password": "",
+    "availability": true,
+    "dates": []
+  },
+  {
+    "type": "Artist",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "biography": "",
+    "genre": "",
+    "facebook": "",
+    "instagram": "",
+    "youtube": "",
+    "twitter": "",
+    "profile_image": "",
+    "images": ["", "", ""],
+    "password": "",
+    "availability": true,
+    "dates": []
+  },
+  {
+    "type": "Artist",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "biography": "",
+    "genre": "",
+    "facebook": "",
+    "instagram": "",
+    "youtube": "",
+    "twitter": "",
+    "profile_image": "",
+    "images": ["", "", ""],
+    "password": "",
+    "availability": true,
+    "dates": []
+  },
+  {
+    "type": "Artist",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "biography": "",
+    "genre": "",
+    "facebook": "",
+    "instagram": "",
+    "youtube": "",
+    "twitter": "",
+    "profile_image": "",
+    "images": ["", "", ""],
+    "password": "",
+    "availability": true,
+    "dates": []
+  },
+  {
+    "type": "Artist",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "biography": "",
+    "genre": "",
+    "facebook": "",
+    "instagram": "",
+    "youtube": "",
+    "twitter": "",
+    "profile_image": "",
+    "images": ["", "", ""],
+    "password": "",
+    "availability": true,
+    "dates": []
+  },
+  {
+    "type": "Artist",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "biography": "",
+    "genre": "",
+    "facebook": "",
+    "instagram": "",
+    "youtube": "",
+    "twitter": "",
+    "profile_image": "",
+    "images": ["", "", ""],
+    "password": "",
+    "availability": true,
+    "dates": []
   }
+
 ]
