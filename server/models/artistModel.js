@@ -135,7 +135,8 @@ const artistSchema = mongoose.Schema(
 );
 // INDEXES
 artistSchema.index({ name: 1 });
-@@ -141,51 +141,51 @@ artistSchema.index({ location: "2dsphere" });
+artistSchema.index({ location: "2dsphere" });
+
 // VALIDATE FUNCTIONS
 // Limit length of if image array to <= 3.
 function imageArrayLimit(val) {
