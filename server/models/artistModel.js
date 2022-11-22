@@ -102,7 +102,8 @@ const artistSchema = mongoose.Schema(
       type: String,
       enum: [
         'Rock',
-        'Indie',
+        'Folk',
+        'Jazz',
         'Hip-Hop',
         'Electronic',
         'Experimental',
