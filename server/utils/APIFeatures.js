@@ -1,4 +1,4 @@
-import AppError from "./appError.js";
+import AppError from './appError.js';
 
 class APIFeatures {
   constructor(mongoQuery, queryString) {
@@ -10,7 +10,7 @@ class APIFeatures {
     if (this.queryString.name) {
       const queryObj = { ...this.queryString };
       this.mongoQuery = this.mongoQuery.find({
-        name: { $regex: queryObj.name, $options: "i" },
+        name: { $regex: queryObj.name, $options: 'i' },
       });
     }
     // Return the entire object in order for chaining methods to work
@@ -21,7 +21,7 @@ class APIFeatures {
     if (this.queryString.zipcode) {
       console.log(this.queryString.zipcode);
       this.mongoQuery = this.mongoQuery.find({
-        "address.zipcode": this.queryString.zipcode,
+        'address.zipcode': this.queryString.zipcode,
       });
     }
     return this;
@@ -29,26 +29,25 @@ class APIFeatures {
 
   sort() {
     if (this.queryString.sort) {
-      const sortBy = this.queryString.sort.split(",").join(" ");
+      const sortBy = this.queryString.sort.split(',').join(' ');
       this.mongoQuery = this.mongoQuery.sort(sortBy);
     } else {
-      this.mongoQuery = this.mongoQuery.sort("-createdAt");
+      this.mongoQuery = this.mongoQuery.sort('-createdAt');
     }
     return this;
   }
 
   limitFields() {
     if (this.queryString.fields) {
-      const fields = this.queryString.fields.split(",").join(" ");
+      const fields = this.queryString.fields.split(',').join(' ');
       this.mongoQuery = this.mongoQuery.select(fields);
     } else {
-      this.mongoQuery = this.mongoQuery.select("-__v");
+      this.mongoQuery = this.mongoQuery.select('-__v');
     }
     return this;
   }
 
   paginate() {
-    console.log(this.queryString);
     const page = this.queryString.page * 1 || 1;
     const limit = this.queryString.limit * 1 || 100;
     const skip = (page - 1) * limit;
@@ -60,7 +59,7 @@ class APIFeatures {
 
   getWithinDistance() {
     if (this.queryString.distance && this.queryString.center) {
-      const latLng = this.queryString.center.split(",");
+      const latLng = this.queryString.center.split(',');
 
       const radius = this.queryString.distance / 6378.1;
 
@@ -75,7 +74,7 @@ class APIFeatures {
       }
 
       this.mongoQuery = this.mongoQuery.find({
-        "location.coordinates": {
+        'location.coordinates': {
           $geoWithin: { $centerSphere: [[lng, lat], radius] },
         },
       });
