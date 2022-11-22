@@ -7,10 +7,13 @@
       "city": "",
       "zipcode": ""
     },
+    "location": {
+      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
+    },
     "password": "test1234",
     "passwordConfirm": "test1234",
     "profileImage": "",
-    "images": ["","",""],
+    "images": ["", "", ""],
     "description": "",
     "mediaLinks": {
       "facebookUrl": "",

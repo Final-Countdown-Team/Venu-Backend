@@ -7,6 +7,9 @@
       "city": "Berlin",
       "zipcode": "12055"
     },
+    "location": {
+      "coordinates": [13.452885316062508, 52.47158581923156]
+    },
     "password": "test1234",
     "passwordConfirm": "test1234",
     "profileImage": "https://www.spirit-of-metal.com/les%20goupes/K/Kadavar%20(DE)/pics/438f_1.jpg",
@@ -23,9 +26,170 @@
       "instagramTag": "@kadavargram",
       "youtubeUrl": "https://www.youtube.com/watch?v=N3PC1pJFNDE"
     },
-    "genre": "Rock" ,
+    "genre": "Rock",
+    "dates": [],
+    "members": 3
+  },
+  {
+    "name": "Joanna Newsom",
+    "email": "jojo@harpy.com",
+    "address": {
+      "street": "Str. d. Jugend 109",
+      "city": "Berlin",
+      "zipcode": "14621"
+    },
+    "location": {
+      "coordinates": [13.110554165829658, 52.598501845264195]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "https://assets.vogue.com/photos/5891c669dec09b18414539e4/master/w_2000,h_1333,c_limit/03-joanna-newsom.jpg",
+    "images": ["https://i.guim.co.uk/img/media/bec8b3060a52c8909bdd9f24497abfb3106078e7/0_742_1920_1153/master/1920.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=dadc905dc5da533407618c88493d11d6", "https://d1gdi8qinx8x49.cloudfront.net/940x535/55463.jpeg", "https://images.mubicdn.net/images/cast_member/134486/cache-5539-1427520993/image-w856.jpg?size=800x"],
+    "description": "Joanna Newsom is an American born singer-songwriter and actress. Born and raised in Northern California, Newsom was classically trained on the harp in her youth and began her musical career as a keyboardist in the San Francisco-based indie band the Pleased.",
+    "mediaLinks": {
+      "facebookUrl": "",
+      "twitterTag": "@itsJoannaNewsom",
+      "instagramTag": "@joannanewsom",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ky9Ro9pP2gc"
+    },
+    "genre": "Singer-Songwriter",
+    "dates": [],
+    "members": 1
+  },
+  {
+    "name": "Farce",
+    "email": "farce1000@gmail.com",
+    "address": {
+      "street": "Hochwassergasse 12",
+      "city": "Wien",
+      "zipcode": "1230"
+    },
+    "location": {
+      "coordinates": [16.358379446784472, 48.149150171949245]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "https://www.musicaustria.at/wp-content/uploads/farce-1-750.png",
+    "images": [
+      "https://tubestatic.orf.at/static/images/site/tube/20181044/farce_presse-magdalena-fischer_888x522.5815310.jpg",
+      "https://tubestatic.orf.at/static/images/site/tube/20220518/f2.5977834.jpg",
+      "https://www.musicexport.at/wp-content/uploads/FARCE_2.jpg",
+      ""
+    ],
+    "description": "VERONIKA J. KÖNIG aka FARCE makes noisy pop music at home in the bedroom. Her first vinyl EP 'ICH SEHE IM VORBEIFAHRENDEN AUTO DEN UNFALL MITVORBEIFAHREN, IN ZEITLUPE UND RÜCKWÄRTS' was recently released on Metamatter Records. In the summer of 2023, FARCE will be touring through Germany, followed by a kind of borderland tour in the fall.",
+    "mediaLinks": {
+      "facebookUrl": "https://www.facebook.com/FARCE1000/",
+      "twitterTag": "",
+      "instagramTag": "@farce1000",
+      "youtubeUrl": "https://www.youtube.com/watch?v=AzVrmwQjHb4"
+    },
+    "genre": "Electronic",
+    "dates": [],
+    "members": 1
+  },
+  {
+    "name": "Mystical Communication Service",
+    "email": "mcs@gmail.com",
+    "address": {
+      "street": "Grasweg 4",
+      "city": "Kleinmachnow",
+      "zipcode": "14532"
+    },
+    "location": {
+      "coordinates": [13.203308165337232, 52.40862641406258]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "http://www.popmonitor.de/content/images/mcs_lovelite.jpg",
+    "images": ["http://yairkarelicmusic.com/wp-content/uploads/2021/10/mcsmasks-265x173.jpg", "https://nbhap.com/wp-content/uploads//2014/03/mystical-communication-service.jpg", "https://f4.bcbits.com/img/0010120608_10.jpg"],
+    "description": "Mystical Communication Service are a Berlin-based music project fronted by the fictional Yanez Di Mompracem, backed by a collection of eccentric and well-traveled bandmates from all corners of the globe. The band is an amalgamation of wayward drifters and modern-day mystics, uniting to play their distinctive style of psychedelic and experimental rock. Their sound oscillates between intricate blues-driven solos, creating a sense of ancient and emotive storytelling, and rhythmic explorations of unfamiliar yet alluring states of mind. Listening to Mystical Communication Service represents an enchanted excursion into a nomadic world, where the concepts of sanity and self-awareness fade away. The band creates an ethereal soundscape, leaving you adrift in a haze of desire and dream-like apparitions.",
+    "mediaLinks": {
+      "facebookUrl": "https://www.facebook.com/mysticalcommunicationservice/",
+      "twitterTag": "",
+      "instagramTag": "",
+      "youtubeUrl": "https://youtu.be/B0T5qENTbFg"
+    },
+    "genre": "Experimental",
+    "dates": [],
+    "members": 6
+  },
+  {
+    "name": "Kendrick Lamar",
+    "email": "duckworth@hotmail.com",
+    "address": {
+      "street": "Bachstraße 5A",
+      "city": "Mühlenbecker Land",
+      "zipcode": "16552"
+    },
+    "location": {
+      "coordinates": [13.378328382195008, 52.6486024458988]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "https://miro.medium.com/max/1400/1*bd6bO3dh9wIQfYj5hsQ6Qw.jpeg",
+    "images": ["https://www.nme.com/wp-content/uploads/2022/06/kendrick-lamar-glasto-2022-696x442.jpg", "https://mostdope.tv/wp-content/uploads/news-kendrick-lamar.jpg", "https://i.scdn.co/image/ab67616d0000b2738b52c6b9bc4e43d873869699"],
+    "description": "Kendrick Lamar Duckworth is a rapper and songwriter. Known for his progressive musical styles and socially conscious songwriting, he is often considered one of the most influential hip hop artists of his generation.",
+    "mediaLinks": {
+      "facebookUrl": "",
+      "twitterTag": "@kendricklamar",
+      "instagramTag": "@kendricklamar",
+      "youtubeUrl": "https://www.youtube.com/watch?v=toBTPGfurLc"
+    },
+    "genre": "Hip-Hop",
+    "dates": [],
+    "members": 1
+  },
+  {
+    "name": "Nusrat Fateh Ali Khan",
+    "email": "gazals@gmail.com",
+    "address": {
+      "street": "Redlingerstraße 7",
+      "city": "München",
+      "zipcode": "81735"
+    },
+    "location": {
+      "coordinates": [11.62844727080123, 48.11501640642005]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "https://media.npr.org/assets/img/2020/12/01/nusrat-fateh-ali-khan-2-b7d32399498a7e6e6bfb7eab68ace50e406b6d7d-s800-c85.webp",
+    "images": ["https://www.aljazeera.com/wp-content/uploads/2022/08/GettyImages-1307215788.jpg?resize=770%2C513", "https://www.aljazeera.com/wp-content/uploads/2022/08/GettyImages-163009531.jpg?w=770&resize=770%2C506", "https://www.aljazeera.com/wp-content/uploads/2022/08/GettyImages-461952019.jpg?w=770&resize=770%2C525"],
+    "description": "Ustad Nusrat Fateh Ali Khan PP was a Pakistani singer, songwriter, and music director. He was primarily a singer of qawwali — a form of Sufi devotional music. Sometimes called the 'Shahenshah-e-Qawwali'd, he is considered by The New York Times to be the greatest qawwali singer of his generation.",
+    "mediaLinks": {
+      "facebookUrl": "https://www.facebook.com/nfak13/",
+      "twitterTag": "",
+      "instagramTag": "@theoffcialnusrat",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fDy-sUF7gLc"
+    },
+    "genre": "Folk",
     "dates": [],
     "members": 2
+  },
+  {
+    "name": "Lonnie Holley",
+    "email": "lonnieholleyallday@music.com",
+    "address": {
+      "street": "Jenischstraße 26",
+      "city": "Hamburg",
+      "zipcode": "22609"
+    },
+    "location": {
+      "coordinates": [9.855626033360727, 53.5600383748285]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "https://static.frieze.com/files/inline-images/editorial-articles-dtd-26--rgb-lonnie-holley--just-before-music-cmyk.jpeg",
+    "images": ["https://static01.nyt.com/images/2021/05/07/arts/06lonnie-holley-10/06lonnie-holley-10-superJumbo.jpg", "https://media.artsbma.org/wp-content/uploads/2022/08/22140014/Lonnie_003.jpeg", "https://www.papercitymag.com/wp-content/uploads/2017/11/040614-lonnie-holley-ba03-1.jpg"],
+    "description": "Holley's professional music career began in 2006 when he made improvisational vocal recordings, at the urging of Matt Arnett (son of William Arnett), in an Alabama church using just a keyboard and a microphone. In 2012, he released his debut album Just Before Music on the Dust-to-Digital label, followed by Keeping a Record of It the following year.",
+    "mediaLinks": {
+      "facebookUrl": "https://www.facebook.com/LonnieHolley/",
+      "twitterTag": "",
+      "instagramTag": "@lonnieholleysuniverse",
+      "youtubeUrl": "https://www.youtube.com/watch?v=So72mlo-nnY"
+    },
+    "genre": "Experimental",
+    "dates": [],
+    "members": 1
   },
   {
     "name": "",
@@ -34,6 +198,9 @@
       "street": "",
       "city": "",
       "zipcode": ""
+    },
+    "location": {
+      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
@@ -58,28 +225,8 @@
       "city": "",
       "zipcode": ""
     },
-    "password": "test1234",
-    "passwordConfirm": "test1234",
-    "profileImage": "",
-    "images": ["", "", ""],
-    "description": "",
-    "mediaLinks": {
-      "facebookUrl": "",
-      "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
-    },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
-    "members": 2
-  },
-  {
-    "name": "",
-    "email": "",
-    "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+    "location": {
+      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
@@ -104,28 +251,8 @@
       "city": "",
       "zipcode": ""
     },
-    "password": "test1234",
-    "passwordConfirm": "test1234",
-    "profileImage": "",
-    "images": ["", "", ""],
-    "description": "",
-    "mediaLinks": {
-      "facebookUrl": "",
-      "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
-    },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
-    "members": 2
-  },
-  {
-    "name": "",
-    "email": "",
-    "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+    "location": {
+      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
@@ -150,28 +277,8 @@
       "city": "",
       "zipcode": ""
     },
-    "password": "test1234",
-    "passwordConfirm": "test1234",
-    "profileImage": "",
-    "images": ["", "", ""],
-    "description": "",
-    "mediaLinks": {
-      "facebookUrl": "",
-      "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
-    },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
-    "members": 2
-  },
-  {
-    "name": "",
-    "email": "",
-    "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+    "location": {
+      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
@@ -196,28 +303,8 @@
       "city": "",
       "zipcode": ""
     },
-    "password": "test1234",
-    "passwordConfirm": "test1234",
-    "profileImage": "",
-    "images": ["", "", ""],
-    "description": "",
-    "mediaLinks": {
-      "facebookUrl": "",
-      "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
-    },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
-    "members": 2
-  },
-  {
-    "name": "",
-    "email": "",
-    "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+    "location": {
+      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
@@ -242,28 +329,8 @@
       "city": "",
       "zipcode": ""
     },
-    "password": "test1234",
-    "passwordConfirm": "test1234",
-    "profileImage": "",
-    "images": ["", "", ""],
-    "description": "",
-    "mediaLinks": {
-      "facebookUrl": "",
-      "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
-    },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
-    "members": 2
-  },
-  {
-    "name": "",
-    "email": "",
-    "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+    "location": {
+      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
@@ -287,6 +354,9 @@
       "street": "",
       "city": "",
       "zipcode": ""
+    },
+    "location": {
+      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
