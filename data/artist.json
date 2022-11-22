@@ -1,15 +1,92 @@
 [
+
+
   {
-    "type": "",
+    "type": "Artist",
     "active": true,
-    "name": "Jimmy Jam",
-    "email": "@huxleys.gov",
+    "name": "Kadavar",
+    "email": "kadavar@gmail.com",
+    "address": {
+      "street": "Saalestr. 32",
+      "city": "Berlin",
+      "zip_code": "12055"
+    },
+    "biography": "Kadavar is a German rock band from Berlin, founded in 2010. Their retro style, incorporating psychedelic rock and stoner rock, has been compared to bands of the 1970s hard rock/heavy metal era such as Led Zeppelin and Black Sabbath. Kadavar currently consists of guitarist/lead vocalist Christoph 'Lupus' Lindemann, drummer Christoph 'Tiger' Bartelt and bassist Simon 'Dragon' Bouteloup.",
+    "genre": "Stoner-rock",
+    "facebook": "https://www.facebook.com/KadavarOfficial/",
+    "instagram": "@kadavargram",
+    "youtube": "https://www.youtube.com/watch?v=N3PC1pJFNDE",
+    "twitter": "@kadavarofficial",
+    "profile_image": "https://www.spirit-of-metal.com/les%20goupes/K/Kadavar%20(DE)/pics/438f_1.jpg",
+    "images": [
+      "https://www.tagesspiegel.de/kultur/images/heprodimagesfotos86120181026kadavar475120181025102127498jpg/alternates/BASE_16_9_W1400/heprodimagesfotos86120181026kadavar475120181025102127498jpg.jpeg",
+      "https://www.spirit-of-metal.com/les%20goupes/K/Kadavar%20(DE)/pics/cbca_3.jpg",
+      "https://storage.googleapis.com/leitmotiv-multi/regio-image-2018-08/880996/xtralarge/20180818_sb_kadaver_2.jpg"
+    ],
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912",
+    "availability": true,
+    "dates": []
+  },
+  {
+    "type": "Artist",
+    "active": true,
+    "name": "Joanna Newsom",
+    "email": "jojo@harpy.com",
+    "address": {
+      "street": "",
+      "city": "San Francisco",
+      "zip_code": ""
+    },
+    "biography": "Joanna Newsom is an American singer-songwriter and actress. Born and raised in Northern California, Newsom was classically trained on the harp in her youth and began her musical career as a keyboardist in the San Francisco-based indie band the Pleased.",
+    "genre": "Folk",
+    "facebook": "",
+    "instagram": "@joannanewsom",
+    "youtube": "https://www.youtube.com/watch?v=ky9Ro9pP2gc",
+    "twitter": "@itsJoannaNewsom",
+    "profile_image": "https://assets.vogue.com/photos/5891c669dec09b18414539e4/master/w_2000,h_1333,c_limit/03-joanna-newsom.jpg",
+    "images": [
+      "https://i.guim.co.uk/img/media/bec8b3060a52c8909bdd9f24497abfb3106078e7/0_742_1920_1153/master/1920.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=dadc905dc5da533407618c88493d11d6",
+      "https://d1gdi8qinx8x49.cloudfront.net/940x535/55463.jpeg",
+      "https://images.mubicdn.net/images/cast_member/134486/cache-5539-1427520993/image-w856.jpg?size=800x"
+    ],
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912",
+    "availability": true,
+    "dates": []
+  },
+  {
+    "type": "Artist",
+    "active": true,
+    "name": "Farce",
+    "email": "farce1000@gmail.com",
+    "address": {
+      "street": "",
+      "city": "Wien",
+      "zip_code": ""
+    },
+    "biography": "VERONIKA J. KÖNIG aka FARCE makes noisy pop music at home in the bedroom. Her first vinyl EP 'ICH SEHE IM VORBEIFAHRENDEN AUTO DEN UNFALL MITVORBEIFAHREN, IN ZEITLUPE UND RÜCKWÄRTS' was recently released on Metamatter Records. In the summer of 2023, FARCE will be touring through Germany, followed by a kind of borderland tour in the fall. ",
+    "genre": "Electronic",
+    "facebook": "https://www.facebook.com/FARCE1000/",
+    "instagram": "@farce1000",
+    "youtube": "https://www.youtube.com/watch?v=AzVrmwQjHb4",
+    "twitter": "",
+    "profile_image": "https://www.musicaustria.at/wp-content/uploads/farce-1-750.png",
+    "images": ["https://tubestatic.orf.at/static/images/site/tube/20181044/farce_presse-magdalena-fischer_888x522.5815310.jpg", 
+      "https://tubestatic.orf.at/static/images/site/tube/20220518/f2.5977834.jpg", 
+      "https://www.musicexport.at/wp-content/uploads/FARCE_2.jpg"],
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912",
+    "availability": true,
+    "dates": []
+  },
+  {
+    "type": "Artist",
+    "active": true,
+    "name": "",
+    "email": "",
     "address": {
       "street": "",
       "city": "",
       "zip_code": ""
     },
-    "coordinates": [],
     "biography": "",
     "genre": "",
     "facebook": "",
@@ -17,8 +94,208 @@
     "youtube": "",
     "twitter": "",
     "profile_image": "",
-    "images": "",
+    "images": ["", "", ""],
     "password": "",
-    "availability": true
+    "availability": true,
+    "dates": []
+  },
+  {
+    "type": "Artist",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "biography": "",
+    "genre": "",
+    "facebook": "",
+    "instagram": "",
+    "youtube": "",
+    "twitter": "",
+    "profile_image": "",
+    "images": ["", "", ""],
+    "password": "",
+    "availability": true,
+    "dates": []
+  },
+  {
+    "type": "Artist",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "biography": "",
+    "genre": "",
+    "facebook": "",
+    "instagram": "",
+    "youtube": "",
+    "twitter": "",
+    "profile_image": "",
+    "images": ["", "", ""],
+    "password": "",
+    "availability": true,
+    "dates": []
+  },
+  {
+    "type": "Artist",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "biography": "",
+    "genre": "",
+    "facebook": "",
+    "instagram": "",
+    "youtube": "",
+    "twitter": "",
+    "profile_image": "",
+    "images": ["", "", ""],
+    "password": "",
+    "availability": true,
+    "dates": []
+  },
+  {
+    "type": "Artist",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "biography": "",
+    "genre": "",
+    "facebook": "",
+    "instagram": "",
+    "youtube": "",
+    "twitter": "",
+    "profile_image": "",
+    "images": ["", "", ""],
+    "password": "",
+    "availability": true,
+    "dates": []
+  },
+  {
+    "type": "Artist",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "biography": "",
+    "genre": "",
+    "facebook": "",
+    "instagram": "",
+    "youtube": "",
+    "twitter": "",
+    "profile_image": "",
+    "images": ["", "", ""],
+    "password": "",
+    "availability": true,
+    "dates": []
+  },
+  {
+    "type": "Artist",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "biography": "",
+    "genre": "",
+    "facebook": "",
+    "instagram": "",
+    "youtube": "",
+    "twitter": "",
+    "profile_image": "",
+    "images": ["", "", ""],
+    "password": "",
+    "availability": true,
+    "dates": []
+  },
+  {
+    "type": "Artist",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "biography": "",
+    "genre": "",
+    "facebook": "",
+    "instagram": "",
+    "youtube": "",
+    "twitter": "",
+    "profile_image": "",
+    "images": ["", "", ""],
+    "password": "",
+    "availability": true,
+    "dates": []
+  },
+  {
+    "type": "Artist",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "biography": "",
+    "genre": "",
+    "facebook": "",
+    "instagram": "",
+    "youtube": "",
+    "twitter": "",
+    "profile_image": "",
+    "images": ["", "", ""],
+    "password": "",
+    "availability": true,
+    "dates": []
+  },
+  {
+    "type": "Artist",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "biography": "",
+    "genre": "",
+    "facebook": "",
+    "instagram": "",
+    "youtube": "",
+    "twitter": "",
+    "profile_image": "",
+    "images": ["", "", ""],
+    "password": "",
+    "availability": true,
+    "dates": []
   }
+
 ]
