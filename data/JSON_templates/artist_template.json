@@ -7,15 +7,10 @@
       "city": "",
       "zipcode": ""
     },
-    "location": {
-      "coordinates": [
-        "Needs longitude first, latitude second, typeof Number"
-      ]
-    },
-    "password": "",
-    "passwordConfirm": "",
+    "password": "test1234",
+    "passwordConfirm": "test1234",
     "profileImage": "",
-    "images": [],
+    "images": ["","",""],
     "description": "",
     "mediaLinks": {
       "facebookUrl": "",
@@ -23,7 +18,7 @@
       "instagramTag": "",
       "youtubeUrl": ""
     },
-    "genre": "Available genres are: Rock, Indie, Hip-Hop, Electronic, Alternative, Metal, Classic, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
+    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
     "dates": [],
     "members": 2
   }
