@@ -91,7 +91,7 @@
     "name": "Mystical Communication Service",
     "email": "mcs@gmail.com",
     "address": {
-      "street": "Grasweg 4"
+      "street": "Grasweg 4",
       "city": "Kleinmachnow",
       "zipcode": "14532"
     },
@@ -140,28 +140,28 @@
     "members": 1
   },
   {
-    "name": "",
-    "email": "",
+    "name": "Nusrat Fateh Ali Khan",
+    "email": "gazals@gmail.com",
     "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+      "street": "Redlingerstraße 7",
+      "city": "München",
+      "zipcode": "81735"
     },
     "location": {
-      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
+      "coordinates": [11.62844727080123, 48.11501640642005]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
-    "profileImage": "",
-    "images": ["", "", ""],
-    "description": "",
+    "profileImage": "https://media.npr.org/assets/img/2020/12/01/nusrat-fateh-ali-khan-2-b7d32399498a7e6e6bfb7eab68ace50e406b6d7d-s800-c85.webp",
+    "images": ["https://www.aljazeera.com/wp-content/uploads/2022/08/GettyImages-1307215788.jpg?resize=770%2C513", "https://www.aljazeera.com/wp-content/uploads/2022/08/GettyImages-163009531.jpg?w=770&resize=770%2C506", "https://www.aljazeera.com/wp-content/uploads/2022/08/GettyImages-461952019.jpg?w=770&resize=770%2C525"],
+    "description": "Ustad Nusrat Fateh Ali Khan PP was a Pakistani singer, songwriter, and music director. He was primarily a singer of qawwali — a form of Sufi devotional music. Sometimes called the 'Shahenshah-e-Qawwali'd, he is considered by The New York Times to be the greatest qawwali singer of his generation.",
     "mediaLinks": {
-      "facebookUrl": "",
+      "facebookUrl": "https://www.facebook.com/nfak13/",
       "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
+      "instagramTag": "@theoffcialnusrat",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fDy-sUF7gLc"
     },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
+    "genre": "Folk",
     "dates": [],
     "members": 2
   },
