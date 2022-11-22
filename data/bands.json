@@ -114,30 +114,30 @@
     "members": 6
   },
   {
-    "name": "",
-    "email": "",
+    "name": "Kendrick Lamar",
+    "email": "duckworth@hotmail.com",
     "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+      "street": "Bachstraße 5A",
+      "city": "Mühlenbecker Land",
+      "zipcode": "16552"
     },
     "location": {
-      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
+      "coordinates": [13.378328382195008, 52.6486024458988]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
-    "profileImage": "",
-    "images": ["", "", ""],
-    "description": "",
+    "profileImage": "https://miro.medium.com/max/1400/1*bd6bO3dh9wIQfYj5hsQ6Qw.jpeg",
+    "images": ["https://www.nme.com/wp-content/uploads/2022/06/kendrick-lamar-glasto-2022-696x442.jpg", "https://mostdope.tv/wp-content/uploads/news-kendrick-lamar.jpg", "https://i.scdn.co/image/ab67616d0000b2738b52c6b9bc4e43d873869699"],
+    "description": "Kendrick Lamar Duckworth is a rapper and songwriter. Known for his progressive musical styles and socially conscious songwriting, he is often considered one of the most influential hip hop artists of his generation.",
     "mediaLinks": {
       "facebookUrl": "",
-      "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
+      "twitterTag": "@kendricklamar",
+      "instagramTag": "@kendricklamar",
+      "youtubeUrl": "https://www.youtube.com/watch?v=toBTPGfurLc"
     },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
+    "genre": "Hip-Hop",
     "dates": [],
-    "members": 2
+    "members": 1
   },
   {
     "name": "",
