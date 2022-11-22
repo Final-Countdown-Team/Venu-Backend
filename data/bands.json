@@ -52,35 +52,40 @@
       "instagramTag": "@joannanewsom",
       "youtubeUrl": "https://www.youtube.com/watch?v=ky9Ro9pP2gc"
     },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
+    "genre": "Singer-Songwriter",
     "dates": [],
-    "members": 2
+    "members": 1
   },
   {
-    "name": "",
-    "email": "",
+    "name": "Farce",
+    "email": "farce1000@gmail.com",
     "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+      "street": "Hochwassergasse 12",
+      "city": "Wien",
+      "zipcode": "1230"
     },
     "location": {
-      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
+      "coordinates": [16.358379446784472, 48.149150171949245]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
-    "profileImage": "",
-    "images": ["", "", ""],
-    "description": "",
+    "profileImage": "https://www.musicaustria.at/wp-content/uploads/farce-1-750.png",
+    "images": [
+      "https://tubestatic.orf.at/static/images/site/tube/20181044/farce_presse-magdalena-fischer_888x522.5815310.jpg",
+      "https://tubestatic.orf.at/static/images/site/tube/20220518/f2.5977834.jpg",
+      "https://www.musicexport.at/wp-content/uploads/FARCE_2.jpg",
+      ""
+    ],
+    "description": "VERONIKA J. KÖNIG aka FARCE makes noisy pop music at home in the bedroom. Her first vinyl EP 'ICH SEHE IM VORBEIFAHRENDEN AUTO DEN UNFALL MITVORBEIFAHREN, IN ZEITLUPE UND RÜCKWÄRTS' was recently released on Metamatter Records. In the summer of 2023, FARCE will be touring through Germany, followed by a kind of borderland tour in the fall.",
     "mediaLinks": {
-      "facebookUrl": "",
+      "facebookUrl": "https://www.facebook.com/FARCE1000/",
       "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
+      "instagramTag": "@farce1000",
+      "youtubeUrl": "https://www.youtube.com/watch?v=AzVrmwQjHb4"
     },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
+    "genre": "Electronic",
     "dates": [],
-    "members": 2
+    "members": 1
   },
   {
     "name": "",
