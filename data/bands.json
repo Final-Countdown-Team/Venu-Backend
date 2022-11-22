@@ -7,6 +7,9 @@
       "city": "Berlin",
       "zipcode": "12055"
     },
+    "location": {
+      "coordinates": [13.452885316062508, 52.47158581923156]
+    },
     "password": "test1234",
     "passwordConfirm": "test1234",
     "profileImage": "https://www.spirit-of-metal.com/les%20goupes/K/Kadavar%20(DE)/pics/438f_1.jpg",
@@ -23,7 +26,33 @@
       "instagramTag": "@kadavargram",
       "youtubeUrl": "https://www.youtube.com/watch?v=N3PC1pJFNDE"
     },
-    "genre": "Rock" ,
+    "genre": "Rock",
+    "dates": [],
+    "members": 3
+  },
+  {
+    "name": "Joanna Newsom",
+    "email": "jojo@harpy.com",
+    "address": {
+      "street": "Str. d. Jugend 109",
+      "city": "Berlin",
+      "zipcode": "14621"
+    },
+    "location": {
+      "coordinates": [13.110554165829658, 52.598501845264195]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "https://assets.vogue.com/photos/5891c669dec09b18414539e4/master/w_2000,h_1333,c_limit/03-joanna-newsom.jpg",
+    "images": ["https://i.guim.co.uk/img/media/bec8b3060a52c8909bdd9f24497abfb3106078e7/0_742_1920_1153/master/1920.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=dadc905dc5da533407618c88493d11d6", "https://d1gdi8qinx8x49.cloudfront.net/940x535/55463.jpeg", "https://images.mubicdn.net/images/cast_member/134486/cache-5539-1427520993/image-w856.jpg?size=800x"],
+    "description": "Joanna Newsom is an American born singer-songwriter and actress. Born and raised in Northern California, Newsom was classically trained on the harp in her youth and began her musical career as a keyboardist in the San Francisco-based indie band the Pleased.",
+    "mediaLinks": {
+      "facebookUrl": "",
+      "twitterTag": "@itsJoannaNewsom",
+      "instagramTag": "@joannanewsom",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ky9Ro9pP2gc"
+    },
+    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
     "dates": [],
     "members": 2
   },
@@ -34,6 +63,9 @@
       "street": "",
       "city": "",
       "zipcode": ""
+    },
+    "location": {
+      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
@@ -58,28 +90,8 @@
       "city": "",
       "zipcode": ""
     },
-    "password": "test1234",
-    "passwordConfirm": "test1234",
-    "profileImage": "",
-    "images": ["", "", ""],
-    "description": "",
-    "mediaLinks": {
-      "facebookUrl": "",
-      "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
-    },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
-    "members": 2
-  },
-  {
-    "name": "",
-    "email": "",
-    "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+    "location": {
+      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
@@ -104,28 +116,8 @@
       "city": "",
       "zipcode": ""
     },
-    "password": "test1234",
-    "passwordConfirm": "test1234",
-    "profileImage": "",
-    "images": ["", "", ""],
-    "description": "",
-    "mediaLinks": {
-      "facebookUrl": "",
-      "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
-    },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
-    "members": 2
-  },
-  {
-    "name": "",
-    "email": "",
-    "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+    "location": {
+      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
@@ -150,28 +142,8 @@
       "city": "",
       "zipcode": ""
     },
-    "password": "test1234",
-    "passwordConfirm": "test1234",
-    "profileImage": "",
-    "images": ["", "", ""],
-    "description": "",
-    "mediaLinks": {
-      "facebookUrl": "",
-      "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
-    },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
-    "members": 2
-  },
-  {
-    "name": "",
-    "email": "",
-    "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+    "location": {
+      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
@@ -196,28 +168,8 @@
       "city": "",
       "zipcode": ""
     },
-    "password": "test1234",
-    "passwordConfirm": "test1234",
-    "profileImage": "",
-    "images": ["", "", ""],
-    "description": "",
-    "mediaLinks": {
-      "facebookUrl": "",
-      "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
-    },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
-    "members": 2
-  },
-  {
-    "name": "",
-    "email": "",
-    "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+    "location": {
+      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
@@ -242,28 +194,8 @@
       "city": "",
       "zipcode": ""
     },
-    "password": "test1234",
-    "passwordConfirm": "test1234",
-    "profileImage": "",
-    "images": ["", "", ""],
-    "description": "",
-    "mediaLinks": {
-      "facebookUrl": "",
-      "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
-    },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
-    "members": 2
-  },
-  {
-    "name": "",
-    "email": "",
-    "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+    "location": {
+      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
@@ -287,6 +219,139 @@
       "street": "",
       "city": "",
       "zipcode": ""
+    },
+    "location": {
+      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "",
+    "images": ["", "", ""],
+    "description": "",
+    "mediaLinks": {
+      "facebookUrl": "",
+      "twitterTag": "",
+      "instagramTag": "",
+      "youtubeUrl": ""
+    },
+    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
+    "dates": [],
+    "members": 2
+  },
+  {
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zipcode": ""
+    },
+    "location": {
+      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "",
+    "images": ["", "", ""],
+    "description": "",
+    "mediaLinks": {
+      "facebookUrl": "",
+      "twitterTag": "",
+      "instagramTag": "",
+      "youtubeUrl": ""
+    },
+    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
+    "dates": [],
+    "members": 2
+  },
+  {
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zipcode": ""
+    },
+    "location": {
+      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "",
+    "images": ["", "", ""],
+    "description": "",
+    "mediaLinks": {
+      "facebookUrl": "",
+      "twitterTag": "",
+      "instagramTag": "",
+      "youtubeUrl": ""
+    },
+    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
+    "dates": [],
+    "members": 2
+  },
+  {
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zipcode": ""
+    },
+    "location": {
+      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "",
+    "images": ["", "", ""],
+    "description": "",
+    "mediaLinks": {
+      "facebookUrl": "",
+      "twitterTag": "",
+      "instagramTag": "",
+      "youtubeUrl": ""
+    },
+    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
+    "dates": [],
+    "members": 2
+  },
+  {
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zipcode": ""
+    },
+    "location": {
+      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "",
+    "images": ["", "", ""],
+    "description": "",
+    "mediaLinks": {
+      "facebookUrl": "",
+      "twitterTag": "",
+      "instagramTag": "",
+      "youtubeUrl": ""
+    },
+    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
+    "dates": [],
+    "members": 2
+  },
+  {
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zipcode": ""
+    },
+    "location": {
+      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
