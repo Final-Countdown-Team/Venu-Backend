@@ -80,22 +80,24 @@
   {
     "type": "Artist",
     "active": true,
-    "name": "",
-    "email": "",
+    "name": "Mystical Communication Service",
+    "email": "mcs@gmail.com",
     "address": {
       "street": "",
-      "city": "",
+      "city": "Berlin",
       "zip_code": ""
     },
-    "biography": "",
-    "genre": "",
-    "facebook": "",
+    "biography": "Mystical Communication Service are a Berlin-based music project fronted by the fictional Yanez Di Mompracem, backed by a collection of eccentric and well-traveled bandmates from all corners of the globe. The band is an amalgamation of wayward drifters and modern-day mystics, uniting to play their distinctive style of psychedelic and experimental rock. Their sound oscillates between intricate blues-driven solos, creating a sense of ancient and emotive storytelling, and rhythmic explorations of unfamiliar yet alluring states of mind. Listening to Mystical Communication Service represents an enchanted excursion into a nomadic world, where the concepts of sanity and self-awareness fade away. The band creates an ethereal soundscape, leaving you adrift in a haze of desire and dream-like apparitions.",
+    "genre": "Cosmic Experimental Psych Rock",
+    "facebook": "https://www.facebook.com/mysticalcommunicationservice/",
     "instagram": "",
-    "youtube": "",
+    "youtube": "https://youtu.be/B0T5qENTbFg",
     "twitter": "",
-    "profile_image": "",
-    "images": ["", "", ""],
-    "password": "",
+    "profile_image": "http://www.popmonitor.de/content/images/mcs_lovelite.jpg",
+    "images": ["http://yairkarelicmusic.com/wp-content/uploads/2021/10/mcsmasks-265x173.jpg", 
+    "https://nbhap.com/wp-content/uploads//2014/03/mystical-communication-service.jpg", 
+    "https://f4.bcbits.com/img/0010120608_10.jpg"],
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912",
     "availability": true,
     "dates": []
   },
@@ -117,7 +119,7 @@
     "twitter": "",
     "profile_image": "",
     "images": ["", "", ""],
-    "password": "",
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912",
     "availability": true,
     "dates": []
   },
@@ -139,7 +141,7 @@
     "twitter": "",
     "profile_image": "",
     "images": ["", "", ""],
-    "password": "",
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912",
     "availability": true,
     "dates": []
   },
@@ -161,7 +163,7 @@
     "twitter": "",
     "profile_image": "",
     "images": ["", "", ""],
-    "password": "",
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912",
     "availability": true,
     "dates": []
   },
@@ -183,7 +185,7 @@
     "twitter": "",
     "profile_image": "",
     "images": ["", "", ""],
-    "password": "",
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912",
     "availability": true,
     "dates": []
   },
@@ -205,7 +207,7 @@
     "twitter": "",
     "profile_image": "",
     "images": ["", "", ""],
-    "password": "",
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912",
     "availability": true,
     "dates": []
   },
@@ -227,7 +229,7 @@
     "twitter": "",
     "profile_image": "",
     "images": ["", "", ""],
-    "password": "",
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912",
     "availability": true,
     "dates": []
   },
@@ -249,7 +251,7 @@
     "twitter": "",
     "profile_image": "",
     "images": ["", "", ""],
-    "password": "",
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912",
     "availability": true,
     "dates": []
   },
@@ -271,7 +273,7 @@
     "twitter": "",
     "profile_image": "",
     "images": ["", "", ""],
-    "password": "",
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912",
     "availability": true,
     "dates": []
   },
@@ -293,7 +295,7 @@
     "twitter": "",
     "profile_image": "",
     "images": ["", "", ""],
-    "password": "",
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912",
     "availability": true,
     "dates": []
   }
