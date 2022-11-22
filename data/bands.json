@@ -166,30 +166,30 @@
     "members": 2
   },
   {
-    "name": "",
-    "email": "",
+    "name": "Lonnie Holley",
+    "email": "lonnieholleyallday@music.com",
     "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+      "street": "Jenischstraße 26",
+      "city": "Hamburg",
+      "zipcode": "22609"
     },
     "location": {
-      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
+      "coordinates": [9.855626033360727, 53.5600383748285]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
-    "profileImage": "",
-    "images": ["", "", ""],
-    "description": "",
+    "profileImage": "https://static.frieze.com/files/inline-images/editorial-articles-dtd-26--rgb-lonnie-holley--just-before-music-cmyk.jpeg",
+    "images": ["https://static01.nyt.com/images/2021/05/07/arts/06lonnie-holley-10/06lonnie-holley-10-superJumbo.jpg", "https://media.artsbma.org/wp-content/uploads/2022/08/22140014/Lonnie_003.jpeg", "https://www.papercitymag.com/wp-content/uploads/2017/11/040614-lonnie-holley-ba03-1.jpg"],
+    "description": "Holley's professional music career began in 2006 when he made improvisational vocal recordings, at the urging of Matt Arnett (son of William Arnett), in an Alabama church using just a keyboard and a microphone. In 2012, he released his debut album Just Before Music on the Dust-to-Digital label, followed by Keeping a Record of It the following year.",
     "mediaLinks": {
-      "facebookUrl": "",
+      "facebookUrl": "https://www.facebook.com/LonnieHolley/",
       "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
+      "instagramTag": "@lonnieholleysuniverse",
+      "youtubeUrl": "https://www.youtube.com/watch?v=So72mlo-nnY"
     },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
+    "genre": "Experimental",
     "dates": [],
-    "members": 2
+    "members": 1
   },
   {
     "name": "",
