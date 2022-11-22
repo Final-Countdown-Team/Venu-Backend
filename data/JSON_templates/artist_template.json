@@ -1,0 +1,30 @@
+[
+  {
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zipcode": ""
+    },
+    "location": {
+      "coordinates": [
+        "Needs longitude first, latitude second, typeof Number"
+      ]
+    },
+    "password": "",
+    "passwordConfirm": "",
+    "profileImage": "",
+    "images": [],
+    "description": "",
+    "mediaLinks": {
+      "facebookUrl": "",
+      "twitterTag": "",
+      "instagramTag": "",
+      "youtubeUrl": ""
+    },
+    "genre": "Available genres are: Rock, Indie, Hip-Hop, Electronic, Alternative, Metal, Classic, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
+    "dates": [],
+    "members": 2
+  }
+]
