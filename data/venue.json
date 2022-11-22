@@ -3,14 +3,14 @@
     "type": "Venue",
     "active": true,
     "name": "Backstage Kulturzentrum",
-    "email": "bookings@huxleys.gov",
+    "email": "backstagemunich@web.de",
     "address": {
       "street": "Reitknechtstraße 6",
       "city": "München",
       "zip_code": "80639"
     },
-    "coordinates": [11.522287108747674 ,48.147007488408754],
-    "password": "",
+    "coordinates": [11.522287108747674, 48.147007488408754],
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
     "profile_image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D115472195934&imgrefurl=https%3A%2F%2Fwww.facebook.com%2Fbackstagemunich%2F&tbnid=xN9Lm-IMKw9HRM&vet=12ahUKEwjb4vT-qL_7AhXrktgFHd9AA8gQMygvegUIARCeAg..i&docid=xllfvSFvqk8TxM&w=1200&h=1200&q=Backstage%20Kulturzentrum&ved=2ahUKEwjb4vT-qL_7AhXrktgFHd9AA8gQMygvegUIARCeAg",
     "images": [
     "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.legacy.de%2Flive%2Fberichte-galerien%2F2351-death-angel-exodus-testament-muenchen-backstage-werk-21-02-2020",
@@ -25,6 +25,442 @@
     "website": "https://l.instagram.com/?u=https%3A%2F%2Fbackstage.eu%2F&e=ATPqHPCWLlvAWuRJnRYr_HSHbdrM6Mg81XuWAR9iqiMEDIZGq717hxBwOshtTNoI5AxLNxPeVfLyk_4N&s=1",
     "capacity": "1000",
     "payment_type": "",
-    "availability": true
-  }
+    "availability": true,
+    "dates": ["2023-19-14T09:00:00.000+00:00"]
+
+  },
+  {
+    "type": "Venue",
+    "active": true,
+    "name": "Muffathalle",
+    "email": "",
+    "address": {
+      "street": " Zellstraße 4",
+      "city": "München",
+      "zip_code": "81667"
+    },
+    "coordinates": [11.589292023058439, 48.133364811110326],
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
+    "profile_image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1086253641672151040%2FhZpAcmFk_400x400.jpg&imgrefurl=https%3A%2F%2Fmobile.twitter.com%2Fmuffatwerk&tbnid=YG97Vnr1MPRQOM&vet=12ahUKEwiTtfXSyb_7AhXmitgFHSHGD04QMygDegQIARA8..i&docid=GLMr9dXTY0WE0M&w=400&h=400&q=logo%20of%20muffathalle&hl=en&ved=2ahUKEwiTtfXSyb_7AhXmitgFHSHGD04QMygDegQIARA8",
+    "images": [
+      "",
+      "",
+      ""
+    ],
+    "description": "Entertainment venue with an eclectic program of live music, dance & drama, DJ sets & party nights.",
+    "facebook": "",
+    "instagram": "https://www.instagram.com/muffatwerk/",
+    "twitter": "https://mobile.twitter.com/muffatwerk",
+    "website": "https://www.muffatwerk.de/de/",
+    "capacity": "400",
+    "payment_type": "",
+    "availability": true,
+    "dates": ["2023-11-20T09:00:00.000+00:00"]
+  },
+  {
+    "type": "Venue",
+    "active": true,
+    "name": "Strom",
+    "email": "",
+    "address": {
+      "street": "Lindwurmstraße 88",
+      "city": "München",
+      "zip_code": " 80337"
+    },
+    "coordinates": [11.549238636635943, 48.126809361859735],
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
+    "profile_image": "",
+    "images": [
+      "",
+      "",
+      ""],
+    "description": "Small, unfussy nightspot hosting alt-rock, metal & electronica concerts & DJ parties.",
+    "facebook": "https://www.facebook.com/stromclubmunich/",
+    "instagram": "https://www.instagram.com/strom.munich/",
+    "twitter": "",
+    "website": "https://strom-muc.de/",
+    "capacity": "500",
+    "payment_type": "",
+    "availability": true,
+    "dates": ["2023-11-20T09:00:00.000+00:00"]
+  },
+  {
+    "type": "Venue",
+    "active": true,
+    "name": "Max-Joseph-Saal",
+    "email": "ResidenzMuenchen@bsv.bayern.de",
+    "address": {
+      "street": "Residence Residenzstraße 1",
+      "city": "Munich",
+      "zip_code": "80333 "
+    },
+    "coordinates": [11.57827696920103, 48.1427226158987],
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
+    "profile_image": "h",
+    "images": [
+      "",
+      "",
+      ""],
+    "description": "Max-Joseph-Saal: Top-rated tours and activities",
+    "facebook": "",
+    "instagram": "",
+    "twitter": "",
+    "website": "https://www.residenz-muenchen.de/",
+    "capacity": "700",
+    "payment_type": "",
+    "availability": true,
+    "dates": ["2023-11-20T09:00:00.000+00:00"]
+  },
+  {
+    "type": "Venue",
+    "active": true,
+    "name": "Olympiahalle",
+    "email": "",
+    "address": {
+      "street": "Spiridon-Louis-Ring 21",
+      "city": "München",
+      "zip_code": "80809"
+    },
+    "coordinates": [11.550486682101909, 48.17565886610457],
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
+    "profile_image": "",
+    "images": [
+      "",
+      "",
+      ""],
+    "description": "Olympiahalle is a multi-purpose arena located in Am Riesenfeld in Munich, Germany, part of Olympiapark. The arena is used for concerts, sporting events, exhibitions or trade fairs. The seating capacity for the arena varies from 12,150 up to 14,000.",
+    "facebook": "",
+    "instagram": "",
+    "twitter": "",
+    "website": "",
+    "capacity": "15,500",
+    "payment_type": "",
+    "availability": true,
+    "dates": ["2023-11-20T09:00:00.000+00:00"]
+  },
+  {
+    "type": "Venue",
+    "active": true,
+    "name": "Huxley's Neue Welt",
+    "email": "bookings@huxleys.gov",
+    "address": {
+      "street": "Hasenheide 107",
+      "city": "Berlin",
+      "zip_code": "10967"
+    },
+    "coordinates": [13.421993895163576, 52.48974292539573],
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
+    "profile_image": "https://lh3.googleusercontent.com/p/AF1QipMPQjEgsqOgfmGyhGapsRcA3IEkO2pR6a94d5rW=s680-w680-h510",
+    "images": [
+      "https://huxleysneuewelt.com/wp-content/uploads/2016/02/11.jpg",
+      "https://huxleysneuewelt.com/wp-content/uploads/2016/01/04.jpg",
+      "https://huxleysneuewelt.com/wp-content/uploads/2016/01/10.jpg"],
+    "description": "Neue Welt was a concert hall in Berlin, Germany. Neue Welt had two halls. The smaller one held 1,500 people, the larger one up to 3,000. Both were rebuilt around 1950. Adolf Hitler spoke at Neue Welt in 1930 to an audience containing Albert Speer who would later be appointed First Architect.",
+    "facebook": "https://www.facebook.com/huxleysneuewelt",
+    "instagram": "@huxley",
+    "twitter": "@huxleysneuewelt",
+    "website": "https://huxleysneuewelt.com",
+    "capacity": "3000",
+    "payment_type": "",
+    "availability": true,
+    "dates": ["2023-12-08T09:00:00.000+00:00"]
+  },
+  {
+    "type": "Venue",
+    "active": true,
+    "name": "Kantine am Berghain",
+    "email": "cantine@berghain.com",
+    "address": {
+      "street": "Am Wriezener Bahnhof",
+      "city": "Berlin",
+      "zip_code": "10243"
+    },
+    "coordinates": [13.441352772752857, 52.51461122159202],
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
+    "profile_image": "https://lh3.googleusercontent.com/p/AF1QipOpYqXvjV7tPfh59ZjW-CnXcDQZMzWFHoPpZDV2=s680-w680-h510",
+    "images": [
+      "https://lh3.googleusercontent.com/p/AF1QipMe68OHbTeyPQopJNLMs_x-oWpl_KiZS_YM1xpl=s680-w680-h510",
+      "https://lh3.googleusercontent.com/p/AF1QipPH1WHJuDoDJLlFd-SG3IAlGFdSPRR0ZOc0yCM_=s680-w680-h510",
+      "https://lh3.googleusercontent.com/p/AF1QipPF6sG4Z6L1eFk_WYseCN6U55c_uEXcbVwIlOhk=s680-w680-h510"],
+    "description": "Former heating plant canteen, now an industrial-style concert venue with a small outdoor area.",
+    "facebook": "",
+    "instagram": "",
+    "twitter": "",
+    "website": "https://www.berghain.berlin/en/program/kantine-am-berghain",
+    "capacity": "200",
+    "payment_type": "",
+    "availability": true,
+    "dates": ["2023-11-28T09:00:00.000+00:00"]
+  },
+  {
+    "type": "",
+    "active": true,
+    "name": "Kulturbrauerei",
+    "email": "",
+    "address": {
+      "street": "Knaackstraße 97",
+      "city": "Berlin",
+      "zip_code": "10435"
+    },
+    "coordinates": [13.413193956000683, 52.54281023596226],
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
+    "profile_image": "https://lh3.googleusercontent.com/p/AF1QipNo4lShZSE6Eu7mRxXrIAxLpwsQ54sucCp3qQxJ=s680-w680-h510",
+    "images": ["https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.rbb24.de%2Fkultur%2Fbeitrag%2F2021%2F08%2Fkulturbrauerei-berlin-prenzlauer-berg-theater-kino.",
+     "https://www.google.com/url?sa=i&url=https%3A%2F%2Fblogoberlinie.",
+      "https://www.google.com/url?sa=i&url=https%3A%2F%2Feventseeker."],
+    "description": "The Berlin Kulturbrauerei (literally, Culture Brewery) is a 25,000 square metres (270,000 sq ft) building complex in Berlin, Germany. Originally built and operated as a brewery, its courtyards and unique architecture have been protected as a monument since 1974 and it is one of the few well-preserved examples of industrial architecture in Berlin dating from the end of the 19th century.",
+    "facebook": "https://www.facebook.com/kinderfestkulturbrauerei/",
+    "instagram": "",
+    "twitter": "",
+    "website": "https://www.kesselhaus.net/",
+    "capacity": "500",
+    "payment_type": "",
+    "availability": true,
+    "dates": ["2023-10-25T09:00:00.000+00:00"]
+  },
+  {
+    "type": "Venue",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "coordinates": [],
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
+    "profile_image": "h",
+    "images": [
+      "",
+      "",
+      ""],
+    "description": "",
+    "facebook": "",
+    "instagram": "",
+    "twitter": "",
+    "website": "",
+    "capacity": "",
+    "payment_type": "",
+    "availability": true,
+    "dates": ["2023-11-20T09:00:00.000+00:00"]
+  },
+  {
+    "type": "Venue",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "coordinates": [],
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
+    "profile_image": "h",
+    "images": [
+      "",
+      "",
+      ""],
+    "description": "",
+    "facebook": "",
+    "instagram": "",
+    "twitter": "",
+    "website": "",
+    "capacity": "",
+    "payment_type": "",
+    "availability": true,
+    "dates": ["2023-11-20T09:00:00.000+00:00"]
+  },
+  {
+    "type": "Venue",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "coordinates": [],
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
+    "profile_image": "h",
+    "images": [
+      "",
+      "",
+      ""],
+    "description": "",
+    "facebook": "",
+    "instagram": "",
+    "twitter": "",
+    "website": "",
+    "capacity": "",
+    "payment_type": "",
+    "availability": true,
+    "dates": ["2023-11-20T09:00:00.000+00:00"]
+  },
+  {
+    "type": "Venue",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "coordinates": [],
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
+    "profile_image": "h",
+    "images": [
+      "",
+      "",
+      ""],
+    "description": "",
+    "facebook": "",
+    "instagram": "",
+    "twitter": "",
+    "website": "",
+    "capacity": "",
+    "payment_type": "",
+    "availability": true,
+    "dates": ["2023-11-20T09:00:00.000+00:00"]
+  },
+  {
+    "type": "Venue",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "coordinates": [],
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
+    "profile_image": "h",
+    "images": [
+      "",
+      "",
+      ""],
+    "description": "",
+    "facebook": "",
+    "instagram": "",
+    "twitter": "",
+    "website": "",
+    "capacity": "",
+    "payment_type": "",
+    "availability": true,
+    "dates": ["2023-11-20T09:00:00.000+00:00"]
+  },
+  {
+    "type": "Venue",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "coordinates": [],
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
+    "profile_image": "h",
+    "images": [
+      "",
+      "",
+      ""],
+    "description": "",
+    "facebook": "",
+    "instagram": "",
+    "twitter": "",
+    "website": "",
+    "capacity": "",
+    "payment_type": "",
+    "availability": true,
+    "dates": ["2023-11-20T09:00:00.000+00:00"]
+  },
+  {
+    "type": "Venue",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "coordinates": [],
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
+    "profile_image": "h",
+    "images": [
+      "",
+      "",
+      ""],
+    "description": "",
+    "facebook": "",
+    "instagram": "",
+    "twitter": "",
+    "website": "",
+    "capacity": "",
+    "payment_type": "",
+    "availability": true,
+    "dates": ["2023-11-20T09:00:00.000+00:00"]
+  },
+  {
+    "type": "Venue",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "coordinates": [],
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
+    "profile_image": "h",
+    "images": [
+      "",
+      "",
+      ""],
+    "description": "",
+    "facebook": "",
+    "instagram": "",
+    "twitter": "",
+    "website": "",
+    "capacity": "",
+    "payment_type": "",
+    "availability": true,
+    "dates": ["2023-11-20T09:00:00.000+00:00"]
+  },
+  {
+    "type": "Venue",
+    "active": true,
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zip_code": ""
+    },
+    "coordinates": [],
+    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
+    "profile_image": "h",
+    "images": [
+      "",
+      "",
+      ""],
+    "description": "",
+    "facebook": "",
+    "instagram": "",
+    "twitter": "",
+    "website": "",
+    "capacity": "",
+    "payment_type": "",
+    "availability": true,
+    "dates": ["2023-11-20T09:00:00.000+00:00"]
+  },
+
+  
 ]
