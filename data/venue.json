@@ -253,17 +253,18 @@
     "dates": ["2023-07-04T09:00:00.000+00:00"]
   },
   {
-    "type": "Venue",
-    "active": true,
     "name": "Admiralspalast",
     "email": "kontakt@mehr-bb-entertainment.de",
     "address": {
       "street": "Friedrichstraße 101",
       "city": "Berlin",
-      "zip_code": "10117"
+      "zipcode": "10117"
     },
-    "coordinates": [13.388433594536986, 52.52097813251269],
-    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
+    "location": {
+    "coordinates": [13.388433594536986, 52.52097813251269]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
     "profile_image": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/2a/cd/26/admiralspalast-vom-bf.jpg",
     "images": [
       "https://img.seekr.cloud/cover/670/3/gjjt.jpg",
@@ -271,14 +272,14 @@
       "https://www.admiralspalast.theater/files/simpler/images-ap/theater/content/anmietung-event-4.jpg"
     ],
     "description": "The Admiralspalast is a 1,756-seat theatre on Friedrichstraße in the Mitte district of Berlin, Germany. Opened in 1910, it is one of the few preserved variety venues of the pre-World War II era in the city. ",
-    "facebook": "https://www.facebook.com/Admiralspalast",
-    "instagram": "https://www.instagram.com/mehrentertainment/",
-    "twitter": "https://twitter.com/MehrBBEntertain",
-    "website": "https://www.admiralspalast.theater/",
-    "capacity": "1756",
-    "payment_type": "",
-    "availability": true,
-    "dates": ["2023-11-20T09:00:00.000+00:00"]
+    "mediaLinks": {
+      "facebookUrl": "https://www.facebook.com/Admiralspalast",
+      "twitterTag": "https://twitter.com/MehrBBEntertain",
+      "instagramTag": "https://www.instagram.com/mehrentertainment/",
+      "websiteUrl": "https://www.admiralspalast.theater/"
+    },
+    "dates": [],
+    "capcaity": "1756"
   },
   {
     "name": "Batschkapp",
@@ -376,12 +377,16 @@
       "zipcode": "63263"
     },
     "location": {
-      "coordinates": []
+      "coordinates": [8.695686439571784, 50.051123071841936]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
     "profile_image": "https://www.fnp.de/bilder/2019/01/30/11588222/1266877488-2334192-efe.jpg",
-    "images": ["https://cdn.proticket.de/media/3358/radio-bob-buehne-queen-kings-2_b.jpg", "https://etmusic-4b58.kxcdn.com/wp-content/uploads/2018/12/Hugenottenhalle%E2%80%93Neu-Isenburg.jpg", "https://cdn.proticket.de/media/3357/huha_l4t4476_b.jpg"],
+    "images": [
+      "https://cdn.proticket.de/media/3358/radio-bob-buehne-queen-kings-2_b.jpg",
+      "https://etmusic-4b58.kxcdn.com/wp-content/uploads/2018/12/Hugenottenhalle%E2%80%93Neu-Isenburg.jpg",
+      "https://cdn.proticket.de/media/3357/huha_l4t4476_b.jpg"
+    ],
     "description": "Cultural center hosting concerts, touring drama & dance productions, plus private events.",
     "mediaLinks": {
       "facebookUrl": "",
@@ -390,6 +395,168 @@
       "websiteUrl": "https://hugenottenhalle.de/"
     },
     "dates": [],
-    "capcaity": 124
+    "capcaity": 2000
+  },
+  {
+    "name": "Jazzkeller Frankfurt",
+    "email": "",
+    "address": {
+      "street": "Kleine Bockenheimer Str. 18a",
+      "city": "Frankfurt am Main",
+      "zipcode": "60313"
+    },
+    "location": {
+      "coordinates": [
+        8.673680032442693, 50.114806309211495
+      ]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "https://www.klassenfahrt-frankfurt.de/wp-content/uploads/2018/05/Deutschland_Frankfurt_JazzHaus2-781x512.jpg",
+    "images": ["https://www.schuljazz-frankfurt.de/uploads/tx_ptg/JIMS-BAUSTEIN-02_01.png","https://www.stadtrundfahrt.com/upload/system/experience/bb9dc64b8de4774995810a5c341c5473.jpg","https://eventportal.imgix.net/public/uploads/7tWTaTrDOTUggfUuf5ColUO73poSi8K1AKmuKi0l.jpg?auto=compress%2Cformat&fit=crop&w=640"],
+    "description": "Intimate, storied jazz club since 1952 with crafted cocktails & a nostalgic speakeasy feel.",
+    "mediaLinks": {
+      "facebookUrl": "https://www.facebook.com/jazzkeller.frankfurt/",
+      "twitterTag": "",
+      "instagramTag": "https://www.instagram.com/jazzkeller_frankfurt/",
+      "websiteUrl": "https://www.jazzkeller.com/"
+    },
+    "dates": [],
+    "capcaity": 100
+  },
+  {
+    "name": "Gewandhaus",
+    "email": "ticket@gewandhaus.de",
+    "address": {
+      "street": "Augustuspl. 8",
+      "city": "Leipzig",
+      "zipcode": "04109"
+    },
+    "location": {
+      "coordinates": [
+        
+      ]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "",
+    "images": [],
+    "description": "Home to the Leipzig Gewandhaus Orchestra, now occupying its 3rd building, constructed in 1981.",
+    "mediaLinks": {
+      "facebookUrl": "https://www.facebook.com/Gewandhausorchester/",
+      "twitterTag": "https://twitter.com/Gewandhaus",
+      "instagramTag": "https://www.instagram.com/gewandhausorchester/",
+      "websiteUrl": "https://www.gewandhausorchester.de/"
+    },
+    "dates": [],
+    "capcaity": 1900
+  },
+  {
+    "name": "Felsenkeller Leipzig",
+    "email": "",
+    "address": {
+      "street": "Karl-Heine-Straße 32",
+      "city": "Leipzig",
+      "zipcode": "04229"
+    },
+    "location": {
+      "coordinates": [
+        12.338443649003306, 51.33305466049007
+      ]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "https://upload.wikimedia.org/wikipedia/commons/6/60/Das_Gewandhaus_und_der_Mendebrunnen_in_Leipzig_bei_Nacht.jpg",
+    "images": ["https://www.bachfestleipzig.de/sites/default/files/bach_db/venues/Leipzig_Gewandhaus_Grosser_Saal.jpg","https://i0.wp.com/www.saturova.com/wp-content/uploads/2015/12/Gewandhausorchester-Leipzig-2013.jpg","https://cdn.mdr.de/mdr-klassik-radio/ipg/bilder/gewandhaus-orchester-andris-nelsons-102_v-variantBig16x9_w-1280_zc-b903ef86.jpg?version=9543"],
+    "description": "This building is an architectural and historical landmark of Leipzig. Its trademark baroque-style dome is noticeable among the more modern buildings in the surrounding area. Since its construction in 1890, it has been used as a restaurant, entertainment center, political meeting place, and theater, among other things. ",
+    "mediaLinks": {
+      "facebookUrl": "https://www.facebook.com/FelsenkellerLeipzig/",
+      "twitterTag": "https://mobile.twitter.com/felsenkellerle",
+      "instagramTag": "https://www.instagram.com/felsenkellerleipzig/",
+      "websiteUrl": "https://www.felsenkeller-leipzig.com/"
+    },
+    "dates": [],
+    "capcaity": 1700
+  },
+  {
+    "name": "Parkbühne",
+    "email": "info@geyserhaus.de",
+    "address": {
+      "street": "Karl-Tauchnitz-Straße 28",
+      "city": "Leipzig",
+      "zipcode": "04107"
+    },
+    "location": {
+      "coordinates": [
+        12.36148910914744, 51.32961156431869
+      ]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "https://www.architektur-blicklicht.de/bilder/artikel/leipzig-parkbuehne_clara-zetkin-park-800x535.jpg",
+    "images": ["https://www.parkbuehne-leipzig.com/wordpress/wp-content/uploads/2020/11/parkbuehne-aboutus-2.jpg","https://www.kulturfalter.de/fileadmin/assets/Locations/Parkbuehne_mawi_concert.jpg","https://www.parkbuehne-leipzig.com/wordpress/wp-content/uploads/2020/11/parkbuehne-aboutus-gallery-01.jpg"],
+    "description": "This event venue can seat 2000 people amidst its beautiful landscapes. This outdoor venue is popular for hosting concerts, summer theater, exhibitions and many diverse events making it a culture hub of the region. This is a perfect place to spend time with your family as venue arranges special events for people of all ages.",
+    "mediaLinks": {
+      "facebookUrl": "https://www.facebook.com/parkbuehne.leipzig/",
+      "twitterTag": "",
+      "instagramTag": "https://www.instagram.com/parkbuehne_leipzig/",
+      "websiteUrl": "https://www.parkbuehne-leipzig.com/wordpress/"
+    },
+    "dates": [],
+    "capcaity": 2000
+  },
+  {
+    "name": "Kupfersaal",
+    "email": "",
+    "address": {
+      "street": "Kupfergasse 2",
+      "city": "Leipzig",
+      "zipcode": "04109"
+    },
+    "location": {
+      "coordinates": [
+        12.377117789184004, 51.33819100799972
+      ]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "http://www.mdm-online.de/tempcache/t_fc_lg_sets_bilder_25649.jpg",
+    "images": ["https://dam.destination.one/924161/bce9c95ad98b59ffc0d591fd8c84e202ef967aded1a4c610ed04ca1ab98e2111/.jpg","https://dam.destination.one/924156/16ac73781c16fd1d73ec496bbe417b2d153b9c13a68258aff937bed63081df0f/.jpg","https://9968c6ef49dc043599a5-e151928c3d69a5a4a2d07a8bf3efa90a.ssl.cf2.rackcdn.com/1171500-1.jpg"],
+    "description": "",
+    "mediaLinks": {
+      "facebookUrl": "https://www.facebook.com/Kupfersaal/",
+      "twitterTag": "",
+      "instagramTag": "https://www.instagram.com/kupfersaal/",
+      "websiteUrl": "https://www.kupfersaal.de/"
+    },
+    "dates": [],
+    "capcaity": 560
+  },
+  {
+    "name": "Spizz",
+    "email": "",
+    "address": {
+      "street": "Markt 9",
+      "city": "Leipzig",
+      "zipcode": "04109"
+    },
+    "location": {
+      "coordinates": [
+        12.374090261035722, 51.34101415658754
+      ]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "https://www.spizz-leipzig.de/media/spizz/spizz00.jpg",
+    "images": ["https://www.spizz-leipzig.de/media/spizz/events/spizz-keller-cocktail-lounge-01.jpg","https://www.spizz-leipzig.de/media/spizz/spizz03.jpg","https://www.spizz-leipzig.de/media/spizz/spizz04.jpg"],
+    "description": "Breakfast, burgers & bistro dishes at a polished bar/restaurant with DJs & live jazz in the cellar.",
+    "mediaLinks": {
+      "facebookUrl": "https://www.facebook.com/SPIZZ.Leipzig/",
+      "twitterTag": "https://mobile.twitter.com/spizz_leipzig",
+      "instagramTag": "",
+      "websiteUrl": "spizz-leipzig.de"
+    },
+    "dates": [],
+    "capcaity": 100
   }
 ]
