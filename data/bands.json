@@ -244,28 +244,28 @@
     "members": 3
   },
   {
-    "name": "",
-    "email": "",
+    "name": "Blurt",
+    "email": "tedmilton@gmail.com",
     "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+      "street": "Mörfelder Landstraße 225",
+      "city": "Frankfurt am Main",
+      "zipcode": "60598"
     },
     "location": {
-      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
+      "coordinates": [8.678461900341325, 50.08964058319469]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
-    "profileImage": "",
-    "images": ["", "", ""],
-    "description": "",
+    "profileImage": "http://s3.amazonaws.com/quietus_production/images/articles/17603/blurtstuff_yahoo.com__1428424506.jpg",
+    "images": ["https://www.radiopanik.org/media/cache/bc/65/bc65432ad1ace53e6772db463c8fdfe6.jpg", "https://lastfm.freetls.fastly.net/i/u/ar0/5223602635834b428f8234808b971864.jpg", "https://www.instantschavires.com/wp-content/uploads/ted-milton20.jpg"],
+    "description": "British trio producing what some have described as Dada-Avantgarde-Jazz or Paranoid Jazz-Mutant Funk. Centered around Ted Milton's alto-sax and poetry.",
     "mediaLinks": {
-      "facebookUrl": "",
+      "facebookUrl": "https://www.facebook.com/profile.php?id=100026536846082",
       "twitterTag": "",
       "instagramTag": "",
-      "youtubeUrl": ""
+      "youtubeUrl": "https://www.youtube.com/watch?v=I4N09evgqw4"
     },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
+    "genre": "Jazz",
     "dates": [],
     "members": 2
   },

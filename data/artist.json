@@ -234,24 +234,24 @@
   {
     "type": "Artist",
     "active": true,
-    "name": "Blurt",
-    "email": "tedmilton@gmail.com",
+    "name": "",
+    "email": "",
     "address": {
       "street": "",
       "city": "Gloucestershire",
       "zipcode": ""
     },
-    "biography": "British trio producing what some have described as Dada-Avantgarde-Jazz or Paranoid Jazz-Mutant Funk. Centered around Ted Milton's alto-sax and poetry.",
+    "biography": "",
     "genre": "Experimental-Jazz",
-    "facebook": "https://www.facebook.com/profile.php?id=100026536846082",
+    "facebook": "",
     "instagram": "@burt_pv",
-    "youtube": "https://www.youtube.com/watch?v=I4N09evgqw4",
+    "youtube": "",
     "twitter": "",
-    "profile_image": "http://s3.amazonaws.com/quietus_production/images/articles/17603/blurtstuff_yahoo.com__1428424506.jpg",
+    "profile_image": "",
     "images": [
-      "https://www.radiopanik.org/media/cache/bc/65/bc65432ad1ace53e6772db463c8fdfe6.jpg",
-      "https://lastfm.freetls.fastly.net/i/u/ar0/5223602635834b428f8234808b971864.jpg",
-      "https://www.instantschavires.com/wp-content/uploads/ted-milton20.jpg"
+      "",
+      "",
+      ""
     ],
     "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912",
     "availability": true,
