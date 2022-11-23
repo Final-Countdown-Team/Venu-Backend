@@ -237,7 +237,11 @@
     "coordinates": [13.443289063048132, 52.507440525905935],
     "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
     "profile_image": "https://de.fiylo.com/static/p/8/0/verti-music-hall-events-00-4511d1a593.jpg",
-    "images": ["https://cdn.iq-mag.net/wp-content/uploads/2022/07/VMH_Set-up_Dez-2019_x02.jpg", "https://upload.wikimedia.org/wikipedia/commons/8/84/Verti_Music_Hall_inside_view.jpg", "https://pbs.twimg.com/media/FGNIEyXXIAMcssZ.png"],
+    "images": [
+      "https://cdn.iq-mag.net/wp-content/uploads/2022/07/VMH_Set-up_Dez-2019_x02.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/8/84/Verti_Music_Hall_inside_view.jpg",
+      "https://pbs.twimg.com/media/FGNIEyXXIAMcssZ.png"
+    ],
     "description": "Verti Music Hall sets new standards for event venues of comparable size with regards to customer experience and production.",
     "facebook": "",
     "instagram": "",
@@ -261,7 +265,11 @@
     "coordinates": [13.388433594536986, 52.52097813251269],
     "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
     "profile_image": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/2a/cd/26/admiralspalast-vom-bf.jpg",
-    "images": ["https://img.seekr.cloud/cover/670/3/gjjt.jpg", "https://images.squarespace-cdn.com/content/v1/5c758f8129f2cc2525c7d59d/1587112525784-850B0MRXBOLRQPSG5PYD/admiralspalast_berlin_festnoise.jpg?format=1000w", "https://www.admiralspalast.theater/files/simpler/images-ap/theater/content/anmietung-event-4.jpg"],
+    "images": [
+      "https://img.seekr.cloud/cover/670/3/gjjt.jpg",
+      "https://images.squarespace-cdn.com/content/v1/5c758f8129f2cc2525c7d59d/1587112525784-850B0MRXBOLRQPSG5PYD/admiralspalast_berlin_festnoise.jpg?format=1000w",
+      "https://www.admiralspalast.theater/files/simpler/images-ap/theater/content/anmietung-event-4.jpg"
+    ],
     "description": "The Admiralspalast is a 1,756-seat theatre on Friedrichstraße in the Mitte district of Berlin, Germany. Opened in 1910, it is one of the few preserved variety venues of the pre-World War II era in the city. ",
     "facebook": "https://www.facebook.com/Admiralspalast",
     "instagram": "https://www.instagram.com/mehrentertainment/",
@@ -273,171 +281,115 @@
     "dates": ["2023-11-20T09:00:00.000+00:00"]
   },
   {
-    "type": "Venue",
-    "active": true,
     "name": "Batschkapp",
-    "email": "",
+    "email": "tickets@tickets.de",
     "address": {
       "street": "Gwinnerstraße 5",
       "city": "Frankfurt am Main",
-      "zip_code": "60388"
+      "zipcode": "60388"
     },
-    "coordinates": [],
-    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
-    "profile_image": "",
-    "images": ["", "", ""],
+    "location": {
+      "coordinates": [8.73870503690718, 50.13585809272438]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profile_image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Batschkapp.jpg",
+    "images": [
+      "https://images.stadtleben.de/events/2019/06/01/4147681.jpg?1558594871",
+      "https://www.op-online.de/bilder/2013/12/10/3264680/1373357429-f8ea5b12-1716-430f-8195-b2a075192684-qKwdQ5lqefe.jpg",
+      "https://www.frankfurt-tipp.de/fileadmin/_processed_/9/3/csm_Batschkappa_a9637dd834.jpg"
+    ],
     "description": "Batschkapp is a rock and pop concert venue in Gwinnerstraße in Seckbach.",
-    "facebook": "",
-    "instagram": "",
-    "twitter": "",
-    "website": "",
-    "capacity": "",
-    "payment_type": "",
-    "availability": true,
-    "dates": ["2023-11-20T09:00:00.000+00:00"]
+    "mediaLinks": {
+      "facebookUrl": "https://www.facebook.com/batschkappffm/",
+      "twitterTag": "",
+      "instagramTag": "",
+      "websiteUrl": "https://batschkapp.tickets.de/en/"
+    },
+    "dates": [],
+    "capcaity": 1500
   },
   {
-    "type": "Venue",
-    "active": true,
-    "name": "",
+    "name": "Festhalle",
     "email": "",
     "address": {
-      "street": "",
-      "city": "",
-      "zip_code": ""
+      "street": "Messe Frankfurt Venue GmbH, Ludwig-Erhard-Anlage 1",
+      "city": "Frankfurt am Main",
+      "zipcode": "60327"
     },
-    "coordinates": [],
-    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
-    "profile_image": "h",
-    "images": ["", "", ""],
-    "description": "",
-    "facebook": "",
-    "instagram": "",
-    "twitter": "",
-    "website": "",
-    "capacity": "",
-    "payment_type": "",
-    "availability": true,
-    "dates": ["2023-11-20T09:00:00.000+00:00"]
+    "location": {
+      "coordinates": [8.650870175148903, 50.11225632684515]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profile_image": "https://www.messefrankfurt.com/content/dam/messefrankfurt-redaktion/locations/stage-photos/festhalle.jpg",
+    "images": [
+      "https://cdn.tomas-travel.com/nds/repository/NDS00020140003869071/TBX00020050000221441/NDS00020140019988215_sized_800_0.jpg",
+      "https://www.frankfurt-tipp.de/fileadmin/_processed_/3/2/csm_SportballFFM_7463e66c81.jpg",
+      "https://dynamicmedia.livenationinternational.com/Media/a/g/p/c4773a34-959d-443f-a99e-d286287b99c2.jpg"
+    ],
+    "description": "Festhalle Frankfurt is a multi-purpose arena located in Frankfurt, Germany. The interior of the dome at its highest reaches a height of 40 meters. It provides an area of 5,646 square metres, offering by a variable grandstand system space for up to 8,500 people seated, and 13,500 people unseated.",
+    "mediaLinks": {
+      "facebookUrl": "https://www.facebook.com/festhalle.messefrankfurt/",
+      "twitterTag": "",
+      "instagramTag": "https://www.instagram.com/festhalle_frankfurt/",
+      "websiteUrl": "https://festhalle.messefrankfurt.com/frankfurt/de/veranstaltungen.html"
+    },
+    "dates": [],
+    "capcaity": 15000
   },
   {
-    "type": "Venue",
-    "active": true,
-    "name": "",
+    "name": "Culture and Congress Center Jahrhunderthalle GmbH",
     "email": "",
     "address": {
-      "street": "",
-      "city": "",
-      "zip_code": ""
+      "street": "Pfaffenwiese 301",
+      "city": "Frankfurt am Main",
+      "zipcode": "65929"
     },
-    "coordinates": [],
-    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
-    "profile_image": "h",
-    "images": ["", "", ""],
-    "description": "",
-    "facebook": "",
-    "instagram": "",
-    "twitter": "",
-    "website": "",
-    "capacity": "",
-    "payment_type": "",
-    "availability": true,
-    "dates": ["2023-11-20T09:00:00.000+00:00"]
+    "location": {
+      "coordinates": [8.518888618641688, 50.102058447399145]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profile_image": "https://media.istockphoto.com/id/458535489/de/foto/jahrhunderthalle-frankfurt-hoechst.jpg?s=612x612&w=0&k=20&c=pfKXjQ4u5XQOaQz4CkM5-TWHSdLBZxTmgokaM1FVoGA=",
+    "images": [
+      "https://cdn.tomas-travel.com/nds/repository/NDS00020140003693383/TBX00020050000221441/NDS00020140020572691_sized_800_0.jpg",
+      "https://cdn.tomas-travel.com/nds/repository/NDS00020140003693383/TBX00020050000221441/NDS00020140020572941_sized_800_0.jpg",
+      "https://www.myticket-jahrhunderthalle.de/media/1036/%C2%A9-ralf-loehr-rock-meets-classic-2011.jpg?center=0.60444444444444445,0.925&mode=crop&quality=45&width=2324&height=876&rnd=131706142300000000"
+    ],
+    "description": "Modern, dome-shaped hall staging concerts, dance shows, musicals & other arts events.",
+    "mediaLinks": {
+      "facebookUrl": "https://www.facebook.com/myticketJahrhunderthalle",
+      "twitterTag": "",
+      "instagramTag": "https://www.instagram.com/myticket_jahrhunderthalle/",
+      "websiteUrl": "https://www.myticket-jahrhunderthalle.de/"
+    },
+    "dates": [],
+    "capcaity": 4800
   },
   {
-    "type": "Venue",
-    "active": true,
-    "name": "",
+    "name": "Hugenottenhalle",
     "email": "",
     "address": {
-      "street": "",
-      "city": "",
-      "zip_code": ""
+      "street": "Frankfurter Str. 152",
+      "city": "Neu-Isenburg",
+      "zipcode": "63263"
     },
-    "coordinates": [],
-    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
-    "profile_image": "h",
-    "images": ["", "", ""],
-    "description": "",
-    "facebook": "",
-    "instagram": "",
-    "twitter": "",
-    "website": "",
-    "capacity": "",
-    "payment_type": "",
-    "availability": true,
-    "dates": ["2023-11-20T09:00:00.000+00:00"]
-  },
-  {
-    "type": "Venue",
-    "active": true,
-    "name": "",
-    "email": "",
-    "address": {
-      "street": "",
-      "city": "",
-      "zip_code": ""
+    "location": {
+      "coordinates": []
     },
-    "coordinates": [],
-    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
-    "profile_image": "h",
-    "images": ["", "", ""],
-    "description": "",
-    "facebook": "",
-    "instagram": "",
-    "twitter": "",
-    "website": "",
-    "capacity": "",
-    "payment_type": "",
-    "availability": true,
-    "dates": ["2023-11-20T09:00:00.000+00:00"]
-  },
-  {
-    "type": "Venue",
-    "active": true,
-    "name": "",
-    "email": "",
-    "address": {
-      "street": "",
-      "city": "",
-      "zip_code": ""
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profile_image": "https://www.fnp.de/bilder/2019/01/30/11588222/1266877488-2334192-efe.jpg",
+    "images": ["https://cdn.proticket.de/media/3358/radio-bob-buehne-queen-kings-2_b.jpg", "https://etmusic-4b58.kxcdn.com/wp-content/uploads/2018/12/Hugenottenhalle%E2%80%93Neu-Isenburg.jpg", "https://cdn.proticket.de/media/3357/huha_l4t4476_b.jpg"],
+    "description": "Cultural center hosting concerts, touring drama & dance productions, plus private events.",
+    "mediaLinks": {
+      "facebookUrl": "",
+      "twitterTag": "",
+      "instagramTag": "",
+      "websiteUrl": "https://hugenottenhalle.de/"
     },
-    "coordinates": [],
-    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
-    "profile_image": "h",
-    "images": ["", "", ""],
-    "description": "",
-    "facebook": "",
-    "instagram": "",
-    "twitter": "",
-    "website": "",
-    "capacity": "",
-    "payment_type": "",
-    "availability": true,
-    "dates": ["2023-11-20T09:00:00.000+00:00"]
-  },
-  {
-    "type": "Venue",
-    "active": true,
-    "name": "",
-    "email": "",
-    "address": {
-      "street": "",
-      "city": "",
-      "zip_code": ""
-    },
-    "coordinates": [],
-    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
-    "profile_image": "h",
-    "images": ["", "", ""],
-    "description": "",
-    "facebook": "",
-    "instagram": "",
-    "twitter": "",
-    "website": "",
-    "capacity": "",
-    "payment_type": "",
-    "availability": true,
-    "dates": ["2023-11-20T09:00:00.000+00:00"]
+    "dates": [],
+    "capcaity": 124
   }
 ]
