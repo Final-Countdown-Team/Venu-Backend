@@ -1,271 +1,314 @@
 [
   {
-    "type": "Venue",
-    "active": true,
     "name": "Backstage Kulturzentrum",
     "email": "backstagemunich@web.de",
     "address": {
       "street": "Reitknechtstraße 6",
       "city": "München",
-      "zip_code": "80639"
+      "zipcode": "80639"
     },
-    "coordinates": [11.522287108747674, 48.147007488408754],
-    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
-    "profile_image": "https://www.filmlocations-bayern.com/media/Image/13872/LocationFullsizeImage/keyvisual_aussenbereich_001.jpg",
+    "location": {
+      "coordinates": [
+        11.522287108747674,
+        48.147007488408754
+      ]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "https://www.filmlocations-bayern.com/media/Image/13872/LocationFullsizeImage/keyvisual_aussenbereich_001.jpg",
     "images": [
       "https://www.filmlocations-bayern.com/media/Image/13877/LocationFullsizeImage/hauptbild-8-bs_werk.jpg",
       "https://magprod-1a27b.kxcdn.com/wp-content/uploads/2022/07/@max_the_hill_Inatagram2-1024x769.jpg",
       "https://www.in-muenchen.de/bilder/2018/01/10/9512710/1139316096-backstage-muenchen-35gG1GT5Mgea.jpg"
     ],
-
     "description": "Alternative music venue with indoor & outdoor spaces for party nights & international rock acts.",
-    "facebook": "",
-    "instagram": "https://www.instagram.com/backstagemunich/",
-    "twitter": "https://mobile.twitter.com/backstagemunich",
-    "website": "https://l.instagram.com/?u=https%3A%2F%2Fbackstage.eu%2F&e=ATPqHPCWLlvAWuRJnRYr_HSHbdrM6Mg81XuWAR9iqiMEDIZGq717hxBwOshtTNoI5AxLNxPeVfLyk_4N&s=1",
-    "capacity": "1000",
-    "payment_type": "",
-    "availability": true,
-    "dates": ["2023-19-14T09:00:00.000+00:00"]
+    "mediaLinks": {
+      "instagramTag": "https://www.instagram.com/backstagemunich/",
+      "twitterTag": "https://mobile.twitter.com/backstagemunich",
+      "websiteUrl": "https://l.instagram.com/?u=https%3A%2F%2Fbackstage.eu%2F&e=ATPqHPCWLlvAWuRJnRYr_HSHbdrM6Mg81XuWAR9iqiMEDIZGq717hxBwOshtTNoI5AxLNxPeVfLyk_4N&s=1"
+    },
+    "capacity": 10002,
+    "dates": [
+      "2022-12-14T09:00:00.000+00:00"
+    ]
   },
   {
-    "type": "Venue",
-    "active": true,
     "name": "Muffathalle",
-    "email": "",
+    "email": "muffathalle@venu.com",
     "address": {
       "street": " Zellstraße 4",
       "city": "München",
-      "zip_code": "81667"
+      "zipcode": "81667"
     },
-    "coordinates": [11.589292023058439, 48.133364811110326],
-    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
-    "profile_image": "https://www.muenchen-tourismus-barrierefrei.de/images/stories/muffathalle_von_auen.klein.jpg",
+    "location": {
+      "coordinates": [
+        11.589292023058439,
+        48.133364811110326
+      ]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "https://www.muenchen-tourismus-barrierefrei.de/images/stories/muffathalle_von_auen.klein.jpg",
     "images": [
       "https://storage.googleapis.com/leitmotiv-multi/regio-image-2022-07/1305701/xtralarge/w4qpkf4ncr1.png",
       "https://viberatecdn.blob.core.windows.net/entity/venue/muffathalle-TKIpZ",
       "https://www.lifeonstage.de/Bilder%20claire%2001.04.16/index_files/vlb_images1/claire010416johannes_kl29.jpg"
     ],
     "description": "Entertainment venue with an eclectic program of live music, dance & drama, DJ sets & party nights.",
-    "facebook": "",
-    "instagram": "https://www.instagram.com/muffatwerk/",
-    "twitter": "https://mobile.twitter.com/muffatwerk",
-    "website": "https://www.muffatwerk.de/de/",
-    "capacity": "400",
-    "payment_type": "",
-    "availability": true,
-    "dates": ["2023-11-20T09:00:00.000+00:00"]
+    "mediaLinks": {
+      "instagramTag": "https://www.instagram.com/muffatwerk/",
+      "twitterTag": "https://mobile.twitter.com/muffatwerk",
+      "websiteUrl": "https://www.muffatwerk.de/de/"
+    },
+    "capacity": 400,
+    "dates": [
+      "2022-11-20T09:00:00.000+00:00"
+    ]
   },
   {
-    "type": "Venue",
-    "active": true,
     "name": "Strom",
-    "email": "",
+    "email": "strom@venu.com",
     "address": {
       "street": "Lindwurmstraße 88",
       "city": "München",
-      "zip_code": " 80337"
+      "zipcode": " 80337"
     },
-    "coordinates": [11.549238636635943, 48.126809361859735],
-    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
-    "profile_image": "https://strom-muc.de/wp-content/uploads/2014/02/Bildschirmfoto-2015-07-29-um-14.57.56.png",
+    "location": {
+      "coordinates": [
+        11.549238636635943,
+        48.126809361859735
+      ]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "https://strom-muc.de/wp-content/uploads/2014/02/Bildschirmfoto-2015-07-29-um-14.57.56.png",
     "images": [
       "https://strom-muc.de/wp-content/uploads/2015/03/IMG_7913-2.jpg",
       "https://subtouring.com/img/IMG_munich/Backstage_12.jpg",
       "https://viberatecdn.blob.core.windows.net/entity/venue/strom-munich-dohaa"
     ],
     "description": "Small, unfussy nightspot hosting alt-rock, metal & electronica concerts & DJ parties.",
-    "facebook": "https://www.facebook.com/stromclubmunich/",
-    "instagram": "https://www.instagram.com/strom.munich/",
-    "twitter": "",
-    "website": "https://strom-muc.de/",
-    "capacity": "500",
-    "payment_type": "",
-    "availability": true,
-    "dates": ["2023-11-20T09:00:00.000+00:00"]
+    "mediaLinks": {
+      "facebookUrl": "https://www.facebook.com/stromclubmunich/",
+      "instagramTag": "https://www.instagram.com/strom.munich/",
+      "websiteUrl": "https://strom-muc.de/"
+    },
+    "capacity": 500,
+    "dates": [
+      "2022-11-20T09:00:00.000+00:00"
+    ]
   },
   {
-    "type": "Venue",
-    "active": true,
     "name": "Max-Joseph-Saal",
     "email": "ResidenzMuenchen@bsv.bayern.de",
     "address": {
       "street": "Residence Residenzstraße 1",
       "city": "Munich",
-      "zip_code": "80333 "
+      "zipcode": "80333 "
     },
-    "coordinates": [11.57827696920103, 48.1427226158987],
-    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
-    "profile_image": "https://www.br-so.com/media/Prinzregententheater_Grosses_HausCFelix-L%C3%B6chner-800x533.jpg",
+    "location": {
+      "coordinates": [
+        11.57827696920103,
+        48.1427226158987
+      ]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "https://www.br-so.com/media/Prinzregententheater_Grosses_HausCFelix-L%C3%B6chner-800x533.jpg",
     "images": [
       "https://www.muenchenticket.de/media/image/original/19668_MeisterkonzertimMaxJosephSaal.jpg",
       "https://cdn.getyourguide.com/img/tour/5b8fbeb881051.jpeg/146.jpg",
       "https://www.musikerlebnis.de/fileadmin/tmpl/defaultproject/Resources/Public/images/konzertsaal_max-joseph-saal-galerie_02.jpg"
     ],
     "description": "Max-Joseph-Saal: Top-rated tours and activities",
-    "facebook": "",
-    "instagram": "",
-    "twitter": "",
-    "website": "https://www.residenz-muenchen.de/",
-    "capacity": "700",
-    "payment_type": "",
-    "availability": true,
-    "dates": ["2023-11-20T09:00:00.000+00:00"]
+    "mediaLinks": {
+      "websiteUrl": "https://www.residenz-muenchen.de/"
+    },
+    "capacity": 700,
+    "dates": [
+      "2022-11-20T09:00:00.000+00:00"
+    ]
   },
   {
-    "type": "Venue",
-    "active": true,
     "name": "Olympiahalle",
-    "email": " info@olympiapark.de",
+    "email": "olympiapark@venue.de",
     "address": {
       "street": "Spiridon-Louis-Ring 21",
       "city": "München",
-      "zip_code": "80809"
+      "zipcode": "80809"
     },
-    "coordinates": [11.550486682101909, 48.17565886610457],
-    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
-    "profile_image": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Olympic_hall_and_Olympiaturm.JPG",
+    "location": {
+      "coordinates": [
+        11.550486682101909,
+        48.17565886610457
+      ]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Olympic_hall_and_Olympiaturm.JPG",
     "images": [
       "https://source.munich-eventlocations.de/1/4/6/ac84301a5a1cbded2a9a6643e33b4cbf.jpg",
       "https://imageserver.stadionwelt.de/Image/5/a/101c54cce2ca5530cd065bdc72a0f914d9c12775195cb0669ec150979dcf4e/Olympiapark%20M%C3%BCnchen%20_piapark%20M%C3%BCnchen.jpg",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-FVUX00A-su-_8p3XYgybse5X6IpL35-Tng&usqp=CAU"
     ],
     "description": "Olympiahalle is a multi-purpose arena located in Am Riesenfeld in Munich, Germany, part of Olympiapark. The arena is used for concerts, sporting events, exhibitions or trade fairs. The seating capacity for the arena varies from 12,150 up to 14,000.",
-    "facebook": "https://www.facebook.com/Olympiapark",
-    "instagram": "https://www.instagram.com/olympiapark/",
-    "twitter": "https://twitter.com/OLYMPIAPARK",
-    "website": "https://www.olympiapark.de/de/der-olympiapark/veranstaltungsorte/olympiahalle/",
-    "capacity": "15,500",
-    "payment_type": "",
-    "availability": true,
-    "dates": ["2023-11-20T09:00:00.000+00:00"]
+    "mediaLinks": {
+      "facebookUrl": "https://www.facebook.com/Olympiapark",
+      "instagramTag": "https://www.instagram.com/olympiapark/",
+      "twitterTag": "https://twitter.com/OLYMPIAPARK",
+      "websiteUrl": "https://www.olympiapark.de/de/der-olympiapark/veranstaltungsorte/olympiahalle/"
+    },
+    "capacity": 15.500,
+    "dates": [
+      "2022-11-20T09:00:00.000+00:00"
+    ]
   },
   {
-    "type": "Venue",
-    "active": true,
     "name": "Huxley's Neue Welt",
-    "email": "bookings@huxleys.gov",
+    "email": "huxley@venue.com",
     "address": {
       "street": "Hasenheide 107",
       "city": "Berlin",
-      "zip_code": "10967"
+      "zipcode": "10967"
     },
-    "coordinates": [13.421993895163576, 52.48974292539573],
-    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
-    "profile_image": "https://lh3.googleusercontent.com/p/AF1QipMPQjEgsqOgfmGyhGapsRcA3IEkO2pR6a94d5rW=s680-w680-h510",
+    "location": {
+      "coordinates": [
+        13.421993895163576,
+        52.48974292539573
+      ]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "https://lh3.googleusercontent.com/p/AF1QipMPQjEgsqOgfmGyhGapsRcA3IEkO2pR6a94d5rW=s680-w680-h510",
     "images": [
       "https://huxleysneuewelt.com/wp-content/uploads/2016/02/11.jpg",
       "https://huxleysneuewelt.com/wp-content/uploads/2016/01/04.jpg",
       "https://huxleysneuewelt.com/wp-content/uploads/2016/01/10.jpg"
     ],
     "description": "Neue Welt was a concert hall in Berlin, Germany. Neue Welt had two halls. The smaller one held 1,500 people, the larger one up to 3,000. Both were rebuilt around 1950. Adolf Hitler spoke at Neue Welt in 1930 to an audience containing Albert Speer who would later be appointed First Architect.",
-    "facebook": "https://www.facebook.com/huxleysneuewelt",
-    "instagram": "@huxley",
-    "twitter": "@huxleysneuewelt",
-    "website": "https://huxleysneuewelt.com",
-    "capacity": "3000",
-    "payment_type": "",
-    "availability": true,
-    "dates": ["2023-12-08T09:00:00.000+00:00"]
+    "mediaLinks": {
+      "facebookUrl": "https://www.facebook.com/huxleysneuewelt",
+      "instagramTag": "@huxley",
+      "twitterTag": "@huxleysneuewelt",
+      "websiteUrl": "https://huxleysneuewelt.com"
+    },
+    "capacity": 3000,
+    "dates": [
+      "2022-12-08T09:00:00.000+00:00"
+    ]
   },
   {
-    "type": "Venue",
-    "active": true,
     "name": "Kantine am Berghain",
-    "email": "cantine@berghain.com",
+    "email": "berghain@venu.com",
     "address": {
       "street": "Am Wriezener Bahnhof",
       "city": "Berlin",
-      "zip_code": "10243"
+      "zipcode": "10243"
     },
-    "coordinates": [13.441352772752857, 52.51461122159202],
-    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
-    "profile_image": "https://lh3.googleusercontent.com/p/AF1QipOpYqXvjV7tPfh59ZjW-CnXcDQZMzWFHoPpZDV2=s680-w680-h510",
+    "location": {
+      "coordinates": [
+        13.441352772752857,
+        52.51461122159202
+      ]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "https://lh3.googleusercontent.com/p/AF1QipOpYqXvjV7tPfh59ZjW-CnXcDQZMzWFHoPpZDV2=s680-w680-h510",
     "images": [
       "https://lh3.googleusercontent.com/p/AF1QipMe68OHbTeyPQopJNLMs_x-oWpl_KiZS_YM1xpl=s680-w680-h510",
       "https://lh3.googleusercontent.com/p/AF1QipPH1WHJuDoDJLlFd-SG3IAlGFdSPRR0ZOc0yCM_=s680-w680-h510",
       "https://lh3.googleusercontent.com/p/AF1QipPF6sG4Z6L1eFk_WYseCN6U55c_uEXcbVwIlOhk=s680-w680-h510"
     ],
     "description": "Former heating plant canteen, now an industrial-style concert venue with a small outdoor area.",
-    "facebook": "",
-    "instagram": "",
-    "twitter": "",
-    "website": "https://www.berghain.berlin/en/program/kantine-am-berghain",
-    "capacity": "200",
-    "payment_type": "",
-    "availability": true,
-    "dates": ["2023-11-28T09:00:00.000+00:00"]
+    "mediaLinks": {
+      "websiteUrl": "https://www.berghain.berlin/en/program/kantine-am-berghain"
+    },
+    "capacity": 200,
+    "dates": [
+      "2023-01-28T09:00:00.000+00:00",
+      "2023-01-20T09:00:00.000+00:00"
+    ]
   },
   {
-    "type": "Venue",
-    "active": true,
     "name": "Kulturbrauerei",
-    "email": "",
+    "email": "kulturbrauer@venu.com",
     "address": {
       "street": "Knaackstraße 97",
       "city": "Berlin",
-      "zip_code": "10435"
+      "zipcode": "10435"
     },
-    "coordinates": [13.413193956000683, 52.54281023596226],
-    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
-    "profile_image": "https://lh3.googleusercontent.com/p/AF1QipNo4lShZSE6Eu7mRxXrIAxLpwsQ54sucCp3qQxJ=s680-w680-h510",
+    "location": {
+      "coordinates": [
+        13.413193956000683,
+        52.54281023596226
+      ]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "https://lh3.googleusercontent.com/p/AF1QipNo4lShZSE6Eu7mRxXrIAxLpwsQ54sucCp3qQxJ=s680-w680-h510",
     "images": [
       "https://www.rbb24.de/content/dam/rbb/rbb/rbb24/2021/2021_08/dpa-account/51779375.jpg.jpg/size=708x398.jpg",
       "https://www.jetsetter.com//uploads/sites/7/2018/04/0N0m9zVP-1380x1035.jpeg",
       "https://www.weihnachteninberlin.de/binaries/asset/image_assets/7059631/source/1635946080/624x468/"
     ],
     "description": "The Berlin Kulturbrauerei (literally, Culture Brewery) is a 25,000 square metres (270,000 sq ft) building complex in Berlin, Germany. Originally built and operated as a brewery, its courtyards and unique architecture have been protected as a monument since 1974 and it is one of the few well-preserved examples of industrial architecture in Berlin dating from the end of the 19th century.",
-    "facebook": "https://www.facebook.com/kinderfestkulturbrauerei/",
-    "instagram": "",
-    "twitter": "",
-    "website": "https://www.kesselhaus.net/",
-    "capacity": "500",
-    "payment_type": "",
-    "availability": true,
-    "dates": ["2023-10-25T09:00:00.000+00:00"]
+    "mediaLinks": {
+      "facebookUrl": "https://www.facebook.com/kinderfestkulturbrauerei/",
+      "websiteUrl": "https://www.kesselhaus.net/"
+    },
+    "capacity": 500,
+    "dates": [
+      "2023-10-25T09:00:00.000+00:00"
+    ]
   },
   {
-    "type": "Venue",
-    "active": true,
     "name": "Verti Music Hall",
-    "email": "",
+    "email": "verti@venu.com",
     "address": {
       "street": "Mercedes-Platz 2",
       "city": "Berlin",
-      "zip_code": "10243"
+      "zipcode": "10243"
     },
-    "coordinates": [13.443289063048132, 52.507440525905935],
-    "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912 ",
-    "profile_image": "https://de.fiylo.com/static/p/8/0/verti-music-hall-events-00-4511d1a593.jpg",
+    "location": {
+      "coordinates": [
+        13.443289063048132,
+        52.507440525905935
+      ]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "https://de.fiylo.com/static/p/8/0/verti-music-hall-events-00-4511d1a593.jpg",
     "images": [
       "https://cdn.iq-mag.net/wp-content/uploads/2022/07/VMH_Set-up_Dez-2019_x02.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/8/84/Verti_Music_Hall_inside_view.jpg",
       "https://pbs.twimg.com/media/FGNIEyXXIAMcssZ.png"
     ],
     "description": "Verti Music Hall sets new standards for event venues of comparable size with regards to customer experience and production.",
-    "facebook": "",
-    "instagram": "",
-    "twitter": "",
-    "website": "https://www.verti-music-hall.de/",
-    "capacity": "4500",
-    "payment_type": "",
-    "availability": true,
-    "dates": ["2023-07-04T09:00:00.000+00:00"]
+    "mediaLinks": {
+      "websiteUrl": "https://www.verti-music-hall.de/"
+    },
+    "capacity": 4500,
+    "dates": [
+      "2023-07-04T09:00:00.000+00:00"
+    ]
   },
   {
     "name": "Admiralspalast",
-    "email": "kontakt@mehr-bb-entertainment.de",
+    "email": "admiral@venu.com",
     "address": {
       "street": "Friedrichstraße 101",
       "city": "Berlin",
       "zipcode": "10117"
     },
     "location": {
-    "coordinates": [13.388433594536986, 52.52097813251269]
+      "coordinates": [
+        13.388433594536986,
+        52.52097813251269
+      ]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
-    "profile_image": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/2a/cd/26/admiralspalast-vom-bf.jpg",
+    "profileImage": "https://media-cdn.tripadvisor.com/media/photo-m/1280/17/2a/cd/26/admiralspalast-vom-bf.jpg",
     "images": [
       "https://img.seekr.cloud/cover/670/3/gjjt.jpg",
       "https://images.squarespace-cdn.com/content/v1/5c758f8129f2cc2525c7d59d/1587112525784-850B0MRXBOLRQPSG5PYD/admiralspalast_berlin_festnoise.jpg?format=1000w",
@@ -283,18 +326,21 @@
   },
   {
     "name": "Batschkapp",
-    "email": "tickets@tickets.de",
+    "email": "batschkapp@venu.com",
     "address": {
       "street": "Gwinnerstraße 5",
       "city": "Frankfurt am Main",
       "zipcode": "60388"
     },
     "location": {
-      "coordinates": [8.73870503690718, 50.13585809272438]
+      "coordinates": [
+        8.73870503690718,
+        50.13585809272438
+      ]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
-    "profile_image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Batschkapp.jpg",
+    "profileImage": "https://upload.wikimedia.org/wikipedia/commons/0/09/Batschkapp.jpg",
     "images": [
       "https://images.stadtleben.de/events/2019/06/01/4147681.jpg?1558594871",
       "https://www.op-online.de/bilder/2013/12/10/3264680/1373357429-f8ea5b12-1716-430f-8195-b2a075192684-qKwdQ5lqefe.jpg",
@@ -303,8 +349,6 @@
     "description": "Batschkapp is a rock and pop concert venue in Gwinnerstraße in Seckbach.",
     "mediaLinks": {
       "facebookUrl": "https://www.facebook.com/batschkappffm/",
-      "twitterTag": "",
-      "instagramTag": "",
       "websiteUrl": "https://batschkapp.tickets.de/en/"
     },
     "dates": [],
@@ -312,18 +356,21 @@
   },
   {
     "name": "Festhalle",
-    "email": "",
+    "email": "festhalle@venu.com",
     "address": {
       "street": "Messe Frankfurt Venue GmbH, Ludwig-Erhard-Anlage 1",
       "city": "Frankfurt am Main",
       "zipcode": "60327"
     },
     "location": {
-      "coordinates": [8.650870175148903, 50.11225632684515]
+      "coordinates": [
+        8.650870175148903,
+        50.11225632684515
+      ]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
-    "profile_image": "https://www.messefrankfurt.com/content/dam/messefrankfurt-redaktion/locations/stage-photos/festhalle.jpg",
+    "profileImage": "https://www.messefrankfurt.com/content/dam/messefrankfurt-redaktion/locations/stage-photos/festhalle.jpg",
     "images": [
       "https://cdn.tomas-travel.com/nds/repository/NDS00020140003869071/TBX00020050000221441/NDS00020140019988215_sized_800_0.jpg",
       "https://www.frankfurt-tipp.de/fileadmin/_processed_/3/2/csm_SportballFFM_7463e66c81.jpg",
@@ -332,7 +379,6 @@
     "description": "Festhalle Frankfurt is a multi-purpose arena located in Frankfurt, Germany. The interior of the dome at its highest reaches a height of 40 meters. It provides an area of 5,646 square metres, offering by a variable grandstand system space for up to 8,500 people seated, and 13,500 people unseated.",
     "mediaLinks": {
       "facebookUrl": "https://www.facebook.com/festhalle.messefrankfurt/",
-      "twitterTag": "",
       "instagramTag": "https://www.instagram.com/festhalle_frankfurt/",
       "websiteUrl": "https://festhalle.messefrankfurt.com/frankfurt/de/veranstaltungen.html"
     },
@@ -341,18 +387,21 @@
   },
   {
     "name": "Culture and Congress Center Jahrhunderthalle GmbH",
-    "email": "",
+    "email": "jahrhunderthalle@venu.com",
     "address": {
       "street": "Pfaffenwiese 301",
       "city": "Frankfurt am Main",
       "zipcode": "65929"
     },
     "location": {
-      "coordinates": [8.518888618641688, 50.102058447399145]
+      "coordinates": [
+        8.518888618641688,
+        50.102058447399145
+      ]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
-    "profile_image": "https://media.istockphoto.com/id/458535489/de/foto/jahrhunderthalle-frankfurt-hoechst.jpg?s=612x612&w=0&k=20&c=pfKXjQ4u5XQOaQz4CkM5-TWHSdLBZxTmgokaM1FVoGA=",
+    "profileImage": "https://media.istockphoto.com/id/458535489/de/foto/jahrhunderthalle-frankfurt-hoechst.jpg?s=612x612&w=0&k=20&c=pfKXjQ4u5XQOaQz4CkM5-TWHSdLBZxTmgokaM1FVoGA=",
     "images": [
       "https://cdn.tomas-travel.com/nds/repository/NDS00020140003693383/TBX00020050000221441/NDS00020140020572691_sized_800_0.jpg",
       "https://cdn.tomas-travel.com/nds/repository/NDS00020140003693383/TBX00020050000221441/NDS00020140020572941_sized_800_0.jpg",
@@ -361,7 +410,6 @@
     "description": "Modern, dome-shaped hall staging concerts, dance shows, musicals & other arts events.",
     "mediaLinks": {
       "facebookUrl": "https://www.facebook.com/myticketJahrhunderthalle",
-      "twitterTag": "",
       "instagramTag": "https://www.instagram.com/myticket_jahrhunderthalle/",
       "websiteUrl": "https://www.myticket-jahrhunderthalle.de/"
     },
@@ -370,18 +418,21 @@
   },
   {
     "name": "Hugenottenhalle",
-    "email": "",
+    "email": "hugenottenhalle@venu.com",
     "address": {
       "street": "Frankfurter Str. 152",
       "city": "Neu-Isenburg",
       "zipcode": "63263"
     },
     "location": {
-      "coordinates": [8.695686439571784, 50.051123071841936]
+      "coordinates": [
+        8.695686439571784,
+        50.051123071841936
+      ]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
-    "profile_image": "https://www.fnp.de/bilder/2019/01/30/11588222/1266877488-2334192-efe.jpg",
+    "profileImage": "https://www.fnp.de/bilder/2019/01/30/11588222/1266877488-2334192-efe.jpg",
     "images": [
       "https://cdn.proticket.de/media/3358/radio-bob-buehne-queen-kings-2_b.jpg",
       "https://etmusic-4b58.kxcdn.com/wp-content/uploads/2018/12/Hugenottenhalle%E2%80%93Neu-Isenburg.jpg",
@@ -389,9 +440,6 @@
     ],
     "description": "Cultural center hosting concerts, touring drama & dance productions, plus private events.",
     "mediaLinks": {
-      "facebookUrl": "",
-      "twitterTag": "",
-      "instagramTag": "",
       "websiteUrl": "https://hugenottenhalle.de/"
     },
     "dates": [],
@@ -399,7 +447,7 @@
   },
   {
     "name": "Jazzkeller Frankfurt",
-    "email": "",
+    "email": "jazzkeller@venu.com",
     "address": {
       "street": "Kleine Bockenheimer Str. 18a",
       "city": "Frankfurt am Main",
@@ -407,17 +455,21 @@
     },
     "location": {
       "coordinates": [
-        8.673680032442693, 50.114806309211495
+        8.673680032442693,
+        50.114806309211495
       ]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
     "profileImage": "https://www.klassenfahrt-frankfurt.de/wp-content/uploads/2018/05/Deutschland_Frankfurt_JazzHaus2-781x512.jpg",
-    "images": ["https://www.schuljazz-frankfurt.de/uploads/tx_ptg/JIMS-BAUSTEIN-02_01.png","https://www.stadtrundfahrt.com/upload/system/experience/bb9dc64b8de4774995810a5c341c5473.jpg","https://eventportal.imgix.net/public/uploads/7tWTaTrDOTUggfUuf5ColUO73poSi8K1AKmuKi0l.jpg?auto=compress%2Cformat&fit=crop&w=640"],
+    "images": [
+      "https://www.schuljazz-frankfurt.de/uploads/tx_ptg/JIMS-BAUSTEIN-02_01.png",
+      "https://www.stadtrundfahrt.com/upload/system/experience/bb9dc64b8de4774995810a5c341c5473.jpg",
+      "https://eventportal.imgix.net/public/uploads/7tWTaTrDOTUggfUuf5ColUO73poSi8K1AKmuKi0l.jpg?auto=compress%2Cformat&fit=crop&w=640"
+    ],
     "description": "Intimate, storied jazz club since 1952 with crafted cocktails & a nostalgic speakeasy feel.",
     "mediaLinks": {
       "facebookUrl": "https://www.facebook.com/jazzkeller.frankfurt/",
-      "twitterTag": "",
       "instagramTag": "https://www.instagram.com/jazzkeller_frankfurt/",
       "websiteUrl": "https://www.jazzkeller.com/"
     },
@@ -426,15 +478,16 @@
   },
   {
     "name": "Gewandhaus",
-    "email": "ticket@gewandhaus.de",
+    "email": "gewandhaus@venu.com",
     "address": {
-      "street": "Augustuspl. 8",
+      "street": "Augustusplatz 8",
       "city": "Leipzig",
       "zipcode": "04109"
     },
     "location": {
       "coordinates": [
-        
+        12.380438,
+        51.337818
       ]
     },
     "password": "test1234",
@@ -453,7 +506,7 @@
   },
   {
     "name": "Felsenkeller Leipzig",
-    "email": "",
+    "email": "felsenkeller@venu.com",
     "address": {
       "street": "Karl-Heine-Straße 32",
       "city": "Leipzig",
@@ -461,13 +514,18 @@
     },
     "location": {
       "coordinates": [
-        12.338443649003306, 51.33305466049007
+        12.338443649003306,
+        51.33305466049007
       ]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
     "profileImage": "https://upload.wikimedia.org/wikipedia/commons/6/60/Das_Gewandhaus_und_der_Mendebrunnen_in_Leipzig_bei_Nacht.jpg",
-    "images": ["https://www.bachfestleipzig.de/sites/default/files/bach_db/venues/Leipzig_Gewandhaus_Grosser_Saal.jpg","https://i0.wp.com/www.saturova.com/wp-content/uploads/2015/12/Gewandhausorchester-Leipzig-2013.jpg","https://cdn.mdr.de/mdr-klassik-radio/ipg/bilder/gewandhaus-orchester-andris-nelsons-102_v-variantBig16x9_w-1280_zc-b903ef86.jpg?version=9543"],
+    "images": [
+      "https://www.bachfestleipzig.de/sites/default/files/bach_db/venues/Leipzig_Gewandhaus_Grosser_Saal.jpg",
+      "https://i0.wp.com/www.saturova.com/wp-content/uploads/2015/12/Gewandhausorchester-Leipzig-2013.jpg",
+      "https://cdn.mdr.de/mdr-klassik-radio/ipg/bilder/gewandhaus-orchester-andris-nelsons-102_v-variantBig16x9_w-1280_zc-b903ef86.jpg?version=9543"
+    ],
     "description": "This building is an architectural and historical landmark of Leipzig. Its trademark baroque-style dome is noticeable among the more modern buildings in the surrounding area. Since its construction in 1890, it has been used as a restaurant, entertainment center, political meeting place, and theater, among other things. ",
     "mediaLinks": {
       "facebookUrl": "https://www.facebook.com/FelsenkellerLeipzig/",
@@ -480,7 +538,7 @@
   },
   {
     "name": "Parkbühne",
-    "email": "info@geyserhaus.de",
+    "email": "parkbuehne@venu.de",
     "address": {
       "street": "Karl-Tauchnitz-Straße 28",
       "city": "Leipzig",
@@ -488,17 +546,21 @@
     },
     "location": {
       "coordinates": [
-        12.36148910914744, 51.32961156431869
+        12.36148910914744,
+        51.32961156431869
       ]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
     "profileImage": "https://www.architektur-blicklicht.de/bilder/artikel/leipzig-parkbuehne_clara-zetkin-park-800x535.jpg",
-    "images": ["https://www.parkbuehne-leipzig.com/wordpress/wp-content/uploads/2020/11/parkbuehne-aboutus-2.jpg","https://www.kulturfalter.de/fileadmin/assets/Locations/Parkbuehne_mawi_concert.jpg","https://www.parkbuehne-leipzig.com/wordpress/wp-content/uploads/2020/11/parkbuehne-aboutus-gallery-01.jpg"],
+    "images": [
+      "https://www.parkbuehne-leipzig.com/wordpress/wp-content/uploads/2020/11/parkbuehne-aboutus-2.jpg",
+      "https://www.kulturfalter.de/fileadmin/assets/Locations/Parkbuehne_mawi_concert.jpg",
+      "https://www.parkbuehne-leipzig.com/wordpress/wp-content/uploads/2020/11/parkbuehne-aboutus-gallery-01.jpg"
+    ],
     "description": "This event venue can seat 2000 people amidst its beautiful landscapes. This outdoor venue is popular for hosting concerts, summer theater, exhibitions and many diverse events making it a culture hub of the region. This is a perfect place to spend time with your family as venue arranges special events for people of all ages.",
     "mediaLinks": {
       "facebookUrl": "https://www.facebook.com/parkbuehne.leipzig/",
-      "twitterTag": "",
       "instagramTag": "https://www.instagram.com/parkbuehne_leipzig/",
       "websiteUrl": "https://www.parkbuehne-leipzig.com/wordpress/"
     },
@@ -507,7 +569,7 @@
   },
   {
     "name": "Kupfersaal",
-    "email": "",
+    "email": "kupfersall@venu.com",
     "address": {
       "street": "Kupfergasse 2",
       "city": "Leipzig",
@@ -515,17 +577,21 @@
     },
     "location": {
       "coordinates": [
-        12.377117789184004, 51.33819100799972
+        12.377117789184004,
+        51.33819100799972
       ]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
     "profileImage": "http://www.mdm-online.de/tempcache/t_fc_lg_sets_bilder_25649.jpg",
-    "images": ["https://dam.destination.one/924161/bce9c95ad98b59ffc0d591fd8c84e202ef967aded1a4c610ed04ca1ab98e2111/.jpg","https://dam.destination.one/924156/16ac73781c16fd1d73ec496bbe417b2d153b9c13a68258aff937bed63081df0f/.jpg","https://9968c6ef49dc043599a5-e151928c3d69a5a4a2d07a8bf3efa90a.ssl.cf2.rackcdn.com/1171500-1.jpg"],
+    "images": [
+      "https://dam.destination.one/924161/bce9c95ad98b59ffc0d591fd8c84e202ef967aded1a4c610ed04ca1ab98e2111/.jpg",
+      "https://dam.destination.one/924156/16ac73781c16fd1d73ec496bbe417b2d153b9c13a68258aff937bed63081df0f/.jpg",
+      "https://9968c6ef49dc043599a5-e151928c3d69a5a4a2d07a8bf3efa90a.ssl.cf2.rackcdn.com/1171500-1.jpg"
+    ],
     "description": "",
     "mediaLinks": {
       "facebookUrl": "https://www.facebook.com/Kupfersaal/",
-      "twitterTag": "",
       "instagramTag": "https://www.instagram.com/kupfersaal/",
       "websiteUrl": "https://www.kupfersaal.de/"
     },
@@ -534,7 +600,7 @@
   },
   {
     "name": "Spizz",
-    "email": "",
+    "email": "spizz@venu.com",
     "address": {
       "street": "Markt 9",
       "city": "Leipzig",
@@ -542,18 +608,22 @@
     },
     "location": {
       "coordinates": [
-        12.374090261035722, 51.34101415658754
+        12.374090261035722,
+        51.34101415658754
       ]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
     "profileImage": "https://www.spizz-leipzig.de/media/spizz/spizz00.jpg",
-    "images": ["https://www.spizz-leipzig.de/media/spizz/events/spizz-keller-cocktail-lounge-01.jpg","https://www.spizz-leipzig.de/media/spizz/spizz03.jpg","https://www.spizz-leipzig.de/media/spizz/spizz04.jpg"],
+    "images": [
+      "https://www.spizz-leipzig.de/media/spizz/events/spizz-keller-cocktail-lounge-01.jpg",
+      "https://www.spizz-leipzig.de/media/spizz/spizz03.jpg",
+      "https://www.spizz-leipzig.de/media/spizz/spizz04.jpg"
+    ],
     "description": "Breakfast, burgers & bistro dishes at a polished bar/restaurant with DJs & live jazz in the cellar.",
     "mediaLinks": {
       "facebookUrl": "https://www.facebook.com/SPIZZ.Leipzig/",
       "twitterTag": "https://mobile.twitter.com/spizz_leipzig",
-      "instagramTag": "",
       "websiteUrl": "spizz-leipzig.de"
     },
     "dates": [],

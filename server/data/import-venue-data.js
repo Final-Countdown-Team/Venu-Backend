@@ -13,11 +13,13 @@ const DB = process.env.DATABASE.replace(
   process.env.DATABASE_PASSWORD
 ).replace('<USERNAME>', process.env.DATABASE_USERNAME);
 
-mongoose.connect(DB).then(() => console.log('DB connection successful!'));
+mongoose
+  .connect(DB)
+  .then(() => console.log('DB connection successful!'));
 
 // Read JSON file
 const venues = JSON.parse(
-  fs.readFileSync(`${__dirname}/venue-test.json`, 'utf-8')
+  fs.readFileSync(`${__dirname}/venues.json`, 'utf-8')
 );
 
 // Import data into DB
