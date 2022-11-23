@@ -130,7 +130,12 @@ const artistSchema = mongoose.Schema(
       select: false,
     },
   },
-  { timestamps: true, toJSON: { virtuals: true }, toObject: { virtuals: true } }
+  {
+    timestamps: true,
+    toJSON: { virtuals: true },
+    toObject: { virtuals: true },
+    id: false,
+  }
 );
 // INDEXES
 artistSchema.index({ name: 1 });
