@@ -7,6 +7,12 @@
       "city": "Berlin",
       "zipcode": "12055"
     },
+    "location": {
+      "coordinates": [
+        13.452885316062508,
+        52.47158581923156
+      ]
+    },
     "password": "test1234",
     "passwordConfirm": "test1234",
     "profileImage": "https://www.spirit-of-metal.com/les%20goupes/K/Kadavar%20(DE)/pics/438f_1.jpg",
@@ -23,331 +29,429 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=N3PC1pJFNDE"
     },
     "genre": "Rock",
-    "dates": [],
-    "members": 2
+    "dates": [
+      "2022-11-27T09:00:00.000+00:00"
+    ],
+    "members": 3
   },
   {
-    "name": "",
-    "email": "",
+    "name": "Joanna Newsom",
+    "email": "jojo@harpy.com",
     "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+      "street": "Str. d. Jugend 109",
+      "city": "Berlin",
+      "zipcode": "14621"
+    },
+    "location": {
+      "coordinates": [
+        13.110554165829658,
+        52.598501845264195
+      ]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
-    "profileImage": "",
+    "profileImage": "https://assets.vogue.com/photos/5891c669dec09b18414539e4/master/w_2000,h_1333,c_limit/03-joanna-newsom.jpg",
     "images": [
-      "",
-      "",
-      ""
+      "https://i.guim.co.uk/img/media/bec8b3060a52c8909bdd9f24497abfb3106078e7/0_742_1920_1153/master/1920.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=dadc905dc5da533407618c88493d11d6",
+      "https://d1gdi8qinx8x49.cloudfront.net/940x535/55463.jpeg",
+      "https://images.mubicdn.net/images/cast_member/134486/cache-5539-1427520993/image-w856.jpg?size=800x"
     ],
-    "description": "",
+    "description": "Joanna Newsom is an American born singer-songwriter and actress. Born and raised in Northern California, Newsom was classically trained on the harp in her youth and began her musical career as a keyboardist in the San Francisco-based indie band the Pleased.",
     "mediaLinks": {
       "facebookUrl": "",
-      "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
+      "twitterTag": "@itsJoannaNewsom",
+      "instagramTag": "@joannanewsom",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ky9Ro9pP2gc"
     },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
-    "members": 2
+    "genre": "Singer-Songwriter",
+    "dates": [
+      "2023-11-27T09:00:00.000+00:00"
+    ],
+    "members": 1
   },
   {
-    "name": "",
-    "email": "",
+    "name": "Farce",
+    "email": "farce1000@gmail.com",
     "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+      "street": "Hochwassergasse 12",
+      "city": "Wien",
+      "zipcode": "1230"
+    },
+    "location": {
+      "coordinates": [
+        16.358379446784472,
+        48.149150171949245
+      ]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
-    "profileImage": "",
+    "profileImage": "https://www.musicaustria.at/wp-content/uploads/farce-1-750.png",
     "images": [
-      "",
-      "",
-      ""
+      "https://tubestatic.orf.at/static/images/site/tube/20181044/farce_presse-magdalena-fischer_888x522.5815310.jpg",
+      "https://tubestatic.orf.at/static/images/site/tube/20220518/f2.5977834.jpg",
+      "https://www.musicexport.at/wp-content/uploads/FARCE_2.jpg"
     ],
-    "description": "",
+    "description": "VERONIKA J. KÖNIG aka FARCE makes noisy pop music at home in the bedroom. Her first vinyl EP 'ICH SEHE IM VORBEIFAHRENDEN AUTO DEN UNFALL MITVORBEIFAHREN, IN ZEITLUPE UND RÜCKWÄRTS' was recently released on Metamatter Records. In the summer of 2023, FARCE will be touring through Germany, followed by a kind of borderland tour in the fall.",
     "mediaLinks": {
-      "facebookUrl": "",
+      "facebookUrl": "https://www.facebook.com/FARCE1000/",
       "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
+      "instagramTag": "@farce1000",
+      "youtubeUrl": "https://www.youtube.com/watch?v=AzVrmwQjHb4"
     },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
-    "members": 2
+    "genre": "Electronic",
+    "dates": [
+      "2023-03-09T09:00:00.000+00:00"
+    ],
+    "members": 1
   },
   {
-    "name": "",
-    "email": "",
+    "name": "Mystical Communication Service",
+    "email": "mcs@gmail.com",
     "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+      "street": "Grasweg 4",
+      "city": "Kleinmachnow",
+      "zipcode": "14532"
+    },
+    "location": {
+      "coordinates": [
+        13.203308165337232,
+        52.40862641406258
+      ]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
-    "profileImage": "",
+    "profileImage": "http://www.popmonitor.de/content/images/mcs_lovelite.jpg",
     "images": [
-      "",
-      "",
-      ""
+      "http://yairkarelicmusic.com/wp-content/uploads/2021/10/mcsmasks-265x173.jpg",
+      "https://nbhap.com/wp-content/uploads//2014/03/mystical-communication-service.jpg",
+      "https://f4.bcbits.com/img/0010120608_10.jpg"
     ],
-    "description": "",
+    "description": "Mystical Communication Service are a Berlin-based music project fronted by the fictional Yanez Di Mompracem, backed by a collection of eccentric and well-traveled bandmates from all corners of the globe. The band is an amalgamation of wayward drifters and modern-day mystics, uniting to play their distinctive style of psychedelic and experimental rock. Their sound oscillates between intricate blues-driven solos, creating a sense of ancient and emotive storytelling, and rhythmic explorations of unfamiliar yet alluring states of mind. Listening to Mystical Communication Service represents an enchanted excursion into a nomadic world, where the concepts of sanity and self-awareness fade away. The band creates an ethereal soundscape, leaving you adrift in a haze of desire and dream-like apparitions.",
     "mediaLinks": {
-      "facebookUrl": "",
+      "facebookUrl": "https://www.facebook.com/mysticalcommunicationservice/",
       "twitterTag": "",
       "instagramTag": "",
-      "youtubeUrl": ""
+      "youtubeUrl": "https://youtu.be/B0T5qENTbFg"
     },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
-    "members": 2
+    "genre": "Experimental",
+    "dates": [
+      "2023-07-07T09:00:00.000+00:00"
+    ],
+    "members": 6
   },
   {
-    "name": "",
-    "email": "",
+    "name": "Kendrick Lamar",
+    "email": "duckworth@hotmail.com",
     "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+      "street": "Bachstraße 5A",
+      "city": "Mühlenbecker Land",
+      "zipcode": "16552"
+    },
+    "location": {
+      "coordinates": [
+        13.378328382195008,
+        52.6486024458988
+      ]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
-    "profileImage": "",
+    "profileImage": "https://miro.medium.com/max/1400/1*bd6bO3dh9wIQfYj5hsQ6Qw.jpeg",
     "images": [
-      "",
-      "",
-      ""
+      "https://www.nme.com/wp-content/uploads/2022/06/kendrick-lamar-glasto-2022-696x442.jpg",
+      "https://mostdope.tv/wp-content/uploads/news-kendrick-lamar.jpg",
+      "https://i.scdn.co/image/ab67616d0000b2738b52c6b9bc4e43d873869699"
     ],
-    "description": "",
+    "description": "Kendrick Lamar Duckworth is a rapper and songwriter. Known for his progressive musical styles and socially conscious songwriting, he is often considered one of the most influential hip hop artists of his generation.",
     "mediaLinks": {
       "facebookUrl": "",
-      "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
+      "twitterTag": "@kendricklamar",
+      "instagramTag": "@kendricklamar",
+      "youtubeUrl": "https://www.youtube.com/watch?v=toBTPGfurLc"
     },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
-    "members": 2
+    "genre": "Hip-Hop",
+    "dates": [
+      "2023-04-17T09:00:00.000+00:00"
+    ],
+    "members": 1
   },
   {
-    "name": "",
-    "email": "",
+    "name": "Nusrat Fateh Ali Khan",
+    "email": "gazals@gmail.com",
     "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+      "street": "Redlingerstraße 7",
+      "city": "München",
+      "zipcode": "81735"
+    },
+    "location": {
+      "coordinates": [
+        11.62844727080123,
+        48.11501640642005
+      ]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
-    "profileImage": "",
+    "profileImage": "https://media.npr.org/assets/img/2020/12/01/nusrat-fateh-ali-khan-2-b7d32399498a7e6e6bfb7eab68ace50e406b6d7d-s800-c85.webp",
     "images": [
-      "",
-      "",
-      ""
+      "https://www.aljazeera.com/wp-content/uploads/2022/08/GettyImages-1307215788.jpg?resize=770%2C513",
+      "https://www.aljazeera.com/wp-content/uploads/2022/08/GettyImages-163009531.jpg?w=770&resize=770%2C506",
+      "https://www.aljazeera.com/wp-content/uploads/2022/08/GettyImages-461952019.jpg?w=770&resize=770%2C525"
     ],
-    "description": "",
+    "description": "Ustad Nusrat Fateh Ali Khan PP was a Pakistani singer, songwriter, and music director. He was primarily a singer of qawwali — a form of Sufi devotional music. Sometimes called the 'Shahenshah-e-Qawwali'd, he is considered by The New York Times to be the greatest qawwali singer of his generation.",
     "mediaLinks": {
-      "facebookUrl": "",
+      "facebookUrl": "https://www.facebook.com/nfak13/",
       "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
+      "instagramTag": "@theoffcialnusrat",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fDy-sUF7gLc"
     },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
+    "genre": "Folk",
+    "dates": [
+      "2023-10-13T09:00:00.000+00:00"
+    ],
     "members": 2
   },
   {
-    "name": "",
-    "email": "",
+    "name": "Lonnie Holley",
+    "email": "lonnieholleyallday@music.com",
     "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+      "street": "Jenischstraße 26",
+      "city": "Hamburg",
+      "zipcode": "22609"
+    },
+    "location": {
+      "coordinates": [
+        9.855626033360727,
+        53.5600383748285
+      ]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
-    "profileImage": "",
+    "profileImage": "https://static.frieze.com/files/inline-images/editorial-articles-dtd-26--rgb-lonnie-holley--just-before-music-cmyk.jpeg",
     "images": [
-      "",
-      "",
-      ""
+      "https://static01.nyt.com/images/2021/05/07/arts/06lonnie-holley-10/06lonnie-holley-10-superJumbo.jpg",
+      "https://media.artsbma.org/wp-content/uploads/2022/08/22140014/Lonnie_003.jpeg",
+      "https://www.papercitymag.com/wp-content/uploads/2017/11/040614-lonnie-holley-ba03-1.jpg"
     ],
-    "description": "",
+    "description": "Holley's professional music career began in 2006 when he made improvisational vocal recordings, at the urging of Matt Arnett (son of William Arnett), in an Alabama church using just a keyboard and a microphone. In 2012, he released his debut album Just Before Music on the Dust-to-Digital label, followed by Keeping a Record of It the following year.",
+    "mediaLinks": {
+      "facebookUrl": "https://www.facebook.com/LonnieHolley/",
+      "twitterTag": "",
+      "instagramTag": "@lonnieholleysuniverse",
+      "youtubeUrl": "https://www.youtube.com/watch?v=So72mlo-nnY"
+    },
+    "genre": "Experimental",
+    "dates": [
+      "2022-12-26T09:00:00.000+00:00"
+    ],
+    "members": 1
+  },
+  {
+    "name": "Dory Previn",
+    "email": "dorydory@lemonhair.com",
+    "address": {
+      "street": "Querstraße 9",
+      "city": "04416",
+      "zipcode": "Markkleeberg"
+    },
+    "location": {
+      "coordinates": [
+        12.356068051370453,
+        51.26881462379174
+      ]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "https://terenceblacker.com/wp-content/uploads/2021/03/Dory-Previn.jpg",
+    "images": [
+      "https://elsewhere.scdn3.secure.raxcdn.com/images/v95000/articles/dory_previn.jpg",
+      "https://i.discogs.com/e0_WwtS_JJQOCiK7L3O62TZcHTeBwgL2yDX8c_GVLtk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTUwMjU3/Mi0xNDc1MTY2OTU4/LTExMTIuanBlZw.jpeg",
+      "https://pbs.twimg.com/media/CvW9zhBXYAAQyWf?format=jpg&name=4096x4096"
+    ],
+    "description": "During the late 1950s and 1960s, Previn was a lyricist on songs intended for motion pictures and, with her then husband, André Previn, received several Academy Award nominations. In the 1970s, after their divorce, she released six albums of original songs and an acclaimed live album. Previn's lyrics from this period are characterized by their originality, irony and honesty in dealing with her troubled personal life as well as more generally about relationships, sexuality, religion and psychology. Until her death, she continued to work as a writer of song lyrics and prose.",
     "mediaLinks": {
       "facebookUrl": "",
       "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
+      "instagramTag": "https://www.instagram.com/doryprevindocumentary/",
+      "youtubeUrl": "https://www.youtube.com/watch?v=vVy5hAZ8Pdw"
     },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
+    "genre": "Folk",
+    "dates": [
+      "2023-09-22T09:00:00.000+00:00"
+    ],
+    "members": 1
+  },
+  {
+    "name": "Man or Astro-man",
+    "email": "rocketsrule@gmail.com",
+    "address": {
+      "street": "Mecklenburgische Str. 53",
+      "city": "Berlin",
+      "zipcode": "14197"
+    },
+    "location": {
+      "coordinates": [
+        13.31657926818535,
+        52.470016022295496
+      ]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "https://townsquare.media/site/838/files/2022/05/attachment-man-or-astro-man.jpeg",
+    "images": [
+      "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/d840b0152375577.631cffab2f21d.jpg",
+      "https://i0.wp.com/www.atlantamusicguide.com/wp-content/uploads/Man-or-Astro-Man-2-1.jpg?w=1920&ssl=1",
+      "https://www.popcultmag.com/wp-content/uploads/2018/03/manorastromanpress.jpg"
+    ],
+    "description": "Man or Astro-man? was known for their anachronistic dedication to science fiction themes, audio samples, obscure electronic devices (such as theremins and tesla coils), and high-energy live performances. Their earlier albums like Is It ... Man or Astroman? and Destroy All Astromen! were known for their traditional surf rock instrumentation and sci-fi sound bite song introductions, but their later albums like EEVIAC... and A Spectrum of Infinite Scale were known for their use of synthesizers, printers (like the Apple ImageWriter II), and their more abstract, experimental sound. Their recordings were often peppered with sound bites from obscure science fiction films and TV shows.",
+    "mediaLinks": {
+      "facebookUrl": "https://www.facebook.com/astroindustries/",
+      "twitterTag": "@man_or_astroman",
+      "instagramTag": "@manorastroman_official",
+      "youtubeUrl": "https://www.youtube.com/watch?v=bD4ojXS_n8E"
+    },
+    "genre": "Rock",
+    "dates": [
+      "2023-02-27T09:00:00.000+00:00"
+    ],
+    "members": 3
+  },
+  {
+    "name": "Blurt",
+    "email": "tedmilton@gmail.com",
+    "address": {
+      "street": "Mörfelder Landstraße 225",
+      "city": "Frankfurt am Main",
+      "zipcode": "60598"
+    },
+    "location": {
+      "coordinates": [
+        8.678461900341325,
+        50.08964058319469
+      ]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "http://s3.amazonaws.com/quietus_production/images/articles/17603/blurtstuff_yahoo.com__1428424506.jpg",
+    "images": [
+      "https://www.radiopanik.org/media/cache/bc/65/bc65432ad1ace53e6772db463c8fdfe6.jpg",
+      "https://lastfm.freetls.fastly.net/i/u/ar0/5223602635834b428f8234808b971864.jpg",
+      "https://www.instantschavires.com/wp-content/uploads/ted-milton20.jpg"
+    ],
+    "description": "British trio producing what some have described as Dada-Avantgarde-Jazz or Paranoid Jazz-Mutant Funk. Centered around Ted Milton's alto-sax and poetry.",
+    "mediaLinks": {
+      "facebookUrl": "https://www.facebook.com/profile.php?id=100026536846082",
+      "twitterTag": "",
+      "instagramTag": "",
+      "youtubeUrl": "https://www.youtube.com/watch?v=I4N09evgqw4"
+    },
+    "genre": "Jazz",
+    "dates": [
+      "2023-01-01T09:00:00.000+00:00"
+    ],
     "members": 2
   },
   {
-    "name": "",
-    "email": "",
+    "name": "Mulatu Astatke",
+    "email": "keybored@music.com",
     "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+      "street": "Mörfelder Landstraße 225",
+      "city": "Frankfurt am Main",
+      "zipcode": "60598"
+    },
+    "location": {
+      "coordinates": [
+        8.678461900341325,
+        50.08964058319469
+      ]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
-    "profileImage": "",
+    "profileImage": "https://worldofjazz.org/wp-content/uploads/2020/05/Mulatu-Astatke.jpg",
     "images": [
-      "",
-      "",
-      ""
+      "https://www.soulstrut.com/images/Archive/Mulatu_Astatke_%E2%80%8E%E2%80%93_Mulatu_Of_Ethiopia.jpg",
+      "https://thebluemomentdotcom.files.wordpress.com/2013/09/mulatu-astatke.jpg",
+      "https://cosmopolite.no/sites/default/files/styles/event_image/public/2020-04/fotobyula_tarasiewicz31.jpg?itok=unJK_IIS"
     ],
-    "description": "",
+    "description": "Mulatu Astatke is an Ethiopian musician and arranger considered as the father of 'Ethio-jazz'. Born in Jimma, Mulatu was musically trained in London, New York City, and Boston where he combined his jazz and Latin music interests with traditional Ethiopian music. ",
     "mediaLinks": {
-      "facebookUrl": "",
+      "facebookUrl": "https://www.facebook.com/profile.php?id=100045131972466",
       "twitterTag": "",
       "instagramTag": "",
-      "youtubeUrl": ""
+      "youtubeUrl": "https://youtu.be/xAJsJ6xDsmw"
     },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
-    "members": 2
+    "genre": "Jazz",
+    "dates": [
+      "2023-07-02T09:00:00.000+00:00"
+    ],
+    "members": 1
   },
   {
-    "name": "",
-    "email": "",
+    "name": "Dog Dimension",
+    "email": "heredoggydoggy@bones.com",
     "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+      "street": "Jenischstraße 26",
+      "city": "Hamburg",
+      "zipcode": "22609"
+    },
+    "location": {
+      "coordinates": [
+        9.855626033360727,
+        53.5600383748285
+      ]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
-    "profileImage": "",
+    "profileImage": "https://dogdimension.de/wp-content/uploads/2022/04/220311_Dog_Dimension_PR_WEB_by_Joel_Thomas-1536x1026.jpg",
     "images": [
-      "",
-      "",
-      ""
+      "https://www.neolyd.com/wp-content/uploads/dog-dimension-area-of-outstanding-beauty.jpg",
+      "https://dogdimension.de/wp-content/uploads/2021/01/Dog-Dimension-Logo.png",
+      "https://bohemiandrips.de/wp-content/uploads/2021/07/Dog_Dimension_May_2021_by_Aljoscha_Redenius_lores.jpg"
     ],
-    "description": "",
+    "description": "Berlin-based power trio Dog Dimension have been blasting away at a mix of experimental rock, alt-metal and grunge on their classic bass-guitar-drums setup since 2019. The band has released three EPs so far, that each have their own distinct way of getting to the bottom of musical extremes: While “Area of Outstanding Beauty” (2019) and “Endless Summer” (2021) prioritized an experimental approach, “Rabies” (2022) is a bold affirmation of harder, groovier guitar rock, that’s soaked in the band’s wry aesthetic. And yet, Dog Dimension always have a surprise in store, like their recent collaboration with “The Sticky People” (2021), where they extended their classic setup with cello, horn and piano. A debut LP is to be expected in 2023.",
     "mediaLinks": {
-      "facebookUrl": "",
+      "facebookUrl": "https://www.facebook.com/dogdimension/",
       "twitterTag": "",
       "instagramTag": "",
-      "youtubeUrl": ""
+      "youtubeUrl": "https://www.youtube.com/watch?v=qgB6_pOAyNE"
     },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
-    "members": 2
+    "genre": "Rock",
+    "dates": [
+      "2023-05-05T09:00:00.000+00:00"
+    ],
+    "members": 3
   },
   {
-    "name": "",
-    "email": "",
+    "name": "Derya Yildirim",
+    "email": "derya@gmail.com",
     "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+      "street": "Bachstraße 5A",
+      "city": "Mühlenbecker Land",
+      "zipcode": "16552"
+    },
+    "location": {
+      "coordinates": [
+        13.378328382195008,
+        52.6486024458988
+      ]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
-    "profileImage": "",
+    "profileImage": "https://www.buback.de/uploads/kSP8NIs7CetTQekhN6XrLCbxJY0QFCud3j7wb78Y.jpeg",
     "images": [
-      "",
-      "",
-      ""
+      "https://i.scdn.co/image/ab6761610000e5eb0ea1d2316c4438b3a883c199",
+      "https://i0.wp.com/cmyksounds.com/wp-content/uploads/2020/05/Derya-crop-1.jpg?resize=1440%2C1080&quality=80&strip=all&ssl=1",
+      "https://scenenoise.com/Content/Articles/Big_image/636795974875760361_46712847_1639716046129308_6731169477544640512_n(1).jpg"
     ],
     "description": "",
     "mediaLinks": {
-      "facebookUrl": "",
+      "facebookUrl": "https://www.facebook.com/deryayildirimandgrupsimsek/",
       "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
+      "instagramTag": "@deryayildirim_grupsimsek",
+      "youtubeUrl": "https://www.youtube.com/watch?v=9PsBfwO5bBY"
     },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
-    "members": 2
-  },
-  {
-    "name": "",
-    "email": "",
-    "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
-    },
-    "password": "test1234",
-    "passwordConfirm": "test1234",
-    "profileImage": "",
-    "images": [
-      "",
-      "",
-      ""
+    "genre": "Singer-Songwriter",
+    "dates": [
+      "2023-04-05T09:00:00.000+00:00"
     ],
-    "description": "",
-    "mediaLinks": {
-      "facebookUrl": "",
-      "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
-    },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
-    "members": 2
-  },
-  {
-    "name": "",
-    "email": "",
-    "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
-    },
-    "password": "test1234",
-    "passwordConfirm": "test1234",
-    "profileImage": "",
-    "images": [
-      "",
-      "",
-      ""
-    ],
-    "description": "",
-    "mediaLinks": {
-      "facebookUrl": "",
-      "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
-    },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
-    "members": 2
-  },
-  {
-    "name": "",
-    "email": "",
-    "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
-    },
-    "password": "test1234",
-    "passwordConfirm": "test1234",
-    "profileImage": "",
-    "images": [
-      "",
-      "",
-      ""
-    ],
-    "description": "",
-    "mediaLinks": {
-      "facebookUrl": "",
-      "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
-    },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
-    "members": 2
+    "members": 5
   }
 ]
