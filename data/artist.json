@@ -260,24 +260,24 @@
   {
     "type": "Artist",
     "active": true,
-    "name": "Mulatu Astatke",
-    "email": "keybored@music.com",
+    "name": "",
+    "email": "",
     "address": {
       "street": "",
       "city": "",
       "zipcode": ""
     },
-    "biography": "Mulatu Astatke is an Ethiopian musician and arranger considered as the father of 'Ethio-jazz'. Born in Jimma, Mulatu was musically trained in London, New York City, and Boston where he combined his jazz and Latin music interests with traditional Ethiopian music. ",
+    "biography": "",
     "genre": "Ethio-jazz",
-    "facebook": "https://www.facebook.com/profile.php?id=100045131972466",
+    "facebook": "",
     "instagram": "",
-    "youtube": "https://youtu.be/xAJsJ6xDsmw",
+    "youtube": "",
     "twitter": "",
-    "profile_image": "https://worldofjazz.org/wp-content/uploads/2020/05/Mulatu-Astatke.jpg",
+    "profile_image": "",
     "images": [
-      "https://www.soulstrut.com/images/Archive/Mulatu_Astatke_%E2%80%8E%E2%80%93_Mulatu_Of_Ethiopia.jpg",
-      "https://thebluemomentdotcom.files.wordpress.com/2013/09/mulatu-astatke.jpg",
-      "https://cosmopolite.no/sites/default/files/styles/event_image/public/2020-04/fotobyula_tarasiewicz31.jpg?itok=unJK_IIS"
+      "",
+      "",
+      ""
     ],
     "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912",
     "availability": true,
