@@ -27,7 +27,7 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=N3PC1pJFNDE"
     },
     "genre": "Rock",
-    "dates": [],
+    "dates": ["2022-11-27T09:00:00.000+00:00"],
     "members": 3
   },
   {
@@ -53,7 +53,7 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=ky9Ro9pP2gc"
     },
     "genre": "Singer-Songwriter",
-    "dates": [],
+    "dates": ["2023-11-27T09:00:00.000+00:00"],
     "members": 1
   },
   {
@@ -84,7 +84,7 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=AzVrmwQjHb4"
     },
     "genre": "Electronic",
-    "dates": [],
+    "dates": ["2023-03-09T09:00:00.000+00:00"],
     "members": 1
   },
   {
@@ -110,7 +110,7 @@
       "youtubeUrl": "https://youtu.be/B0T5qENTbFg"
     },
     "genre": "Experimental",
-    "dates": [],
+    "dates": ["2023-07-07T09:00:00.000+00:00"],
     "members": 6
   },
   {
@@ -136,7 +136,7 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=toBTPGfurLc"
     },
     "genre": "Hip-Hop",
-    "dates": [],
+    "dates": ["2023-04-17T09:00:00.000+00:00"],
     "members": 1
   },
   {
@@ -162,7 +162,7 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=fDy-sUF7gLc"
     },
     "genre": "Folk",
-    "dates": [],
+    "dates": ["2023-10-13T09:00:00.000+00:00"],
     "members": 2
   },
   {
@@ -188,7 +188,7 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=So72mlo-nnY"
     },
     "genre": "Experimental",
-    "dates": [],
+    "dates": ["2022-12-26T09:00:00.000+00:00"],
     "members": 1
   },
   {
@@ -214,7 +214,7 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=vVy5hAZ8Pdw"
     },
     "genre": "Folk",
-    "dates": [],
+    "dates": ["2023-09-22T09:00:00.000+00:00"],
     "members": 1
   },
   {
@@ -240,7 +240,7 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=bD4ojXS_n8E"
     },
     "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
+    "dates": ["2023-02-27T09:00:00.000+00:00"],
     "members": 3
   },
   {
@@ -266,19 +266,19 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=I4N09evgqw4"
     },
     "genre": "Jazz",
-    "dates": [],
+    "dates": ["2023-01-01T09:00:00.000+00:00"],
     "members": 2
   },
   {
     "name": "Mulatu Astatke",
     "email": "keybored@music.com",
     "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+      "street": "Mörfelder Landstraße 225",
+      "city": "Frankfurt am Main",
+      "zipcode": "60598"
     },
     "location": {
-      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
+      "coordinates": [8.678461900341325, 50.08964058319469]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
@@ -292,85 +292,60 @@
       "youtubeUrl": "https://youtu.be/xAJsJ6xDsmw"
     },
     "genre": "Jazz",
-    "dates": [],
+    "dates": ["2023-07-02T09:00:00.000+00:00"],
     "members": 1
   },
   {
-    "name": "",
-    "email": "",
+    "name": "Dog Dimension",
+    "email": "heredoggydoggy@bones.com",
     "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+      "street": "Jenischstraße 26",
+      "city": "Hamburg",
+      "zipcode": "22609"
     },
     "location": {
-      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
+      "coordinates": [9.855626033360727, 53.5600383748285]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
-    "profileImage": "",
-    "images": ["", "", ""],
-    "description": "",
+    "profileImage": "https://dogdimension.de/wp-content/uploads/2022/04/220311_Dog_Dimension_PR_WEB_by_Joel_Thomas-1536x1026.jpg",
+    "images": ["https://www.neolyd.com/wp-content/uploads/dog-dimension-area-of-outstanding-beauty.jpg", "https://dogdimension.de/wp-content/uploads/2021/01/Dog-Dimension-Logo.png", "https://bohemiandrips.de/wp-content/uploads/2021/07/Dog_Dimension_May_2021_by_Aljoscha_Redenius_lores.jpg"],
+    "description": "Berlin-based power trio Dog Dimension have been blasting away at a mix of experimental rock, alt-metal and grunge on their classic bass-guitar-drums setup since 2019. The band has released three EPs so far, that each have their own distinct way of getting to the bottom of musical extremes: While “Area of Outstanding Beauty” (2019) and “Endless Summer” (2021) prioritized an experimental approach, “Rabies” (2022) is a bold affirmation of harder, groovier guitar rock, that’s soaked in the band’s wry aesthetic. And yet, Dog Dimension always have a surprise in store, like their recent collaboration with “The Sticky People” (2021), where they extended their classic setup with cello, horn and piano. A debut LP is to be expected in 2023.",
     "mediaLinks": {
-      "facebookUrl": "",
+      "facebookUrl": "https://www.facebook.com/dogdimension/",
       "twitterTag": "",
       "instagramTag": "",
-      "youtubeUrl": ""
+      "youtubeUrl": "https://www.youtube.com/watch?v=qgB6_pOAyNE"
     },
     "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
-    "members": 2
+    "dates": ["2023-05-05T09:00:00.000+00:00"],
+    "members": 3
   },
   {
-    "name": "",
-    "email": "",
+    "name": "Derya Yildirim",
+    "email": "derya@gmail.com",
     "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+      "street": "Bachstraße 5A",
+      "city": "Mühlenbecker Land",
+      "zipcode": "16552"
     },
     "location": {
-      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
+      "coordinates": [13.378328382195008, 52.6486024458988]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
-    "profileImage": "",
-    "images": ["", "", ""],
+    "profileImage": "https://www.buback.de/uploads/kSP8NIs7CetTQekhN6XrLCbxJY0QFCud3j7wb78Y.jpeg",
+    "images": ["https://i.scdn.co/image/ab6761610000e5eb0ea1d2316c4438b3a883c199", "https://i0.wp.com/cmyksounds.com/wp-content/uploads/2020/05/Derya-crop-1.jpg?resize=1440%2C1080&quality=80&strip=all&ssl=1", "https://scenenoise.com/Content/Articles/Big_image/636795974875760361_46712847_1639716046129308_6731169477544640512_n(1).jpg"],
     "description": "",
     "mediaLinks": {
-      "facebookUrl": "",
+      "facebookUrl": "https://www.facebook.com/deryayildirimandgrupsimsek/",
       "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
+      "instagramTag": "@deryayildirim_grupsimsek",
+      "youtubeUrl": "https://www.youtube.com/watch?v=9PsBfwO5bBY"
     },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
-    "members": 2
-  },
-  {
-    "name": "",
-    "email": "",
-    "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
-    },
-    "location": {
-      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
-    },
-    "password": "test1234",
-    "passwordConfirm": "test1234",
-    "profileImage": "",
-    "images": ["", "", ""],
-    "description": "",
-    "mediaLinks": {
-      "facebookUrl": "",
-      "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
-    },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
-    "dates": [],
-    "members": 2
+    "genre": "Singer-Songwriter",
+    "dates": ["2023-04-05T09:00:00.000+00:00"],
+    "members": 5
   }
+  
 ]

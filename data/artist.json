@@ -286,24 +286,24 @@
   {
     "type": "Artist",
     "active": true,
-    "name": "Dog Dimension",
-    "email": "heredoggydoggy@bones.com",
+    "name": "",
+    "email": "",
     "address": {
-      "street": "Oranianstr. 34",
+      "street": "",
       "city": "Berlin",
       "zipcode": ""
     },
-    "biography": "Berlin-based power trio Dog Dimension have been blasting away at a mix of experimental rock, alt-metal and grunge on their classic bass-guitar-drums setup since 2019. The band has released three EPs so far, that each have their own distinct way of getting to the bottom of musical extremes: While “Area of Outstanding Beauty” (2019) and “Endless Summer” (2021) prioritized an experimental approach, “Rabies” (2022) is a bold affirmation of harder, groovier guitar rock, that’s soaked in the band’s wry aesthetic. And yet, Dog Dimension always have a surprise in store, like their recent collaboration with “The Sticky People” (2021), where they extended their classic setup with cello, horn and piano. A debut LP is to be expected in 2023.",
+    "biography": "",
     "genre": "Grunge",
-    "facebook": "https://www.facebook.com/dogdimension/",
+    "facebook": "",
     "instagram": "@dogdimensionband",
-    "youtube": "https://www.youtube.com/watch?v=qgB6_pOAyNE",
+    "youtube": "",
     "twitter": "",
-    "profile_image": "https://dogdimension.de/wp-content/uploads/2022/04/220311_Dog_Dimension_PR_WEB_by_Joel_Thomas-1536x1026.jpg",
+    "profile_image": "",
     "images": [
-      "https://www.neolyd.com/wp-content/uploads/dog-dimension-area-of-outstanding-beauty.jpg",
-      "https://dogdimension.de/wp-content/uploads/2021/01/Dog-Dimension-Logo.png",
-      "https://bohemiandrips.de/wp-content/uploads/2021/07/Dog_Dimension_May_2021_by_Aljoscha_Redenius_lores.jpg"
+      "",
+      "",
+      ""
     ],
     "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912",
     "availability": true,
@@ -312,7 +312,7 @@
   {
     "type": "Artist",
     "active": true,
-    "name": "Derya Yildirim",
+    "name": "",
     "email": "",
     "address": {
       "street": "",
@@ -321,15 +321,15 @@
     },
     "biography": "The Anatolian psych-pop sensations! Fronted by Berlin based, Turkish singer and multi-instrumentalist Derya Yildirim, the group is known for its contemporary takes on traditional Anatolian folk ballads whilst drawing on a heady mix of psychedelia, jazz and the omnivorous pop universe of the present day. Derya Yildirim and her trans-continental band of brothers and sisters are an essential guide for contemporary psychedelia.",
     "genre": "Anatolian folk",
-    "facebook": "https://www.facebook.com/deryayildirimandgrupsimsek/",
-    "instagram": "@deryayildirim_grupsimsek",
-    "youtube": "https://www.youtube.com/watch?v=9PsBfwO5bBY",
+    "facebook": "",
+    "instagram": "",
+    "youtube": "",
     "twitter": "",
-    "profile_image": "https://www.buback.de/uploads/kSP8NIs7CetTQekhN6XrLCbxJY0QFCud3j7wb78Y.jpeg",
+    "profile_image": "",
     "images": [
-      "https://i.scdn.co/image/ab6761610000e5eb0ea1d2316c4438b3a883c199",
-      "https://i0.wp.com/cmyksounds.com/wp-content/uploads/2020/05/Derya-crop-1.jpg?resize=1440%2C1080&quality=80&strip=all&ssl=1",
-      "https://scenenoise.com/Content/Articles/Big_image/636795974875760361_46712847_1639716046129308_6731169477544640512_n(1).jpg"
+      "",
+      "",
+      ""
     ],
     "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912",
     "availability": true,
