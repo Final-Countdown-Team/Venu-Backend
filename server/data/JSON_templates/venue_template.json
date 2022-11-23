@@ -1,0 +1,29 @@
+[
+  {
+    "name": "",
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "zipcode": ""
+    },
+    "location": {
+      "coordinates": [
+        "Needs longitude first, latitude second, typeof Number"
+      ]
+    },
+    "password": "",
+    "passwordConfirm": "",
+    "profileImage": "",
+    "images": [],
+    "description": "",
+    "mediaLinks": {
+      "facebookUrl": "",
+      "twitterTag": "",
+      "instagramTag": "",
+      "websiteUrl": ""
+    },
+    "dates": [],
+    "capcaity": 120
+  }
+]
