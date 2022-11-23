@@ -208,24 +208,24 @@
   {
     "type": "Artist",
     "active": true,
-    "name": "Man or Astro-man",
-    "email": "rocketsrule@gmail.com",
+    "name": "",
+    "email": "",
     "address": {
       "street": "",
       "city": "",
       "zipcode": ""
     },
-    "biography": "Man or Astro-man? was known for their anachronistic dedication to science fiction themes, audio samples, obscure electronic devices (such as theremins and tesla coils), and high-energy live performances. Their earlier albums like Is It ... Man or Astroman? and Destroy All Astromen! were known for their traditional surf rock instrumentation and sci-fi sound bite song introductions, but their later albums like EEVIAC... and A Spectrum of Infinite Scale were known for their use of synthesizers, printers (like the Apple ImageWriter II), and their more abstract, experimental sound. Their recordings were often peppered with sound bites from obscure science fiction films and TV shows.",
+    "biography": "",
     "genre": "Surf-rock",
-    "facebook": "https://www.facebook.com/astroindustries/",
+    "facebook": "",
     "instagram": "",
-    "youtube": "@manorastroman_official",
-    "twitter": "@man_or_astroman",
-    "profile_image": "https://townsquare.media/site/838/files/2022/05/attachment-man-or-astro-man.jpeg",
+    "youtube": "",
+    "twitter": "",
+    "profile_image": "",
     "images": [
-      "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/d840b0152375577.631cffab2f21d.jpg",
-      "https://i0.wp.com/www.atlantamusicguide.com/wp-content/uploads/Man-or-Astro-Man-2-1.jpg?w=1920&ssl=1",
-      "https://www.popcultmag.com/wp-content/uploads/2018/03/manorastromanpress.jpg"
+      "",
+      "",
+      ""
     ],
     "password": "$2a$12$SOPzXWWnf/oygfdWiIGhDu2Oh8/FArvm2rMOmhO6ddvDOdbZSR912",
     "availability": true,

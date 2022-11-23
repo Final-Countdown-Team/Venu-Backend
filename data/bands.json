@@ -192,56 +192,56 @@
     "members": 1
   },
   {
-    "name": "",
-    "email": "",
+    "name": "Dory Previn",
+    "email": "dorydory@lemonhair.com",
     "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+      "street": "Querstraße 9",
+      "city": "04416",
+      "zipcode": "Markkleeberg"
     },
     "location": {
-      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
+      "coordinates": [12.356068051370453, 51.26881462379174]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
-    "profileImage": "",
-    "images": ["", "", ""],
-    "description": "",
+    "profileImage": "https://terenceblacker.com/wp-content/uploads/2021/03/Dory-Previn.jpg",
+    "images": ["https://elsewhere.scdn3.secure.raxcdn.com/images/v95000/articles/dory_previn.jpg", "https://i.discogs.com/e0_WwtS_JJQOCiK7L3O62TZcHTeBwgL2yDX8c_GVLtk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTUwMjU3/Mi0xNDc1MTY2OTU4/LTExMTIuanBlZw.jpeg", "https://pbs.twimg.com/media/CvW9zhBXYAAQyWf?format=jpg&name=4096x4096"],
+    "description": "During the late 1950s and 1960s, Previn was a lyricist on songs intended for motion pictures and, with her then husband, André Previn, received several Academy Award nominations. In the 1970s, after their divorce, she released six albums of original songs and an acclaimed live album. Previn's lyrics from this period are characterized by their originality, irony and honesty in dealing with her troubled personal life as well as more generally about relationships, sexuality, religion and psychology. Until her death, she continued to work as a writer of song lyrics and prose.",
     "mediaLinks": {
       "facebookUrl": "",
       "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
+      "instagramTag": "https://www.instagram.com/doryprevindocumentary/",
+      "youtubeUrl": "https://www.youtube.com/watch?v=vVy5hAZ8Pdw"
     },
-    "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
+    "genre": "Folk",
     "dates": [],
-    "members": 2
+    "members": 1
   },
   {
-    "name": "",
-    "email": "",
+    "name": "Man or Astro-man",
+    "email": "rocketsrule@gmail.com",
     "address": {
-      "street": "",
-      "city": "",
-      "zipcode": ""
+      "street": "Mecklenburgische Str. 53",
+      "city": "Berlin",
+      "zipcode": "14197"
     },
     "location": {
-      "coordinates": ["Needs longitude first, latitude second, typeof Number"]
+      "coordinates": [13.31657926818535, 52.470016022295496]
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
-    "profileImage": "",
-    "images": ["", "", ""],
-    "description": "",
+    "profileImage": "https://townsquare.media/site/838/files/2022/05/attachment-man-or-astro-man.jpeg",
+    "images": ["https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/d840b0152375577.631cffab2f21d.jpg", "https://i0.wp.com/www.atlantamusicguide.com/wp-content/uploads/Man-or-Astro-Man-2-1.jpg?w=1920&ssl=1", "https://www.popcultmag.com/wp-content/uploads/2018/03/manorastromanpress.jpg"],
+    "description": "Man or Astro-man? was known for their anachronistic dedication to science fiction themes, audio samples, obscure electronic devices (such as theremins and tesla coils), and high-energy live performances. Their earlier albums like Is It ... Man or Astroman? and Destroy All Astromen! were known for their traditional surf rock instrumentation and sci-fi sound bite song introductions, but their later albums like EEVIAC... and A Spectrum of Infinite Scale were known for their use of synthesizers, printers (like the Apple ImageWriter II), and their more abstract, experimental sound. Their recordings were often peppered with sound bites from obscure science fiction films and TV shows.",
     "mediaLinks": {
-      "facebookUrl": "",
-      "twitterTag": "",
-      "instagramTag": "",
-      "youtubeUrl": ""
+      "facebookUrl": "https://www.facebook.com/astroindustries/",
+      "twitterTag": "@man_or_astroman",
+      "instagramTag": "@manorastroman_official",
+      "youtubeUrl": "https://www.youtube.com/watch?v=bD4ojXS_n8E"
     },
     "genre": "Available genres are: Rock, Folk, Hip-Hop, Electronic, Alternative, Metal, Classic, Jazz, Experimental, Singer-Songwriter, Country, Schlager, watch out for capitalisation",
     "dates": [],
-    "members": 2
+    "members": 3
   },
   {
     "name": "",
