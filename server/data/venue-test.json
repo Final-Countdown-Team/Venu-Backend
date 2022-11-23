@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Backstage Kulturzentrum",
+    "email": "backstagemunich@web.de",
+    "address": {
+      "street": "Reitknechtstraße 6",
+      "city": "München",
+      "zipcode": "80639"
+    },
+    "location": {
+      "coordinates": [
+        11.522287108747674,
+        48.147007488408754
+      ]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "https://www.filmlocations-bayern.com/media/Image/13872/LocationFullsizeImage/keyvisual_aussenbereich_001.jpg",
+    "images": [
+      "https://www.filmlocations-bayern.com/media/Image/13877/LocationFullsizeImage/hauptbild-8-bs_werk.jpg",
+      "https://magprod-1a27b.kxcdn.com/wp-content/uploads/2022/07/@max_the_hill_Inatagram2-1024x769.jpg",
+      "https://www.in-muenchen.de/bilder/2018/01/10/9512710/1139316096-backstage-muenchen-35gG1GT5Mgea.jpg"
+    ],
+    "description": "Alternative music venue with indoor & outdoor spaces for party nights & international rock acts.",
+    "capacity": "1000",
+    "dates": [
+      "2023-02-14T09:00:00.000+00:00"
+    ]
+  },
+  {
+    "name": "Muffathalle",
+    "email": "test@email.de",
+    "address": {
+      "street": " Zellstraße 4",
+      "city": "München",
+      "zipcode": "81667"
+    },
+    "location": {
+      "coordinates": [
+        11.522287108747674,
+        48.147007488408754
+      ]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "https://www.muenchen-tourismus-barrierefrei.de/images/stories/muffathalle_von_auen.klein.jpg",
+    "images": [
+      "https://storage.googleapis.com/leitmotiv-multi/regio-image-2022-07/1305701/xtralarge/w4qpkf4ncr1.png",
+      "https://viberatecdn.blob.core.windows.net/entity/venue/muffathalle-TKIpZ",
+      "https://www.lifeonstage.de/Bilder%20claire%2001.04.16/index_files/vlb_images1/claire010416johannes_kl29.jpg"
+    ],
+    "description": "Entertainment venue with an eclectic program of live music, dance & drama, DJ sets & party nights.",
+    "capacity": "400",
+    "dates": [
+      "2023-11-20T09:00:00.000+00:00"
+    ]
+  }
+]

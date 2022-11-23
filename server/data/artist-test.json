@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Kadavar",
+    "email": "kadavar@gmail.com",
+    "address": {
+      "street": "Saalestr. 32",
+      "city": "Berlin",
+      "zipcode": "12055"
+    },
+    "location": {
+      "coordinates": [
+        13.452885316062508,
+        52.47158581923156
+      ]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "https://www.spirit-of-metal.com/les%20goupes/K/Kadavar%20(DE)/pics/438f_1.jpg",
+    "images": [
+      "https://www.tagesspiegel.de/kultur/images/heprodimagesfotos86120181026kadavar475120181025102127498jpg/alternates/BASE_16_9_W1400/heprodimagesfotos86120181026kadavar475120181025102127498jpg.jpeg",
+      "https://www.spirit-of-metal.com/les%20goupes/K/Kadavar%20(DE)/pics/cbca_3.jpg",
+      "https://storage.googleapis.com/leitmotiv-multi/regio-image-2018-08/880996/xtralarge/20180818_sb_kadaver_2.jpg"
+    ],
+    "description": "Kadavar is a German rock band from Berlin, founded in 2010. Their retro style, incorporating psychedelic rock and stoner rock, has been compared to bands of the 1970s hard rock/heavy metal era such as Led Zeppelin and Black Sabbath. Kadavar currently consists of guitarist/lead vocalist Christoph 'Lupus' Lindemann, drummer Christoph 'Tiger' Bartelt and bassist Simon 'Dragon' Bouteloup.",
+    "mediaLinks": {
+      "facebookUrl": "https://www.facebook.com/KadavarOfficial/",
+      "twitterTag": "@kadavarofficial",
+      "instagramTag": "@kadavargram",
+      "youtubeUrl": "https://www.youtube.com/watch?v=N3PC1pJFNDE"
+    },
+    "genre": "Rock",
+    "dates": [],
+    "members": 3
+  },
+  {
+    "name": "Joanna Newsom",
+    "email": "jojo@harpy.com",
+    "address": {
+      "street": "Str. d. Jugend 109",
+      "city": "Berlin",
+      "zipcode": "14621"
+    },
+    "location": {
+      "coordinates": [
+        13.110554165829658,
+        52.598501845264195
+      ]
+    },
+    "password": "test1234",
+    "passwordConfirm": "test1234",
+    "profileImage": "https://assets.vogue.com/photos/5891c669dec09b18414539e4/master/w_2000,h_1333,c_limit/03-joanna-newsom.jpg",
+    "images": [
+      "https://i.guim.co.uk/img/media/bec8b3060a52c8909bdd9f24497abfb3106078e7/0_742_1920_1153/master/1920.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=dadc905dc5da533407618c88493d11d6",
+      "https://d1gdi8qinx8x49.cloudfront.net/940x535/55463.jpeg",
+      "https://images.mubicdn.net/images/cast_member/134486/cache-5539-1427520993/image-w856.jpg?size=800x"
+    ],
+    "description": "Joanna Newsom is an American born singer-songwriter and actress. Born and raised in Northern California, Newsom was classically trained on the harp in her youth and began her musical career as a keyboardist in the San Francisco-based indie band the Pleased.",
+    "mediaLinks": {
+      "facebookUrl": "",
+      "twitterTag": "@itsJoannaNewsom",
+      "instagramTag": "@joannanewsom",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ky9Ro9pP2gc"
+    },
+    "genre": "Singer-Songwriter",
+    "dates": [],
+    "members": 1
+  }
+]
