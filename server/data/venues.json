@@ -21,7 +21,7 @@
       "https://magprod-1a27b.kxcdn.com/wp-content/uploads/2022/07/@max_the_hill_Inatagram2-1024x769.jpg",
       "https://www.in-muenchen.de/bilder/2018/01/10/9512710/1139316096-backstage-muenchen-35gG1GT5Mgea.jpg"
     ],
-    "description": "Alternative music venue with indoor & outdoor spaces for party nights & international rock acts.",
+    "description": "Backstage is an alternative music venue with indoor & outdoor spaces for party nights & international acts. In different areas on 3.600 square metres different events can be held simultaneously, but there are also all-area events, that happen include multiple event spaces.",
     "mediaLinks": {
       "instagramTag": "https://www.instagram.com/backstagemunich/",
       "twitterTag": "https://mobile.twitter.com/backstagemunich",
@@ -33,8 +33,8 @@
     ]
   },
   {
-    "name": "Muffathalle",
-    "email": "muffathalle@venu.com",
+    "name": "Muffatawerk",
+    "email": "muffatawerk@venu.com",
     "address": {
       "street": " Zellstraße 4",
       "city": "München",
@@ -54,7 +54,7 @@
       "https://viberatecdn.blob.core.windows.net/entity/venue/muffathalle-TKIpZ",
       "https://www.lifeonstage.de/Bilder%20claire%2001.04.16/index_files/vlb_images1/claire010416johannes_kl29.jpg"
     ],
-    "description": "Entertainment venue with an eclectic program of live music, dance & drama, DJ sets & party nights.",
+    "description": "Muffatwerk is located in an area with major importance for the development of the city of Munich, that offers an eclectic program of live music, dance & drama, DJ sets & party nights. The mellow yellow Art Nouveau chimney of Muffatwerk is visible over a long distance - towering lofty above the dense and mature tree population of a lush urban meadow landscape",
     "mediaLinks": {
       "instagramTag": "https://www.instagram.com/muffatwerk/",
       "twitterTag": "https://mobile.twitter.com/muffatwerk",
@@ -87,7 +87,7 @@
       "https://subtouring.com/img/IMG_munich/Backstage_12.jpg",
       "https://viberatecdn.blob.core.windows.net/entity/venue/strom-munich-dohaa"
     ],
-    "description": "Small, unfussy nightspot hosting alt-rock, metal & electronica concerts & DJ parties.",
+    "description": "Strom is a small, unfussy nightspot hosting alt-rock, metal & electronica concerts & DJ parties.",
     "mediaLinks": {
       "facebookUrl": "https://www.facebook.com/stromclubmunich/",
       "instagramTag": "https://www.instagram.com/strom.munich/",
@@ -120,7 +120,7 @@
       "https://cdn.getyourguide.com/img/tour/5b8fbeb881051.jpeg/146.jpg",
       "https://www.musikerlebnis.de/fileadmin/tmpl/defaultproject/Resources/Public/images/konzertsaal_max-joseph-saal-galerie_02.jpg"
     ],
-    "description": "Max-Joseph-Saal: Top-rated tours and activities",
+    "description": "The Max-Joseph-Saal, with its wonderful stucco work and crystal chandeliers, is considered by many to be a small pearl in the middle of the residence and provides the perfect setting for classical concerts. Above all, fans of chamber music appreciate the intimate character of the room, which makes it possible to experience music and artists directly.",
     "mediaLinks": {
       "websiteUrl": "https://www.residenz-muenchen.de/"
     },
@@ -219,7 +219,7 @@
       "https://lh3.googleusercontent.com/p/AF1QipPH1WHJuDoDJLlFd-SG3IAlGFdSPRR0ZOc0yCM_=s680-w680-h510",
       "https://lh3.googleusercontent.com/p/AF1QipPF6sG4Z6L1eFk_WYseCN6U55c_uEXcbVwIlOhk=s680-w680-h510"
     ],
-    "description": "Former heating plant canteen, now an industrial-style concert venue with a small outdoor area.",
+    "description": "Kantine am Berghain is a former heating plant canteen, now an industrial-style concert venue with a small outdoor area, part of the internationally renowned Berghain.",
     "mediaLinks": {
       "websiteUrl": "https://www.berghain.berlin/en/program/kantine-am-berghain"
     },
@@ -283,7 +283,7 @@
       "https://upload.wikimedia.org/wikipedia/commons/8/84/Verti_Music_Hall_inside_view.jpg",
       "https://pbs.twimg.com/media/FGNIEyXXIAMcssZ.png"
     ],
-    "description": "Verti Music Hall sets new standards for event venues of comparable size with regards to customer experience and production.",
+    "description": "Verti Music Hall sets new standards for event venues of comparable size with regards to customer experience and production. Berlin's largest ballroom or smallest stadium, the atmosphere of a club with a multitude of possibilities.",
     "mediaLinks": {
       "websiteUrl": "https://www.verti-music-hall.de/"
     },
@@ -322,7 +322,7 @@
       "websiteUrl": "https://www.admiralspalast.theater/"
     },
     "dates": [],
-    "capcaity": "1756"
+    "capacity": "1756"
   },
   {
     "name": "Batschkapp",
@@ -346,13 +346,13 @@
       "https://www.op-online.de/bilder/2013/12/10/3264680/1373357429-f8ea5b12-1716-430f-8195-b2a075192684-qKwdQ5lqefe.jpg",
       "https://www.frankfurt-tipp.de/fileadmin/_processed_/9/3/csm_Batschkappa_a9637dd834.jpg"
     ],
-    "description": "Batschkapp is a rock and pop concert venue in Gwinnerstraße in Seckbach.",
+    "description": "The Batschkapp cultural center, also simply called the Kapp in the scene jargon, is a rock club in Frankfurt am Main that is dedicated to the genre of alternative music.",
     "mediaLinks": {
       "facebookUrl": "https://www.facebook.com/batschkappffm/",
       "websiteUrl": "https://batschkapp.tickets.de/en/"
     },
     "dates": [],
-    "capcaity": 1500
+    "capacity": 1500
   },
   {
     "name": "Festhalle",
@@ -383,10 +383,10 @@
       "websiteUrl": "https://festhalle.messefrankfurt.com/frankfurt/de/veranstaltungen.html"
     },
     "dates": [],
-    "capcaity": 15000
+    "capacity": 15000
   },
   {
-    "name": "Culture and Congress Center Jahrhunderthalle GmbH",
+    "name": "Jahrhunderthalle Frankfurt",
     "email": "jahrhunderthalle@venu.com",
     "address": {
       "street": "Pfaffenwiese 301",
@@ -407,14 +407,14 @@
       "https://cdn.tomas-travel.com/nds/repository/NDS00020140003693383/TBX00020050000221441/NDS00020140020572941_sized_800_0.jpg",
       "https://www.myticket-jahrhunderthalle.de/media/1036/%C2%A9-ralf-loehr-rock-meets-classic-2011.jpg?center=0.60444444444444445,0.925&mode=crop&quality=45&width=2324&height=876&rnd=131706142300000000"
     ],
-    "description": "Modern, dome-shaped hall staging concerts, dance shows, musicals & other arts events.",
+    "description": "The Jahrhunderhalle Frankfurt is one of the largest private cultural initiatives in Europe and traditionally stands for unparalleled democratic cultural experiences. In many respects, the house sets standards not only in the field of popular culture. The Jarhunderhalle is considered to be the birthplace of Rock'n'Roll in Germany and in this tradition continues the history of the great stage moments in the live music sector today as 'Europe's most famous stage'.",
     "mediaLinks": {
       "facebookUrl": "https://www.facebook.com/myticketJahrhunderthalle",
       "instagramTag": "https://www.instagram.com/myticket_jahrhunderthalle/",
       "websiteUrl": "https://www.myticket-jahrhunderthalle.de/"
     },
     "dates": [],
-    "capcaity": 4800
+    "capacity": 4800
   },
   {
     "name": "Hugenottenhalle",
@@ -438,12 +438,12 @@
       "https://etmusic-4b58.kxcdn.com/wp-content/uploads/2018/12/Hugenottenhalle%E2%80%93Neu-Isenburg.jpg",
       "https://cdn.proticket.de/media/3357/huha_l4t4476_b.jpg"
     ],
-    "description": "Cultural center hosting concerts, touring drama & dance productions, plus private events.",
+    "description": "The Huggenottenhalle is the place for culture in Neu-Isenburg. This is where the big rock concerts take place, touring theaters make guest appearances, and dance and music are performed. The citizens are offered a comprehensive cultural program that covers all sectors.",
     "mediaLinks": {
       "websiteUrl": "https://hugenottenhalle.de/"
     },
     "dates": [],
-    "capcaity": 2000
+    "capacity": 2000
   },
   {
     "name": "Jazzkeller Frankfurt",
@@ -467,14 +467,14 @@
       "https://www.stadtrundfahrt.com/upload/system/experience/bb9dc64b8de4774995810a5c341c5473.jpg",
       "https://eventportal.imgix.net/public/uploads/7tWTaTrDOTUggfUuf5ColUO73poSi8K1AKmuKi0l.jpg?auto=compress%2Cformat&fit=crop&w=640"
     ],
-    "description": "Intimate, storied jazz club since 1952 with crafted cocktails & a nostalgic speakeasy feel.",
+    "description": "The Jazzkeller is a venue for jazz music in Frankfurt am Main, founded as a jazz club. It was founded as domicile du jazz in 1952 by trumpeter Carlo Bohländer in Frankfurt in the basement of Kleine Bockenheimer Strasse No. 18a and is just called 'the basement' by 'nitiates'. A narrow staircase with 19 stone steps leads down.",
     "mediaLinks": {
       "facebookUrl": "https://www.facebook.com/jazzkeller.frankfurt/",
       "instagramTag": "https://www.instagram.com/jazzkeller_frankfurt/",
       "websiteUrl": "https://www.jazzkeller.com/"
     },
     "dates": [],
-    "capcaity": 100
+    "capacity": 100
   },
   {
     "name": "Gewandhaus",
@@ -494,7 +494,7 @@
     "passwordConfirm": "test1234",
     "profileImage": "",
     "images": [],
-    "description": "Home to the Leipzig Gewandhaus Orchestra, now occupying its 3rd building, constructed in 1981.",
+    "description": "The Gewandhaus plays host to an extremely eclectic range of concerts and events, numbering approximately 800 per year. The artistic backbone of the Gewandhaus programme is formed by the concert series given by the Gewandhausorchester and the organ recitals in the Great hall. The Mendelssohn Hall provides an ideal ambience for the various chamber music series, as well as conferences, symposia, lectures and an enormous diversity of other events.",
     "mediaLinks": {
       "facebookUrl": "https://www.facebook.com/Gewandhausorchester/",
       "twitterTag": "https://twitter.com/Gewandhaus",
@@ -502,7 +502,7 @@
       "websiteUrl": "https://www.gewandhausorchester.de/"
     },
     "dates": [],
-    "capcaity": 1900
+    "capacity": 1900
   },
   {
     "name": "Felsenkeller Leipzig",
@@ -534,7 +534,7 @@
       "websiteUrl": "https://www.felsenkeller-leipzig.com/"
     },
     "dates": [],
-    "capcaity": 1700
+    "capacity": 1700
   },
   {
     "name": "Parkbühne",
@@ -565,7 +565,7 @@
       "websiteUrl": "https://www.parkbuehne-leipzig.com/wordpress/"
     },
     "dates": [],
-    "capcaity": 2000
+    "capacity": 2000
   },
   {
     "name": "Kupfersaal",
@@ -589,17 +589,17 @@
       "https://dam.destination.one/924156/16ac73781c16fd1d73ec496bbe417b2d153b9c13a68258aff937bed63081df0f/.jpg",
       "https://9968c6ef49dc043599a5-e151928c3d69a5a4a2d07a8bf3efa90a.ssl.cf2.rackcdn.com/1171500-1.jpg"
     ],
-    "description": "",
+    "description": "The Kupfersaal is part of the Dresdner Passage and is located between the Leipzig market square and the campus of the University of Leipzig right in the center of Leipzig. It is used as a stage and venue and serves, among other things, as a permanent venue for the Philharmonie Leipzig. The hall offers space for over 500 guests and promises a unique program of diverse classical music, urban live literature, podcasts and concerts.",
     "mediaLinks": {
       "facebookUrl": "https://www.facebook.com/Kupfersaal/",
       "instagramTag": "https://www.instagram.com/kupfersaal/",
       "websiteUrl": "https://www.kupfersaal.de/"
     },
     "dates": [],
-    "capcaity": 560
+    "capacity": 560
   },
   {
-    "name": "Spizz",
+    "name": "Spizz Keller",
     "email": "spizz@venu.com",
     "address": {
       "street": "Markt 9",
@@ -620,13 +620,13 @@
       "https://www.spizz-leipzig.de/media/spizz/spizz03.jpg",
       "https://www.spizz-leipzig.de/media/spizz/spizz04.jpg"
     ],
-    "description": "Breakfast, burgers & bistro dishes at a polished bar/restaurant with DJs & live jazz in the cellar.",
+    "description": "Breakfast, burgers & bistro dishes at a polished bar/restaurant with DJs & live jazz in the cellar. The legendary jazz and music club has been one of the hip spots in Leipzig for many years, offering international music ranging from jazz to rock and pop.",
     "mediaLinks": {
       "facebookUrl": "https://www.facebook.com/SPIZZ.Leipzig/",
       "twitterTag": "https://mobile.twitter.com/spizz_leipzig",
       "websiteUrl": "spizz-leipzig.de"
     },
     "dates": [],
-    "capcaity": 100
+    "capacity": 100
   }
 ]

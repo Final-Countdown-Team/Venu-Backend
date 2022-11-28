@@ -1,6 +1,9 @@
 import express from "express";
 
-import { getArtist, getAllArtists } from "../controllers/artistController.js";
+import {
+  getArtist,
+  getAllArtists,
+} from "../controllers/artistController.js";
 import {
   forgotPassword,
   login,
@@ -11,11 +14,12 @@ import {
   signup,
   updatePassword,
 } from "../controllers/authController.js";
-import { deleteMe, getMe, updateMe } from "../controllers/userController.js";
 import {
-  processProfileImage,
-  uploadProfileImage,
-} from "../utils/imageUploads.js";
+  deleteMe,
+  getMe,
+  updateMe,
+} from "../controllers/userController.js";
+import { processImages, uploadImages } from "../utils/imageUploads.js";
 import Artist from "../models/artistModel.js";
 
 const router = express.Router();
@@ -39,8 +43,8 @@ router.get("/user/me", getMe, getArtist);
 router.patch("/user/updateMyPassword", updatePassword(Artist));
 router.patch(
   "/user/updateMe",
-  uploadProfileImage,
-  processProfileImage,
+  uploadImages,
+  processImages,
   updateMe(Artist)
 );
 router.delete("/user/deleteMe", deleteMe(Artist));

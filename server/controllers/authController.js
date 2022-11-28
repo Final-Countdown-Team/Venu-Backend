@@ -1,13 +1,13 @@
-import jwt from 'jsonwebtoken';
-import { promisify } from 'util';
-import bcrypt from 'bcryptjs';
-import crypto from 'crypto';
+import jwt from "jsonwebtoken";
+import { promisify } from "util";
+import bcrypt from "bcryptjs";
+import crypto from "crypto";
 
-import Venue from '../models/venueModel.js';
-import Artist from '../models/artistModel.js';
-import sendEmail from '../utils/sendEmail.js';
-import catchAsync from '../utils/catchAsync.js';
-import AppError from '../utils/appError.js';
+import Venue from "../models/venueModel.js";
+import Artist from "../models/artistModel.js";
+import sendEmail from "../utils/sendEmail.js";
+import catchAsync from "../utils/catchAsync.js";
+import AppError from "../utils/appError.js";
 
 const signToken = (id) =>
   jwt.sign({ id: id }, process.env.JWT_SECRET, {
@@ -23,11 +23,11 @@ const createSendToken = (user, statusCode, res) => {
     httpOnly: true,
   };
   // if (process.env.NODE_ENV === 'production') cookieOptions.secure = true;
-  res.cookie('jwt', token, cookieOptions);
+  res.cookie("jwt", token, cookieOptions);
   // Remove the password form the output
   user.password = undefined;
   res.status(statusCode).json({
-    status: 'success',
+    status: "success",
     token,
     data: user,
   });
@@ -64,18 +64,18 @@ export const login = (Model) =>
     const { email, password } = req.body;
 
     if (!email || !password)
-      throw new AppError('Please provide email and password', 400);
+      throw new AppError("Please provide email and password", 400);
 
-    const user = await Model.findOne({ email }).select('+password');
+    const user = await Model.findOne({ email }).select("+password");
 
     if (!user || !(await user.correctPassword(password)))
-      throw new AppError('Incorrect email or password', 401);
+      throw new AppError("Incorrect email or password", 401);
 
     createSendToken(user, 200, res);
   });
 // LOG OUT
 export const logout = (req, res) => {
-  res.clearCookie('jwt').status(200).json({ status: 'success' });
+  res.clearCookie("jwt").status(200).json({ status: "success" });
 };
 
 // PROTECT ROUTE MIDDLEWARE
@@ -84,27 +84,33 @@ export const protect = (Model) =>
     let token;
     const authHeader = req.headers.authorization;
     // Check if token is stored in req.header or in a cookie
-    if (authHeader && authHeader.startsWith('Bearer')) {
-      token = authHeader.split(' ')[1];
+    if (authHeader && authHeader.startsWith("Bearer")) {
+      token = authHeader.split(" ")[1];
     } else if (req.cookies.jwt) {
       token = req.cookies.jwt;
     }
-    if (!token) throw new AppError('Please log in to get access', 401);
+    if (!token) throw new AppError("Please log in to get access", 401);
 
     // Validate token
-    const decoded = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
+    const decoded = await promisify(jwt.verify)(
+      token,
+      process.env.JWT_SECRET
+    );
     // Check if document still exists
     const currentUser = await Model.findById(decoded.id);
     if (!currentUser)
       throw new AppError(
-        'The user does no longer exists or you do not have permission to enter this site',
+        "The user does no longer exists or you do not have permission to enter this site",
         404
       );
     // NOT WORKING BECAUSE OF DAYLIGHT SAVING TIMES
     // Check if user changed password after token was issued
     if (currentUser.changedPasswordAfter(decoded.iat)) {
       return next(
-        new AppError('User recently changed password. Please login again!', 401)
+        new AppError(
+          "User recently changed password. Please login again!",
+          401
+        )
       );
     }
     // Grant access to protected route
@@ -118,7 +124,7 @@ export const restrictTo = (type) => {
   return (req, res, next) => {
     if (!type.includes(req.user.type)) {
       throw new AppError(
-        'You do not have permission to perform this action',
+        "You do not have permission to perform this action",
         403
       );
     }
@@ -130,7 +136,7 @@ export const restrictTo = (type) => {
 export const forgotPassword = (Model) =>
   catchAsync(async (req, res, next) => {
     const user = await Model.findOne({ email: req.body.email });
-    if (!user) throw new AppError('No user found', 404);
+    if (!user) throw new AppError("No user found", 404);
 
     // Generate reset token
     const resetToken = user.createPasswordResetToken();
@@ -140,7 +146,7 @@ export const forgotPassword = (Model) =>
     const modelURLString = Model.collection.collectionName;
 
     const resetURL = `${req.protocol}://${req.get(
-      'host'
+      "host"
     )}/${modelURLString}/resetPassword/${resetToken}`;
 
     const message = `Forgot your password? Submit a PATCH request with your new password and passwordConfirm to: \n\n${resetURL}\n\nIf you did't forget your password, please ignore this email! `;
@@ -159,11 +165,11 @@ export const forgotPassword = (Model) =>
       user.passwordResetExpires = undefined;
       await user.save({ validateBeforeSave: false });
 
-      throw new AppError('An error occured sending the email', 500);
+      throw new AppError("An error occured sending the email", 500);
     }
     res.status(200).json({
-      status: 'success',
-      message: 'Token sent to email',
+      status: "success",
+      message: "Token sent to email",
     });
   });
 
@@ -172,15 +178,15 @@ export const resetPassword = (Model) =>
   catchAsync(async (req, res, next) => {
     // Hash resetToken to compare it to hashed token stored in database
     const hashedToken = crypto
-      .createHash('sha256')
+      .createHash("sha256")
       .update(req.params.token)
-      .digest('hex');
+      .digest("hex");
     // Find user based on hashed token and check if token has not yet expired
     const user = await Model.findOne({
       passwordResetToken: hashedToken,
       passwordResetExpires: { $gt: Date.now() },
     });
-    if (!user) throw new AppError('Token is invalid or has expired', 400);
+    if (!user) throw new AppError("Token is invalid or has expired", 400);
 
     user.password = req.body.password;
     user.passwordConfirm = req.body.passwordConfirm;
@@ -196,10 +202,10 @@ export const resetPassword = (Model) =>
 export const updatePassword = (Model) =>
   catchAsync(async (req, res, next) => {
     // We get access to req.user from our protect middleware
-    const user = await Model.findById(req.user.id).select('+password');
+    const user = await Model.findById(req.user.id).select("+password");
     // Check if current password is correct
     if (!(await bcrypt.compare(req.body.passwordCurrent, user.password)))
-      throw new AppError('Your current password is invalid', 401);
+      throw new AppError("Your current password is invalid", 401);
     // Update password
     user.password = req.body.password;
     user.passwordConfirm = req.body.passwordConfirm;
