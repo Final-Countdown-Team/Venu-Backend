@@ -25,7 +25,10 @@ const venueSchema = mongoose.Schema(
       type: String,
       required: [true, "Please enter your email address"],
       lowercase: true,
-      validate: [validator.isEmail, "Please provide a valid email address"],
+      validate: [
+        validator.isEmail,
+        "Please provide a valid email address",
+      ],
       unique: true,
       trim: true,
     },
@@ -78,7 +81,8 @@ const venueSchema = mongoose.Schema(
     },
     profileImage: {
       type: String,
-      default: "default.jpeg",
+      default:
+        "https://res.cloudinary.com/dpfykfp1m/image/upload/v1669645444/venu/default_profileImage/default_user_small_smuxut.png",
     },
     images: {
       type: [String],
@@ -157,6 +161,7 @@ venueSchema.pre("save", function (next) {
 
 // VIRTUAL PROPERTIES
 venueSchema.virtual("availability").get(function () {
+  if (!this.dates) return;
   return this.dates.length >= 1;
 });
 
