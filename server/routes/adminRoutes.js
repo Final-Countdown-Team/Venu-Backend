@@ -8,7 +8,6 @@ import {
   protect,
   resetPassword,
   restrictTo,
-  signup,
   updatePassword,
 } from "../controllers/authController.js";
 import {
@@ -16,7 +15,11 @@ import {
   getAdmin,
   getAdmins,
 } from "../controllers/adminController.js";
-import { deleteMe, getMe, updateMe } from "../controllers/userController.js";
+import {
+  deleteMe,
+  getMe,
+  updateMe,
+} from "../controllers/userController.js";
 import {
   createVenue,
   deleteVenue,

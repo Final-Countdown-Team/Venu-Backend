@@ -25,7 +25,7 @@ import Artist from "../models/artistModel.js";
 const router = express.Router();
 
 // PUBLIC ROUTES
-router.post("/signup", signup(Artist));
+router.post("/signup", uploadImages, processImages, signup(Artist));
 router.post("/login", login(Artist));
 router.get("/logout", logout);
 
