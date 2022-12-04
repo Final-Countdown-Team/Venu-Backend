@@ -23,7 +23,7 @@ import { processImages, uploadImages } from "../utils/imageUploads.js";
 const router = express.Router();
 
 // PUBLIC ROUTES
-router.post("/signup", signup(Venue));
+router.post("/signup", uploadImages, processImages, signup(Venue));
 router.post("/login", login(Venue));
 router.get("/logout", logout);
 

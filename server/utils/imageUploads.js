@@ -23,7 +23,7 @@ export const uploadImages = upload.fields([
 ]);
 
 export const processImages = async (req, res, next) => {
-  if (!req.files.profileImage || !req.files.images) return next();
+  if (!req?.files?.profileImage || !req?.files?.images) return next();
   // 1) PROFILE IMAGES
   /* Setting custom filename for user profileImage
   each user is only allowed to have 1 profile iamge in the cloud */
