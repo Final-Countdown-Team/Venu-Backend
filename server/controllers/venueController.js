@@ -7,6 +7,7 @@ export const getAllVenues = catchAsync(async (req, res, next) => {
   const features = new APIFeatures(Venue.find({}), req.query)
     .searchName()
     .searchZipCode()
+    .searchDates()
     .sort()
     .limitFields()
     .paginate()
