@@ -27,6 +27,16 @@ class APIFeatures {
     return this;
   }
 
+  searchGenre() {
+    if (this.queryString.genre) {
+      console.log(this.queryString.genre);
+      this.mongoQuery = this.mongoQuery.find({
+        genre: this.queryString.genre,
+      });
+    }
+    return this;
+  }
+
   searchDates() {
     if (this.queryString.dates) {
       console.log(this.queryString.dates);
@@ -73,11 +83,9 @@ class APIFeatures {
   getWithinDistance() {
     if (this.queryString.distance && this.queryString.center) {
       const latLng = this.queryString.center.split(",");
-
       const radius = this.queryString.distance / 6378.1;
 
       const [lat, lng] = latLng;
-      console.log(lat, lng);
 
       if (!lat || !lng) {
         throw new AppError(
