@@ -42,7 +42,6 @@ export const signup = (Model) =>
       email: req.body.email,
       address: req.body.address,
       location: req.body.location,
-      availability: req.body.availability,
       password: req.body.password,
       passwordConfirm: req.body.passwordConfirm,
       profileImage: req.body.profileImage,
@@ -51,7 +50,10 @@ export const signup = (Model) =>
       mediaLinks: req.body.mediaLink,
       dates: req.body.dates,
     };
-    if (Model === Artist) body.genre = req.body.genre;
+    if (Model === Artist) {
+      body.genre = req.body.genre;
+      body.members = req.body.members;
+    }
     if (Model === Venue) body.capacity = req.body.capacity;
 
     const user = await Model.create(body);
