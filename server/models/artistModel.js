@@ -115,7 +115,6 @@ const artistSchema = mongoose.Schema(
         "Schlager",
         "Singer-Songwriter",
       ],
-      required: [true, "Please provide a genre"],
     },
     dates: [Date],
     members: {

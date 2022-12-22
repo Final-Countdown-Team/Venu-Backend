@@ -8,8 +8,8 @@ export const getAllArtists = catchAsync(async (req, res, next) => {
     .searchName()
     .searchZipCode()
     .searchDates()
-    .searchGenre()
     .sort()
+    .searchGenre()
     .limitFields()
     .paginate()
     .getWithinDistance();
