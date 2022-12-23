@@ -145,23 +145,27 @@ export const forgotPassword = (Model) =>
     await user.save({ validateBeforeSave: false });
 
     // Send un-hashed reset token to user's email
-    const modelURLString = Model.collection.collectionName;
+    // const modelURLString = Model.collection.collectionName;
+    // const resetURL = `${req.protocol}://${req.get(
+    //   "host"
+    // )}/${modelURLString}/resetPassword/${resetToken}`;
+    // const message = `Howdy! You forgot your password? Don't worry, use the link below to reset it. The link expires in 10 minutes. Submit a PATCH request with your new password and passwordConfirm to: \n\n${resetURL}\n\nIf you did't forget your password, please ignore this email! `;
 
-    const resetURL = `${req.protocol}://${req.get(
-      "host"
-    )}/${modelURLString}/resetPassword/${resetToken}`;
-
-    const message = `Forgot your password? Submit a PATCH request with your new password and passwordConfirm to: \n\n${resetURL}\n\nIf you did't forget your password, please ignore this email! `;
+    const buttonColor = user.type === "artist" ? "#0168b5" : "#b02476";
 
     try {
-      // await sendEmail({
-      //   email: user.email,
-      //   subject: 'Your password reset token (valid for 10 minutes)',
-      //   message,
-      // });
+      await sendEmail({
+        template: "/forgotPasswordEmail.html",
+        name: user.name,
+        type: user.type,
+        token: resetToken,
+        buttonColor: buttonColor,
+        email: user.email,
+        subject: "Your password reset token (valid for 10 minutes)",
+      });
 
       // Nodemailer works, but I'm sending it to mailtrap, which is only registered to my github account and I cannot invite any team members. So before setting up mailgun for production, we simply log the email to the console here.
-      console.log(message);
+      // console.log(message);
     } catch (err) {
       user.passwordResetToken = undefined;
       user.passwordResetExpires = undefined;
