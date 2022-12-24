@@ -17,11 +17,20 @@ class APIFeatures {
     return this;
   }
 
-  searchZipCode() {
-    if (this.queryString.zipcode) {
-      console.log(this.queryString.zipcode);
+  // searchZipCode() {
+  //   if (this.queryString.zipcode) {
+  //     console.log(this.queryString.zipcode);
+  //     this.mongoQuery = this.mongoQuery.find({
+  //       "address.zipcode": this.queryString.zipcode,
+  //     });
+  //   }
+  //   return this;
+  // }
+
+  searchCity() {
+    if (this.queryString.city) {
       this.mongoQuery = this.mongoQuery.find({
-        "address.zipcode": this.queryString.zipcode,
+        "address.city": this.queryString.city,
       });
     }
     return this;

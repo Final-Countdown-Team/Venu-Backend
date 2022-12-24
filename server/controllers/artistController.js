@@ -6,7 +6,7 @@ import catchAsync from "../utils/catchAsync.js";
 export const getAllArtists = catchAsync(async (req, res, next) => {
   const features = new APIFeatures(Artist.find({}), req.query)
     .searchName()
-    .searchZipCode()
+    .searchCity()
     .searchDates()
     .searchGenre()
     .sort()
