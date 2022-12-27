@@ -21,6 +21,7 @@ const createSendToken = (user, statusCode, res) => {
       Date.now() + process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000
     ),
     httpOnly: true,
+    sameSite: "lax",
   };
   // if (process.env.NODE_ENV === 'production') cookieOptions.secure = true;
   res.cookie("jwt", token, cookieOptions);
@@ -105,7 +106,6 @@ export const protect = (Model) =>
         "The user does no longer exists or you do not have permission to enter this site",
         404
       );
-    // NOT WORKING BECAUSE OF DAYLIGHT SAVING TIMES
     // Check if user changed password after token was issued
     if (currentUser.changedPasswordAfter(decoded.iat)) {
       return next(
