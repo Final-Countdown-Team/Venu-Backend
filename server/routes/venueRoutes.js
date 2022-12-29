@@ -31,12 +31,12 @@ router.post("/forgotPassword", forgotPassword(Venue));
 router.patch("/resetPassword/:token", resetPassword(Venue));
 
 router.get("/", getAllVenues);
-router.get("/:id", getVenue);
 
 // PROTECTED AND RESTRICTED ROUTES
 router.use(protect(Venue));
 router.use(restrictTo("venue"));
 
+router.get("/:id", getVenue);
 router.get("/user/me", getMe, getVenue);
 router.patch("/user/updateMyPassword", updatePassword(Venue));
 router.patch(

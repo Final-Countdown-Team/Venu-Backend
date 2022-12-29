@@ -33,12 +33,12 @@ router.post("/forgotPassword", forgotPassword(Artist));
 router.patch("/resetPassword/:token", resetPassword(Artist));
 
 router.get("/", getAllArtists);
-router.get("/:id", getArtist);
 
 // PROTECTED AND RESTRICTED ROUTES
 router.use(protect(Artist));
 router.use(restrictTo("artist"));
 
+router.get("/:id", getArtist);
 router.get("/user/me", getMe, getArtist);
 router.patch("/user/updateMyPassword", updatePassword(Artist));
 router.patch(
