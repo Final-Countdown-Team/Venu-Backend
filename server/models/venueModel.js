@@ -13,8 +13,8 @@ const venueSchema = mongoose.Schema(
   {
     type: {
       type: String,
-      enum: ["venue"],
-      default: "venue",
+      enum: ["venues"],
+      default: "venues",
     },
     name: {
       type: String,

@@ -48,7 +48,7 @@ export const signup = (Model) =>
       profileImage: req.body.profileImage,
       images: req.body.images,
       description: req.body.description,
-      mediaLinks: req.body.mediaLink,
+      mediaLinks: req.body.mediaLinks,
       dates: req.body.dates,
     };
     if (Model === Artist) {

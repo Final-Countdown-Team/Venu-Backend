@@ -13,8 +13,8 @@ const artistSchema = mongoose.Schema(
   {
     type: {
       type: String,
-      enum: ["artist"],
-      default: "artist",
+      enum: ["artists"],
+      default: "artists",
     },
     name: {
       type: String,

@@ -36,7 +36,7 @@ router.get("/", getAllArtists);
 
 // PROTECTED AND RESTRICTED ROUTES
 router.use(protect(Artist));
-router.use(restrictTo("artist"));
+router.use(restrictTo("artists"));
 
 router.get("/:id", getArtist);
 router.get("/user/me", getMe, getArtist);
