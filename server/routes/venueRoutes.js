@@ -34,7 +34,7 @@ router.get("/", getAllVenues);
 
 // PROTECTED AND RESTRICTED ROUTES
 router.use(protect(Venue));
-router.use(restrictTo("venues"));
+// router.use(restrictTo("venues"));
 
 router.get("/:id", getVenue);
 router.get("/user/me", getMe, getVenue);

@@ -84,6 +84,7 @@ export const logout = (req, res) => {
 // PROTECT ROUTE MIDDLEWARE
 export const protect = (Model) =>
   catchAsync(async (req, res, next) => {
+    console.log(req);
     let token;
     const authHeader = req.headers.authorization;
     // Check if token is stored in req.header or in a cookie
@@ -99,8 +100,14 @@ export const protect = (Model) =>
       token,
       process.env.JWT_SECRET
     );
+    console.log(decoded);
+    console.log(Model);
     // Check if document still exists
-    const currentUser = await Model.findById(decoded.id);
+    //NEEDS TO BE FIXED
+    let currentUser;
+    currentUser = await Venue.findById(decoded.id);
+    if (!currentUser) currentUser = await Artist.findById(decoded.id);
+
     if (!currentUser)
       throw new AppError(
         "The user does no longer exists or you do not have permission to enter this site",
