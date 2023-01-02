@@ -492,8 +492,12 @@
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
-    "profileImage": "",
-    "images": [],
+    "profileImage": "https://upload.wikimedia.org/wikipedia/commons/6/60/Das_Gewandhaus_und_der_Mendebrunnen_in_Leipzig_bei_Nacht.jpg",
+    "images": [
+      "https://www.bachfestleipzig.de/sites/default/files/bach_db/venues/Leipzig_Gewandhaus_Grosser_Saal.jpg",
+      "https://i0.wp.com/www.saturova.com/wp-content/uploads/2015/12/Gewandhausorchester-Leipzig-2013.jpg",
+      "https://osterfestspiele.at/files/2023/Gewandhaus-Nelsons/_AUTOx1920_crop_center-center_75_none/Nelsons_Gewandhaus_032_Marco_Borggreve.jpg"
+    ],
     "description": "The Gewandhaus plays host to an extremely eclectic range of concerts and events, numbering approximately 800 per year. The artistic backbone of the Gewandhaus programme is formed by the concert series given by the Gewandhausorchester and the organ recitals in the Great hall. The Mendelssohn Hall provides an ideal ambience for the various chamber music series, as well as conferences, symposia, lectures and an enormous diversity of other events.",
     "mediaLinks": {
       "facebookUrl": "https://www.facebook.com/Gewandhausorchester/",
@@ -520,7 +524,7 @@
     },
     "password": "test1234",
     "passwordConfirm": "test1234",
-    "profileImage": "https://upload.wikimedia.org/wikipedia/commons/6/60/Das_Gewandhaus_und_der_Mendebrunnen_in_Leipzig_bei_Nacht.jpg",
+    "profileImage": "https://www.sg-development.de/wp-content/uploads/2020/04/felsenkeller_107.jpg",
     "images": [
       "https://www.bachfestleipzig.de/sites/default/files/bach_db/venues/Leipzig_Gewandhaus_Grosser_Saal.jpg",
       "https://i0.wp.com/www.saturova.com/wp-content/uploads/2015/12/Gewandhausorchester-Leipzig-2013.jpg",
