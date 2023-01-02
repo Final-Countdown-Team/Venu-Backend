@@ -82,9 +82,8 @@ export const logout = (req, res) => {
 };
 
 // PROTECT ROUTE MIDDLEWARE
-export const protect = (Model) =>
+export const protect = (Model1, Model2) =>
   catchAsync(async (req, res, next) => {
-    console.log(req);
     let token;
     const authHeader = req.headers.authorization;
     // Check if token is stored in req.header or in a cookie
@@ -101,12 +100,12 @@ export const protect = (Model) =>
       process.env.JWT_SECRET
     );
     console.log(decoded);
-    console.log(Model);
     // Check if document still exists
     //NEEDS TO BE FIXED
     let currentUser;
-    currentUser = await Venue.findById(decoded.id);
-    if (!currentUser) currentUser = await Artist.findById(decoded.id);
+    currentUser = await Model1.findById(decoded.id);
+    if (!currentUser && Model2)
+      currentUser = await Model2.findById(decoded.id);
 
     if (!currentUser)
       throw new AppError(
@@ -129,7 +128,7 @@ export const protect = (Model) =>
 
 // RESTRICT MIDDLEWARE
 export const restrictTo = (type) => {
-  // type is either 'artist' or 'venue'
+  // type is either 'artists' or 'venues'
   return (req, res, next) => {
     if (!type.includes(req.user.type)) {
       throw new AppError(
@@ -215,7 +214,8 @@ export const resetPassword = (Model) =>
 export const updatePassword = (Model) =>
   catchAsync(async (req, res, next) => {
     // We get access to req.user from our protect middleware
-    const user = await Model.findById(req.user.id).select("+password");
+    console.log(req.user);
+    const user = await Model.findById(req.user._id).select("+password");
     // Check if current password is correct
     if (!(await bcrypt.compare(req.body.passwordCurrent, user.password)))
       throw new AppError("Your current password is invalid", 401);
