@@ -17,6 +17,7 @@ import {
 } from "../controllers/userController.js";
 import { getAllVenues, getVenue } from "../controllers/venueController.js";
 import Admin from "../models/adminModel.js";
+import Artist from "../models/artistModel.js";
 import Venue from "../models/venueModel.js";
 import { processImages, uploadImages } from "../utils/imageUploads.js";
 
@@ -32,11 +33,14 @@ router.patch("/resetPassword/:token", resetPassword(Venue));
 
 router.get("/", getAllVenues);
 
+// PROTECT FROM UNAUTHORIZED USERS
+router.use(protect(Venue, Artist));
+router.get("/:id", getVenue);
+
 // PROTECTED AND RESTRICTED ROUTES
 router.use(protect(Venue));
-// router.use(restrictTo("venues"));
+router.use(restrictTo("venues"));
 
-router.get("/:id", getVenue);
 router.get("/user/me", getMe, getVenue);
 router.patch("/user/updateMyPassword", updatePassword(Venue));
 router.patch(

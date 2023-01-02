@@ -54,7 +54,7 @@ export const updateMe = (Model) =>
 // DELETE ME
 export const deleteMe = (Model) =>
   catchAsync(async (req, res, next) => {
-    await Model.findByIdAndUpdate(req.user.id, { active: false });
+    await Model.findByIdAndUpdate(req.user._id, { active: false });
     res.status(204).json({
       status: "success",
       data: null,

@@ -16,8 +16,6 @@ export const getAllArtists = catchAsync(async (req, res, next) => {
 
   const artists = await features.mongoQuery;
 
-  console.log(artists);
-
   res.status(200).json({
     status: "success",
     results: artists.length,
@@ -71,7 +69,6 @@ export const updateArtist = catchAsync(async (req, res, next) => {
 });
 
 export const deleteArtist = catchAsync(async (req, res, next) => {
-  const { id } = req.params;
   const artist = await Artist.findByIdAndDelete(id);
 
   if (!artist) throw new AppError("No artist found with that ID", 404);
