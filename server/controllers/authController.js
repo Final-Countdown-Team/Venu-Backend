@@ -99,7 +99,6 @@ export const protect = (Model1, Model2) =>
       token,
       process.env.JWT_SECRET
     );
-    console.log(decoded);
     // Check if document still exists
     //NEEDS TO BE FIXED
     let currentUser;

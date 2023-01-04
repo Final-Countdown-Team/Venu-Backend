@@ -30,12 +30,33 @@ export const updateMe = (Model) =>
       req.body,
       "active",
       "type",
+      "images",
       "createdAt",
       "passwordChangedAt",
       "passwordResetToken",
       "passwordResetExpires"
     );
     //Update User
+    const user = await Model.findById(req.user._id);
+    // Merge the two arrays to prevent overwriting images
+    console.log(req.body.images);
+    if (req.body.images) {
+      const mergedImages = req.body.images
+        .map((image, i) => {
+          if (image === "delete-me") {
+            return `empty-${i}`;
+          } else if (image === "") {
+            return user.images[i] || `empty-${i}`;
+          } else {
+            return image;
+          }
+        })
+        .filter((el) => el !== "");
+      filteredBody.images = mergedImages;
+      console.log("Merged images: ", mergedImages);
+      console.log("user images: ", user.images);
+    }
+    console.log("Filtered body: ", filteredBody);
     const updatedUser = await Model.findByIdAndUpdate(
       req.user._id,
       filteredBody,

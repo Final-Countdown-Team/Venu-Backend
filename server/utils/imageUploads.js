@@ -23,44 +23,67 @@ export const uploadImages = upload.fields([
 ]);
 
 export const processImages = async (req, res, next) => {
-  if (!req?.files?.profileImage || !req?.files?.images) return next();
-  // 1) PROFILE IMAGES
-  /* Setting custom filename for user profileImage
-  each user is only allowed to have 1 profile iamge in the cloud */
-  const profileImageName = `${req.user.name}-${req.user._id}`;
+  // if (!req?.files?.profileImage && !req?.files?.images) return next();
+  if (req?.files?.profileImage) {
+    console.log("Uploading profileImage...");
+    // 1) PROFILE IMAGES
+    /* Setting custom filename for user profileImage
+    each user is only allowed to have 1 profile iamge in the cloud */
+    const profileImageName = `${req.user.name}-${req.user._id}`;
 
-  const parser = new Datauri();
+    const parser = new Datauri();
 
-  const imagePath = parser.format(
-    profileImageName,
-    req.files.profileImage[0].buffer
-  );
+    const imagePath = parser.format(
+      profileImageName,
+      req.files.profileImage[0].buffer
+    );
+    const result = await cloudinary.uploader.upload(imagePath.content, {
+      public_id: imagePath.fileName,
+      folder: `venu/users/${req.user.email}/profileImages`,
+      overwrite: true,
+    });
+    console.log(result);
 
-  const result = await cloudinary.uploader.upload(imagePath.content, {
-    public_id: imagePath.fileName,
-    folder: `venu/users/${req.user.name}/profileImages`,
-    overwrite: true,
-  });
+    req.body.profileImage = result.url;
+  }
 
-  req.body.profileImage = result.url;
+  if (req?.files?.images) {
+    console.log("Uploading images...");
+    req.body.images = new Array(3).fill("");
+    console.log(req.body.images);
 
-  req.body.images = [];
+    await Promise.all(
+      req.files.images.map(async (file, i) => {
+        try {
+          // Get the index where the new image should be inserted in the array
+          const replaceAt = +file.originalname.charAt(
+            file.originalname.length - 1
+          );
+          if (file.originalname.includes("delete-me")) {
+            req.body.images.splice(replaceAt, 1, "delete-me");
+            return;
+          } else {
+            const filename = `image-${replaceAt}-${req.user.name}-${req.user._id}`;
 
-  await Promise.all(
-    req.files.images.map(async (file, i) => {
-      const filename = `image-${i}-${req.user.name}-${req.user._id}`;
+            const parser = new Datauri();
+            const filePath = parser.format(filename, file.buffer);
 
-      const parser = new Datauri();
-      const filePath = parser.format(filename, file.buffer);
-
-      const result = await cloudinary.uploader.upload(filePath.content, {
-        public_id: filePath.fileName,
-        folder: `venu/users/${req.user.name}/images`,
-        overwrite: true,
-      });
-      req.body.images.push(result.url);
-    })
-  );
-
+            const result = await cloudinary.uploader.upload(
+              filePath.content,
+              {
+                public_id: filePath.fileName,
+                folder: `venu/${req.user.type}/${req.user.email}/images`,
+                overwrite: true,
+              }
+            );
+            // Insert the uploaded image at the right position
+            req.body.images.splice(replaceAt, 1, result.url);
+          }
+        } catch (err) {
+          console.error(err);
+        }
+      })
+    );
+  }
   next();
 };
