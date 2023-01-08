@@ -1,5 +1,8 @@
 import AppError from "../utils/appError.js";
 import catchAsync from "../utils/catchAsync.js";
+import Artist from "../models/artistModel.js";
+import Venue from "../models/venueModel.js";
+import Email from "../utils/sendEmail.js";
 
 // Get middleware, forwards to getVenue or getArtists controller in routes
 export const getMe = (req, res, next) => {
@@ -14,6 +17,23 @@ const filterObj = (obj, ...notAllowedFields) => {
     if (!notAllowedFields.includes(el)) newObj[el] = obj[el];
   });
   return newObj;
+};
+
+// CONTACT USER
+export const contactUser = (Model) => {
+  catchAsync(async (req, res, next) => {
+    const contactForm = {
+      firstname: req.body.firstname,
+      date: req.body.date,
+      message: req.body.message,
+    };
+    const receiver = await Model.findById(req.params.id);
+    const sender = req.user;
+    try {
+      const confirmDateURL = `${req.protocol}://192.168.0.129:3000/me/editProfile`;
+      await new Email();
+    } catch (err) {}
+  });
 };
 
 // UPDATE ME
@@ -75,9 +95,29 @@ export const updateMe = (Model) =>
 // DELETE ME
 export const deleteMe = (Model) =>
   catchAsync(async (req, res, next) => {
+    try {
+      const reactivateURL = `${req.protocol}://192.168.0.129:3000/${req.user.type}/reactivateAccount/${req.user._id}`;
+      await new Email(req.user, reactivateURL).sendGoodbye();
+    } catch (err) {
+      console.error(err);
+      throw new AppError("An error occured sending the email", 500);
+    }
     await Model.findByIdAndUpdate(req.user._id, { active: false });
     res.status(204).json({
       status: "success",
       data: null,
+    });
+  });
+
+// REACTIVATE ACCOUNT
+export const reactivateAccount = (Model) =>
+  catchAsync(async (req, res, next) => {
+    const user = await Model.updateOne(
+      { _id: req.params.id },
+      { active: true }
+    );
+    res.status(204).json({
+      status: "success",
+      msg: "Successfully reactivated account",
     });
   });

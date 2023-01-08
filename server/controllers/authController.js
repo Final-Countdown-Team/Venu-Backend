@@ -5,7 +5,7 @@ import crypto from "crypto";
 
 import Venue from "../models/venueModel.js";
 import Artist from "../models/artistModel.js";
-import sendEmail from "../utils/sendEmail.js";
+import Email from "../utils/sendEmail.js";
 import catchAsync from "../utils/catchAsync.js";
 import AppError from "../utils/appError.js";
 
@@ -56,8 +56,14 @@ export const signup = (Model) =>
       body.members = req.body.members;
     }
     if (Model === Venue) body.capacity = req.body.capacity;
-
     const user = await Model.create(body);
+
+    try {
+      const profileEditURL = `${req.protocol}://192.168.0.129:3000/me/editProfile`;
+      await new Email(user, profileEditURL).sendWelcome();
+    } catch (err) {
+      throw new AppError("An error occured sending the email", 500);
+    }
 
     createSendToken(user, 201, res);
   });
@@ -148,6 +154,7 @@ export const forgotPassword = (Model) =>
     // Generate reset token
     const resetToken = user.createPasswordResetToken();
     await user.save({ validateBeforeSave: false });
+    console.log(user);
 
     // Send un-hashed reset token to user's email
     // const modelURLString = Model.collection.collectionName;
@@ -156,21 +163,9 @@ export const forgotPassword = (Model) =>
     // )}/${modelURLString}/resetPassword/${resetToken}`;
     // const message = `Howdy! You forgot your password? Don't worry, use the link below to reset it. The link expires in 10 minutes. Submit a PATCH request with your new password and passwordConfirm to: \n\n${resetURL}\n\nIf you did't forget your password, please ignore this email! `;
 
-    const buttonColor = user.type === "artist" ? "#0168b5" : "#b02476";
-
     try {
-      await sendEmail({
-        template: "/forgotPasswordEmail.html",
-        name: user.name,
-        type: user.type,
-        token: resetToken,
-        buttonColor: buttonColor,
-        email: user.email,
-        subject: "Your password reset token (valid for 10 minutes)",
-      });
-
-      // Nodemailer works, but I'm sending it to mailtrap, which is only registered to my github account and I cannot invite any team members. So before setting up mailgun for production, we simply log the email to the console here.
-      // console.log(message);
+      const resetURL = `${req.protocol}://192.168.0.129:3000/${user.type}/resetPassword/${resetToken}`;
+      await new Email(user, resetURL).sendPasswordReset();
     } catch (err) {
       user.passwordResetToken = undefined;
       user.passwordResetExpires = undefined;

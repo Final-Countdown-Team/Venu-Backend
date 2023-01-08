@@ -167,7 +167,7 @@ artistSchema.pre("save", function (next) {
 
 // Create URL slug from name
 artistSchema.pre("save", function (next) {
-  this.slug = slugify(this.name, { lower: true });
+  if (this.name) this.slug = slugify(this.name, { lower: true });
   next();
 });
 
