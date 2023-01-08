@@ -11,6 +11,7 @@ import {
   updatePassword,
 } from "../controllers/authController.js";
 import {
+  contactUser,
   deleteMe,
   getMe,
   reactivateAccount,
@@ -38,7 +39,7 @@ router.get("/", getAllVenues);
 // PROTECT FROM UNAUTHORIZED USERS
 router.use(protect(Venue, Artist));
 router.get("/:id", getVenue);
-// router.post("/:id", contactUser);
+router.post("/contactUser/:id", contactUser(Artist));
 
 // PROTECTED AND RESTRICTED ROUTES
 router.use(protect(Venue));

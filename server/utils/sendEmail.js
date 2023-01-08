@@ -70,7 +70,7 @@ class Email {
       senderName: sender.name,
       senderEmail: sender.email,
       firstname: contactForm.firstname,
-      date: contactForm.date,
+      date: contactForm.date.substring(0, 10),
       message: contactForm.message,
     };
     return replacements;
@@ -97,7 +97,6 @@ class Email {
       replacements
     );
   }
-
   async sendGoodbye() {
     console.log("Sending goodbye");
     const fromVenuTeam = "Hammed";
@@ -119,7 +118,7 @@ class Email {
     );
     await this.send(
       "contactUserEmail",
-      `${sender} sent you a request`,
+      `${sender.name} sent you a request`,
       fromVenuTeam,
       replacements
     );

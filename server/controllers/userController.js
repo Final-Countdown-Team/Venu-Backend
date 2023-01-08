@@ -20,7 +20,7 @@ const filterObj = (obj, ...notAllowedFields) => {
 };
 
 // CONTACT USER
-export const contactUser = (Model) => {
+export const contactUser = (Model) =>
   catchAsync(async (req, res, next) => {
     const contactForm = {
       firstname: req.body.firstname,
@@ -29,12 +29,26 @@ export const contactUser = (Model) => {
     };
     const receiver = await Model.findById(req.params.id);
     const sender = req.user;
+
+    console.log(contactForm);
+    console.log(receiver);
+    console.log(sender);
     try {
-      const confirmDateURL = `${req.protocol}://192.168.0.129:3000/me/editProfile`;
-      await new Email();
-    } catch (err) {}
+      const confirmDateURL = `${req.protocol}://192.168.0.129:3000/me/confirmDate`;
+      await new Email(receiver, confirmDateURL).sendContact(
+        sender,
+        contactForm
+      );
+    } catch (err) {
+      console.error(err);
+      throw new AppError("An error occurred sending the email", 500);
+    }
+
+    res.status(200).json({
+      status: "success",
+      message: "Successfully send contact email",
+    });
   });
-};
 
 // UPDATE ME
 export const updateMe = (Model) =>
