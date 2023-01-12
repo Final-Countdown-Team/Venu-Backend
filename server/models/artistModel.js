@@ -5,7 +5,7 @@ import slugify from "slugify";
 import {
   changedPasswordAfterUtil,
   correctPasswordUtil,
-  createPasswordResetTokenUtil,
+  saveAndCreateTokenUtil,
 } from "./modelMiddleware/instanceMethods.js";
 import { hashingPassword } from "../utils/hashingPassword.js";
 
@@ -124,6 +124,9 @@ const artistSchema = mongoose.Schema(
     passwordChangedAt: Date,
     passwordResetToken: String,
     passwordResetExpires: Date,
+    confirmDateToken: String,
+    confirmDateTokenExpires: Date,
+    confirmDate: Date,
     active: {
       type: Boolean,
       default: true,
@@ -177,6 +180,12 @@ artistSchema.virtual("availability").get(function () {
   return this.dates.length >= 1;
 });
 
+artistSchema.virtual("bookedDates", {
+  ref: "ConfirmedDate",
+  foreignField: "artist",
+  localField: "_id",
+});
+
 // INSTANCE METHODS
 // Comparing password when logging in
 artistSchema.methods.correctPassword = async function (candidatePW) {
@@ -184,10 +193,20 @@ artistSchema.methods.correctPassword = async function (candidatePW) {
 };
 // Generate and hash reset token and save it to current document
 artistSchema.methods.createPasswordResetToken = function () {
-  return createPasswordResetTokenUtil(this);
+  return saveAndCreateTokenUtil(
+    this.passwordResetToken,
+    this.passwordResetExpires
+  );
 };
 artistSchema.methods.changedPasswordAfter = function (JWTTimestamp) {
   return changedPasswordAfterUtil(JWTTimestamp, this);
+};
+// Generte and has a confirmDate token
+artistSchema.methods.createConfirmDateToken = function () {
+  return saveAndCreateTokenUtil(
+    this.confirmDateToken,
+    this.confirmDateTokenExpires
+  );
 };
 
 // Query middleware

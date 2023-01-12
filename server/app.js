@@ -8,6 +8,7 @@ import rateLimit from "express-rate-limit";
 
 import venueRouter from "./routes/venueRoutes.js";
 import artistRouter from "./routes/artistRoutes.js";
+import confirmedDateRouter from "./routes/confirmedDateRoutes.js";
 import adminRouter from "./routes/adminRoutes.js";
 import AppError from "./utils/appError.js";
 import { globalErrorHandler } from "./controllers/errorController.js";
@@ -36,6 +37,7 @@ app.use(xss());
 // ROUTES
 app.use("/venues", venueRouter);
 app.use("/artists", artistRouter);
+app.use("/confirmedDates", confirmedDateRouter);
 app.use("/admins", adminRouter);
 
 // CREATING 404

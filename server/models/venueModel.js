@@ -6,7 +6,6 @@ import { hashingPassword } from "../utils/hashingPassword.js";
 import {
   changedPasswordAfterUtil,
   correctPasswordUtil,
-  createPasswordResetTokenUtil,
 } from "./modelMiddleware/instanceMethods.js";
 
 const venueSchema = mongoose.Schema(
@@ -112,6 +111,9 @@ const venueSchema = mongoose.Schema(
     passwordChangedAt: Date,
     passwordResetToken: String,
     passwordResetExpires: Date,
+    confirmDateToken: String,
+    confirmDateTokenExpires: Date,
+    confirmDate: Date,
     active: {
       type: Boolean,
       default: true,
@@ -165,6 +167,12 @@ venueSchema.virtual("availability").get(function () {
   return this.dates.length >= 1;
 });
 
+venueSchema.virtual("bookedDates", {
+  ref: "ConfirmedDate",
+  foreignField: "artist",
+  localField: "_id",
+});
+
 // INSTANCE METHODS
 // Comparing password when logging in
 venueSchema.methods.correctPassword = async function (candidatePW) {
@@ -172,10 +180,20 @@ venueSchema.methods.correctPassword = async function (candidatePW) {
 };
 // Generate and hash reset token and save it to current document
 venueSchema.methods.createPasswordResetToken = function () {
-  return createPasswordResetTokenUtil(this);
+  return saveAndCreateTokenUtil(
+    this.passwordResetToken,
+    this.passwordResetExpires
+  );
 };
 venueSchema.methods.changedPasswordAfter = function (JWTTimestamp) {
   return changedPasswordAfterUtil(JWTTimestamp, this);
+};
+// Generte and has a confirmDate token
+venueSchema.methods.createConfirmDateToken = function () {
+  return saveAndCreateTokenUtil(
+    this.confirmDateToken,
+    this.confirmDateTokenExpires
+  );
 };
 
 // Query middleware
