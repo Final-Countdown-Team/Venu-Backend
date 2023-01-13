@@ -1,6 +1,8 @@
 import multer from "multer";
 import Datauri from "datauri/parser.js";
 import cloudinary from "../config/cloudinaryConfig.js";
+import AppError from "./appError.js";
+import catchAsync from "./catchAsync.js";
 
 const multerStorage = multer.memoryStorage();
 
@@ -22,7 +24,7 @@ export const uploadImages = upload.fields([
   { name: "images", maxCount: 3 },
 ]);
 
-export const processImages = async (req, res, next) => {
+export const processImages = catchAsync(async (req, res, next) => {
   // if (!req?.files?.profileImage && !req?.files?.images) return next();
   if (req?.files?.profileImage) {
     console.log("Uploading profileImage...");
@@ -37,12 +39,22 @@ export const processImages = async (req, res, next) => {
       profileImageName,
       req.files.profileImage[0].buffer
     );
+
     const result = await cloudinary.uploader.upload(imagePath.content, {
       public_id: imagePath.fileName,
-      folder: `venu/users/${req.user.email}/profileImages`,
+      width: 1050,
+      crop: "limit",
+      format: "jpg",
+      folder: `venu/${req.user.type}/${req.user.email}/profileImages`,
       overwrite: true,
     });
+
     console.log(result);
+    if (!result)
+      throw new AppError(
+        "An error occured uploading the profileImage",
+        500
+      );
 
     req.body.profileImage = result.url;
   }
@@ -54,36 +66,37 @@ export const processImages = async (req, res, next) => {
 
     await Promise.all(
       req.files.images.map(async (file, i) => {
-        try {
-          // Get the index where the new image should be inserted in the array
-          const replaceAt = +file.originalname.charAt(
-            file.originalname.length - 1
+        // Get the index where the new image should be inserted in the array
+        const replaceAt = +file.originalname.charAt(
+          file.originalname.length - 1
+        );
+        if (file.originalname.includes("delete-me")) {
+          req.body.images.splice(replaceAt, 1, "delete-me");
+          return;
+        } else {
+          const filename = `image-${replaceAt}-${req.user.name}-${req.user._id}`;
+
+          const parser = new Datauri();
+          const filePath = parser.format(filename, file.buffer);
+
+          const result = await cloudinary.uploader.upload(
+            filePath.content,
+            {
+              public_id: filePath.fileName,
+              folder: `venu/${req.user.type}/${req.user.email}/images`,
+              overwrite: true,
+            }
           );
-          if (file.originalname.includes("delete-me")) {
-            req.body.images.splice(replaceAt, 1, "delete-me");
-            return;
-          } else {
-            const filename = `image-${replaceAt}-${req.user.name}-${req.user._id}`;
-
-            const parser = new Datauri();
-            const filePath = parser.format(filename, file.buffer);
-
-            const result = await cloudinary.uploader.upload(
-              filePath.content,
-              {
-                public_id: filePath.fileName,
-                folder: `venu/${req.user.type}/${req.user.email}/images`,
-                overwrite: true,
-              }
+          if (!result)
+            throw new AppError(
+              "An error occured uploading the images",
+              500
             );
-            // Insert the uploaded image at the right position
-            req.body.images.splice(replaceAt, 1, result.url);
-          }
-        } catch (err) {
-          console.error(err);
+          // Insert the uploaded image at the right position
+          req.body.images.splice(replaceAt, 1, result.url);
         }
       })
     );
   }
   next();
-};
+});

@@ -79,6 +79,7 @@ const artistSchema = mongoose.Schema(
     },
     images: {
       type: [String],
+      default: ["empty-0", "empty-1", "empty-2"],
       validate: [
         imageArrayLimit,
         "The maximum amount of images cannot exceed 3",

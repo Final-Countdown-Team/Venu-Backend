@@ -31,12 +31,6 @@ class Email {
     );
     const source = fs.readFileSync(filePath, "utf-8").toString();
     const compiledTemplate = Handlebars.compile(source);
-    // const replacements = {
-    //   username: this.name,
-    //   teamMember: from,
-    //   link: this.url,
-    //   buttonColor: this.buttonColor,
-    // };
 
     const htmlToSend = compiledTemplate(replacements);
 
@@ -70,7 +64,7 @@ class Email {
       senderName: sender.name,
       senderEmail: sender.email,
       firstname: contactForm.firstname,
-      date: contactForm.date.substring(0, 10),
+      date: new Date(contactForm.date).toDateString(),
       message: contactForm.message,
     };
     return replacements;

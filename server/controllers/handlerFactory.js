@@ -2,9 +2,12 @@ import catchAsync from "../utils/catchAsync.js";
 import AppError from "../utils/appError.js";
 import APIFeatures from "../utils/APIFeatures.js";
 
-export const getAll = (Model) =>
+export const getAll = (Model, populateOptions) =>
   catchAsync(async (req, res, next) => {
-    const features = new APIFeatures(Model.find(), req.query)
+    const features = new APIFeatures(
+      Model.find().populate(populateOptions),
+      req.query
+    )
       .searchName()
       .searchCity()
       .searchDates()

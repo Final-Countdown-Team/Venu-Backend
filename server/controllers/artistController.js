@@ -7,7 +7,9 @@ import {
   deleteOne,
 } from "./handlerFactory.js";
 
-export const getAllArtists = getAll(Artist);
+export const getAllArtists = getAll(Artist, {
+  path: "bookedDates",
+});
 export const getArtist = getOne(Artist, {
   path: "bookedDates",
 });

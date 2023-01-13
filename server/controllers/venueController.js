@@ -7,7 +7,7 @@ import {
   updateOne,
 } from "./handlerFactory.js";
 
-export const getAllVenues = getAll(Venue);
+export const getAllVenues = getAll(Venue, { path: "bookedDates" });
 export const getVenue = getOne(Venue, { path: "bookedDates" });
 export const createVenue = createOne(Venue);
 export const updateVenue = updateOne(Venue);
