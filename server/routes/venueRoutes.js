@@ -11,8 +11,11 @@ import {
   updatePassword,
 } from "../controllers/authController.js";
 import {
+  confirmBookedDate,
+  contactUser,
   deleteMe,
   getMe,
+  reactivateAccount,
   updateMe,
 } from "../controllers/userController.js";
 import { getAllVenues, getVenue } from "../controllers/venueController.js";
@@ -27,15 +30,18 @@ const router = express.Router();
 router.post("/signup", uploadImages, processImages, signup(Venue));
 router.post("/login", login(Venue));
 router.get("/logout", logout);
+router.post("/reactivateAccount/:id", reactivateAccount(Venue));
 
 router.post("/forgotPassword", forgotPassword(Venue));
 router.patch("/resetPassword/:token", resetPassword(Venue));
 
 router.get("/", getAllVenues);
+router.patch("/confirmBookedDate/:token", confirmBookedDate(Venue));
 
 // PROTECT FROM UNAUTHORIZED USERS
 router.use(protect(Venue, Artist));
 router.get("/:id", getVenue);
+router.post("/contactUser/:id", contactUser(Venue));
 
 // PROTECTED AND RESTRICTED ROUTES
 router.use(protect(Venue));

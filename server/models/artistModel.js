@@ -5,7 +5,7 @@ import slugify from "slugify";
 import {
   changedPasswordAfterUtil,
   correctPasswordUtil,
-  createPasswordResetTokenUtil,
+  saveAndCreateTokenUtil,
 } from "./modelMiddleware/instanceMethods.js";
 import { hashingPassword } from "../utils/hashingPassword.js";
 
@@ -79,6 +79,7 @@ const artistSchema = mongoose.Schema(
     },
     images: {
       type: [String],
+      default: ["empty-0", "empty-1", "empty-2"],
       validate: [
         imageArrayLimit,
         "The maximum amount of images cannot exceed 3",
@@ -124,6 +125,9 @@ const artistSchema = mongoose.Schema(
     passwordChangedAt: Date,
     passwordResetToken: String,
     passwordResetExpires: Date,
+    confirmDateToken: String,
+    confirmDateTokenExpires: Date,
+    confirmDate: Date,
     active: {
       type: Boolean,
       default: true,
@@ -167,7 +171,7 @@ artistSchema.pre("save", function (next) {
 
 // Create URL slug from name
 artistSchema.pre("save", function (next) {
-  this.slug = slugify(this.name, { lower: true });
+  if (this.name) this.slug = slugify(this.name, { lower: true });
   next();
 });
 
@@ -177,6 +181,12 @@ artistSchema.virtual("availability").get(function () {
   return this.dates.length >= 1;
 });
 
+artistSchema.virtual("bookedDates", {
+  ref: "ConfirmedDate",
+  foreignField: "artist",
+  localField: "_id",
+});
+
 // INSTANCE METHODS
 // Comparing password when logging in
 artistSchema.methods.correctPassword = async function (candidatePW) {
@@ -184,10 +194,20 @@ artistSchema.methods.correctPassword = async function (candidatePW) {
 };
 // Generate and hash reset token and save it to current document
 artistSchema.methods.createPasswordResetToken = function () {
-  return createPasswordResetTokenUtil(this);
+  return saveAndCreateTokenUtil(
+    this.passwordResetToken,
+    this.passwordResetExpires
+  );
 };
 artistSchema.methods.changedPasswordAfter = function (JWTTimestamp) {
   return changedPasswordAfterUtil(JWTTimestamp, this);
+};
+// Generte and has a confirmDate token
+artistSchema.methods.createConfirmDateToken = function () {
+  return saveAndCreateTokenUtil(
+    this.confirmDateToken,
+    this.confirmDateTokenExpires
+  );
 };
 
 // Query middleware
