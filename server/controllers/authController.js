@@ -75,7 +75,9 @@ export const login = (Model) =>
     if (!email || !password)
       throw new AppError("Please provide email and password", 400);
 
-    const user = await Model.findOne({ email }).select("+password");
+    const user = await Model.findOne({ email })
+      .select("+password")
+      .populate({ path: "bookedDates" });
 
     if (!user || !(await user.correctPassword(password)))
       throw new AppError("Incorrect email or password", 401);

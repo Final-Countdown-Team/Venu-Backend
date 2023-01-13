@@ -3,12 +3,13 @@ import catchAsync from "../utils/catchAsync.js";
 import Artist from "../models/artistModel.js";
 import Venue from "../models/venueModel.js";
 import Email from "../utils/sendEmail.js";
-import { addOrCreateBookingUtil } from "./confirmedDatesController.js";
 import crypto from "crypto";
+import ConfirmedDate from "../models/confirmedDateModel.js";
+import { clear } from "console";
 
 // Get middleware, forwards to getVenue or getArtists controller in routes
 export const getMe = (req, res, next) => {
-  req.params.id = req.user.id;
+  req.params.id = req.user._id;
   next();
 };
 
@@ -19,6 +20,31 @@ const filterObj = (obj, ...notAllowedFields) => {
     if (!notAllowedFields.includes(el)) newObj[el] = obj[el];
   });
   return newObj;
+};
+
+// Helper function to see if a date is already booked
+const checkForExistingDate = (bookedDates, confirmDate) => {
+  return bookedDates.some(
+    (date) => date.toDateString() === confirmDate.toDateString()
+  );
+};
+
+// Clear the fields in both receiver and sender documents
+const clearContactUsers = async (receiver, sender) => {
+  [receiver, sender].forEach((user) => {
+    user.confirmDate = undefined;
+    user.confirmDateToken = undefined;
+    user.confirmDateTokenExpires = undefined;
+  });
+};
+
+const updateDateArray = (receiver, sender, bookedDate) => {
+  [receiver, sender].forEach(async (user) => {
+    const index = user.dates.findIndex(
+      (date) => new Date(date).getTime() === new Date(bookedDate).getTime()
+    );
+    user.dates.splice(index, 1);
+  });
 };
 
 // CONTACT USER
@@ -91,32 +117,57 @@ export const confirmBookedDate = (Model) =>
       .update(req.params.token)
       .digest("hex");
 
-    console.log(hashedToken);
-
     // Find user based on hashed token and check if token has not yet expired
     const receiver = await receiverModel.findOne({
       confirmDateToken: hashedToken,
       // confirmDateTokenExpires: { $gt: Date.now() },
     });
-    if (!receiver)
-      throw new AppError(
-        "Receiver's token is invalid or has expired",
-        400
-      );
     const sender = await senderModel.findOne({
       confirmDateToken: hashedToken,
       // confirmDateTokenExpires: { $gt: Date.now() },
     });
-    if (!sender)
-      throw new AppError("Sender's token is invalid or has expired", 400);
+    if (!receiver || !sender)
+      throw new AppError("Confirm token is invalid or has expired", 400);
 
-    addOrCreateBookingUtil(receiver, sender, receiver.confirmDate, res);
+    // Add or create a new booking doc
+    const artist = receiver.type === "artists" ? receiver : sender;
+    const venue = receiver.type === "venues" ? receiver : sender;
+    const bookedDate = receiver.confirmDate;
 
-    // [receiver, sender].forEach((user) => {
-    //   user.confirmDate = undefined;
-    //   user.confirmDateToken = undefined;
-    //   user.confirmDateTokenExpires = undefined;
-    // });
+    const booking = await ConfirmedDate.findOne({
+      $and: [{ artist: artist._id }, { venue: venue._id }],
+    });
+    if (!booking) {
+      const newDocument = await ConfirmedDate.create({
+        artist: artist,
+        venue: venue,
+        bookedDates: [bookedDate],
+      });
+
+      res.status(200).json({
+        status: "success",
+        message: "Successfully created a new booked date",
+        data: newDocument,
+      });
+      return;
+    }
+
+    if (checkForExistingDate(booking.bookedDates, bookedDate)) {
+      clearContactUsers(receiver, sender);
+      throw new AppError("This date has already been booked", 409);
+    }
+
+    booking.bookedDates = [...booking.bookedDates, ...[bookedDate]];
+    await booking.save();
+
+    res.status(200).json({
+      status: "success",
+      message: "Successfully added a new booked date",
+      data: booking,
+    });
+
+    updateDateArray(receiver, sender, bookedDate);
+    clearContactUsers(receiver, sender);
 
     await receiver.save({ validateBeforeSave: false });
     await sender.save({ validateBeforeSave: false });

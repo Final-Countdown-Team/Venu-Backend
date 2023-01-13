@@ -169,7 +169,7 @@ venueSchema.virtual("availability").get(function () {
 
 venueSchema.virtual("bookedDates", {
   ref: "ConfirmedDate",
-  foreignField: "artist",
+  foreignField: "venue",
   localField: "_id",
 });
 
