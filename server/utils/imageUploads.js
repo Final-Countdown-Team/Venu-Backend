@@ -25,6 +25,7 @@ export const uploadImages = upload.fields([
 ]);
 
 export const processImages = catchAsync(async (req, res, next) => {
+
   // if (!req?.files?.profileImage && !req?.files?.images) return next();
   if (req?.files?.profileImage) {
     console.log("Uploading profileImage...");
@@ -55,7 +56,6 @@ export const processImages = catchAsync(async (req, res, next) => {
         "An error occured uploading the profileImage",
         500
       );
-
     req.body.profileImage = result.url;
   }
 

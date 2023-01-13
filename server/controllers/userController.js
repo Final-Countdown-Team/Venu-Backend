@@ -213,7 +213,6 @@ export const updateMe = (Model) =>
       console.log("Merged images: ", mergedImages);
       console.log("user images: ", user.images);
     }
-    console.log("Update Filtered body: ", filteredBody);
     const updatedUser = await Model.findByIdAndUpdate(
       req.user._id,
       filteredBody,
