@@ -1,54 +1,32 @@
-# The-final-countdown
+# Venu - Backend
 
-## 1. Project title -
+This project was done as a final project during the 1-year fullstack web development course at DCI and was developed over a period of 2 months.
 
-    *Venu
-## 2. Project description -
+Our goal was to build an application that allows musicians and venues to get in contact and book dates for upcoming shows and events.
 
+### Technologies:
 
-    VENU is an innovative and effortless app that makes music happen. We connect musicians and venues, allowing the artist to plan the upcoming tour in the most uncomplicated way possible. The app gives opportunities to have direct communication between venues and artists. 
+- The backend is built with NodeJS and Express as the corresponding framework.
 
-## 3. Technologies used -
+- MongoDB is set up as the database and mongoose is used as the ODM library.
 
-    
-     Frontend:
-     --------------------------------------- 
-     Node-modules
-     React
-     React Router DOM
-     Sass
-     Formik library for forms
-     Yup schema validation for forms
-     Framer motion: page transitions and animations
-     Mapbox: displaying maps
-     Geoapify API: geocoding and address 
-     autocomplete
-     Cloudinary: uploading images to cloud   storage
----
-     Backend:
-     ---------------------------------------
-     Express
-     Mongoose
-     MongoDB
-     Handlebars for email templates
-     Basic Security ( HTTP cookies, 
-     XSS-Protection, Mongo-Sanitize against query selector injetion attacks, Rate limiting) 
+- We used JWT for authentication, which are sent via HTTP-only cookies for additional security.
 
+- Sending emails is enabled via nodemailer, which sends dynamically rendered and customized emails to users with the help of handlebars.
 
+  - As a template, Lee Munroe's awesome <a src="https://github.com/leemunroe/responsive-html-email-template">"responsive-html-email-template"</a> was used.
+  - A transport for mailgun is set up, but right now emails are sent to mailtrap.
 
-## 4. Installations and running procedure -
- To run this project, install it locally using npm:
+- For image transformation and uploading a combination of multer and cloudinary comes into use.
 
-     * npm install
-     * npm start
-     
-## 5. Example of use -
-### Artists : 
-    1.Search engine for the artist to find and book the venue.
-    image :
-    2. Login/ Registration
-    
-### Venue:
-    1.Search engine for the venue to find and book the artist.
-    image :
-    2. Login/ Registration
+- Additionally we took care of basic security and protection for example against XSS-Attacks with the xss module and query selector injection attacks via Mongo-Sanitize. Rate limiting protects against spamming or bot activity.
+
+The app includes all essential functionalities, like authentication and authorisation, protected and restricted routes, queries and geospatial queries, pagination, image processing and upload, global error handling etc.
+
+To see the live version please visit:
+
+//https://final-URL-comes-here
+
+If you want to check out the frontend repository, please visit:
+
+https://github.com/Final-Countdown-Team/Venu-Frontend
