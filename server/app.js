@@ -17,7 +17,7 @@ const app = express();
 
 // Limit requests
 const limiter = rateLimit({
-  max: 100,
+  max: 200,
   windowMs: 60 * 60 * 1000,
   message: "Too many requests from this IP, please try again in an hour!",
 });
@@ -26,8 +26,8 @@ const limiter = rateLimit({
 // GLOBAL MIDDLEWARE
 app.use(cors());
 app.use(morgan("dev"));
-app.use(express.json({ limit: "1000kb" }));
-app.use(express.urlencoded({ extended: true, limit: "1000kb" }));
+app.use(express.json({ limit: "60000kb" }));
+app.use(express.urlencoded({ extended: true, limit: "15000kb" }));
 app.use(cookieParser());
 
 // SECURITY
