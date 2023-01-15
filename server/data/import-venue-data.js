@@ -48,7 +48,6 @@ const updateDates = async () => {
     venues.forEach(async (venue) => {
       if (venue.dates.length >= 1) {
         venue.dates = venue.dates.filter((date) => date >= Date.now());
-        console.log(venue);
         await venue.save();
       }
     });

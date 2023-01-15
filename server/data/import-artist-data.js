@@ -48,7 +48,6 @@ const updateDates = async () => {
     artists.forEach(async (artist) => {
       if (artist.dates.length >= 1) {
         artist.dates = artist.dates.filter((date) => date >= Date.now());
-        console.log(artist);
         await artist.save();
       }
     });
