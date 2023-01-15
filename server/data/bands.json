@@ -339,9 +339,7 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=bD4ojXS_n8E"
     },
     "genre": "Rock",
-    "dates": [
-      ""
-    ],
+    "dates": [],
     "members": 3
   },
   {
@@ -349,7 +347,7 @@
     "email": "tedmilton@venu.com",
     "address": {
       "street": "Mörfelder Landstraße 225",
-      "city": "Frankfurt am Main",
+      "city": "Frankfurt",
       "zipcode": "60598"
     },
     "location": {
@@ -374,9 +372,7 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=I4N09evgqw4"
     },
     "genre": "Jazz",
-    "dates": [
-      ""
-    ],
+    "dates": [],
     "members": 2
   },
   {
@@ -447,9 +443,7 @@
       "youtubeUrl": "https://www.youtube.com/watch?v=qgB6_pOAyNE"
     },
     "genre": "Rock",
-    "dates": [
-      ""
-    ],
+    "dates": [],
     "members": 3
   },
   {
