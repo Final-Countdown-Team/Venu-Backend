@@ -229,6 +229,7 @@ export const updateMe = (Model) =>
   });
 
 // DELETE ME
+
 export const deleteMe = (Model) =>
   catchAsync(async (req, res, next) => {
     try {

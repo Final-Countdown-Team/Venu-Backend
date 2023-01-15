@@ -9,7 +9,6 @@ export const getAll = (Model, populateOptions) =>
       req.query
     )
       .searchName()
-      .searchCity()
       .searchDates()
       .searchGenre()
       .sort()
@@ -17,12 +16,12 @@ export const getAll = (Model, populateOptions) =>
       .paginate()
       .getWithinDistance();
 
-    const doc = await features.mongoQuery;
+    const docs = await features.mongoQuery;
 
     res.status(200).json({
       status: "success",
-      results: doc.length,
-      data: doc,
+      results: docs.length,
+      data: docs,
     });
   });
 

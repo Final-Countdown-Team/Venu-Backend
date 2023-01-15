@@ -17,25 +17,6 @@ class APIFeatures {
     return this;
   }
 
-  // searchZipCode() {
-  //   if (this.queryString.zipcode) {
-  //     console.log(this.queryString.zipcode);
-  //     this.mongoQuery = this.mongoQuery.find({
-  //       "address.zipcode": this.queryString.zipcode,
-  //     });
-  //   }
-  //   return this;
-  // }
-
-  searchCity() {
-    if (this.queryString.city) {
-      this.mongoQuery = this.mongoQuery.find({
-        "address.city": this.queryString.city,
-      });
-    }
-    return this;
-  }
-
   searchGenre() {
     if (this.queryString.genre) {
       console.log(this.queryString.genre);
@@ -94,7 +75,7 @@ class APIFeatures {
       const latLng = this.queryString.center.split(",");
       const radius = this.queryString.distance / 6378.1;
 
-      const [lat, lng] = latLng;
+      const [lat, lng] = latLng.map((el) => +el);
 
       if (!lat || !lng) {
         throw new AppError(
@@ -104,7 +85,7 @@ class APIFeatures {
       }
 
       this.mongoQuery = this.mongoQuery.find({
-        "location.coordinates": {
+        location: {
           $geoWithin: { $centerSphere: [[lng, lat], radius] },
         },
       });
@@ -112,7 +93,4 @@ class APIFeatures {
     return this;
   }
 }
-
 export default APIFeatures;
-
-// distance=300&center=52.509727478027344,13.626799583435059
