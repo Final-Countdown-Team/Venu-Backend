@@ -26,7 +26,8 @@ const limiter = rateLimit({
 // GLOBAL MIDDLEWARE
 app.use(
   cors({
-    origin: "*",
+    // ["https://venu-frontend.onrender.com", "https://venu-frontend.onrender.com/artists", "https://venu-frontend.onrender.com/venues"]
+    origin: "https://216.24.57.3:443",
     methods: ["GET", "POST", "PATCH", "DELETE"],
     credentials: true,
   })
