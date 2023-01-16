@@ -48,12 +48,18 @@ const whitelist = [
 app.use(
   cors({
     origin: function (origin, callback) {
-      return callback(null, true);
+      if (whitelist.indexOf(origin) !== -1 || !origin) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
     },
     methods: ["GET", "POST", "PATCH", "DELETE"],
     credentials: true,
   })
 );
+// Enable pre-flight
+app.options("*", cors());
 app.use(morgan("dev"));
 app.use(express.json({ limit: "60000kb" }));
 app.use(express.urlencoded({ extended: true, limit: "15000kb" }));

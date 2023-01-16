@@ -15,6 +15,7 @@ const DB = process.env.DATABASE.replace(
   process.env.DATABASE_PASSWORD
 ).replace("<USERNAME>", process.env.DATABASE_USERNAME);
 
+mongoose.set("strictQuery", true);
 mongoose.connect(DB).then(() => console.log("DB connection successful"));
 
 console.log("Node Environment: " + process.env.NODE_ENV);
