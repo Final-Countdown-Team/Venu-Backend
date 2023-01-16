@@ -26,7 +26,8 @@ const limiter = rateLimit({
 // GLOBAL MIDDLEWARE
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL,
+    origin: "*",
+    methods: ["GET", "POST", "PATCH", "DELETE"],
     credentials: true,
   })
 );
