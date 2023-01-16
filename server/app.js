@@ -24,7 +24,12 @@ const limiter = rateLimit({
 // app.use("/", limiter);
 
 // GLOBAL MIDDLEWARE
-app.use(cors());
+app.use(
+  cors({
+    origin: process.env.FRONTEND_URL,
+    credentials: true,
+  })
+);
 app.use(morgan("dev"));
 app.use(express.json({ limit: "60000kb" }));
 app.use(express.urlencoded({ extended: true, limit: "15000kb" }));
