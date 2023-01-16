@@ -5,7 +5,6 @@ import Venue from "../models/venueModel.js";
 import Email from "../utils/sendEmail.js";
 import crypto from "crypto";
 import ConfirmedDate from "../models/confirmedDateModel.js";
-import { clear } from "console";
 
 // Get middleware, forwards to getVenue or getArtists controller in routes
 export const getMe = (req, res, next) => {
@@ -30,7 +29,7 @@ const checkForExistingDate = (bookedDates, confirmDate) => {
 };
 
 // Clear the fields in both receiver and sender documents
-const clearContactUsers = async (receiver, sender) => {
+const clearContactUsers = (receiver, sender) => {
   [receiver, sender].forEach((user) => {
     user.confirmDate = undefined;
     user.confirmDateToken = undefined;
@@ -39,11 +38,15 @@ const clearContactUsers = async (receiver, sender) => {
 };
 
 const updateDateArray = (receiver, sender, bookedDate) => {
-  [receiver, sender].forEach(async (user) => {
+  [receiver, sender].forEach((user) => {
     const index = user.dates.findIndex(
-      (date) => new Date(date).getTime() === new Date(bookedDate).getTime()
+      (date) =>
+        new Date(date).toDateString() ===
+        new Date(bookedDate).toDateString()
     );
-    user.dates.splice(index, 1);
+    console.log(index);
+    if (index !== -1) user.dates.splice(index, 1);
+    console.log(user.dates);
   });
 };
 
@@ -90,7 +93,8 @@ export const contactUser = (Model) =>
     };
 
     try {
-      const confirmDateURL = `${req.protocol}://192.168.0.129:3000/${receiver.type}/confirmDate/${confirmToken}`;
+      // venu-frontend.onrender.com
+      const confirmDateURL = `${req.protocol}://venu-frontend.onrender.com/${receiver.type}/confirmDate/${confirmToken}`;
       await new Email(receiver, confirmDateURL).sendContact(
         sender,
         contactForm
@@ -149,6 +153,12 @@ export const confirmBookedDate = (Model) =>
         message: "Successfully created a new booked date",
         data: newDocument,
       });
+
+      updateDateArray(receiver, sender, bookedDate);
+      clearContactUsers(receiver, sender);
+
+      await receiver.save({ validateBeforeSave: false });
+      await sender.save({ validateBeforeSave: false });
       return;
     }
 
@@ -196,7 +206,6 @@ export const updateMe = (Model) =>
     //Update User
     const user = await Model.findById(req.user._id);
     // Merge the two arrays to prevent overwriting images
-    console.log(req.body.images);
     if (req.body.images) {
       const mergedImages = req.body.images
         .map((image, i) => {
@@ -210,8 +219,6 @@ export const updateMe = (Model) =>
         })
         .filter((el) => el !== "");
       filteredBody.images = mergedImages;
-      console.log("Merged images: ", mergedImages);
-      console.log("user images: ", user.images);
     }
     const updatedUser = await Model.findByIdAndUpdate(
       req.user._id,
@@ -233,7 +240,8 @@ export const updateMe = (Model) =>
 export const deleteMe = (Model) =>
   catchAsync(async (req, res, next) => {
     try {
-      const reactivateURL = `${req.protocol}://192.168.0.129:3000/${req.user.type}/reactivateAccount/${req.user._id}`;
+      // https://venu-frontend.onrender.com
+      const reactivateURL = `${req.protocol}://venu-frontend.onrender.com/${req.user.type}/reactivateAccount/${req.user._id}`;
       await new Email(req.user, reactivateURL).sendGoodbye();
     } catch (err) {
       console.error(err);
