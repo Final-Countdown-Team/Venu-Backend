@@ -47,13 +47,17 @@ const whitelist = [
 ];
 app.use(
   cors({
-    origin: function (origin, callback) {
-      if (whitelist.indexOf(origin) !== -1 || !origin) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
+    origin: "https://venu-frontend.onrender.com",
+    // origin: function (origin, callback) {
+    //   if (
+    //     origin.startsWith("https://venu-frontend.onrender.com") ||
+    //     !origin
+    //   ) {
+    //     callback(null, true);
+    //   } else {
+    //     callback(new Error("Not allowed by CORS"));
+    //   }
+    // },
     methods: ["GET", "POST", "PATCH", "DELETE"],
     credentials: true,
   })
