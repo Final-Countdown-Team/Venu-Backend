@@ -93,8 +93,7 @@ export const contactUser = (Model) =>
     };
 
     try {
-      // venu-frontend.onrender.com
-      const confirmDateURL = `${req.protocol}://venu-frontend.onrender.com/${receiver.type}/confirmDate/${confirmToken}`;
+      const confirmDateURL = `${process.env.FRONTEND_URL}/${receiver.type}/confirmDate/${confirmToken}`;
       await new Email(receiver, confirmDateURL).sendContact(
         sender,
         contactForm
@@ -240,8 +239,7 @@ export const updateMe = (Model) =>
 export const deleteMe = (Model) =>
   catchAsync(async (req, res, next) => {
     try {
-      // https://venu-frontend.onrender.com
-      const reactivateURL = `${req.protocol}://venu-frontend.onrender.com/${req.user.type}/reactivateAccount/${req.user._id}`;
+      const reactivateURL = `${process.env.FRONTEND_URL}/${req.user.type}/reactivateAccount/${req.user._id}`;
       await new Email(req.user, reactivateURL).sendGoodbye();
     } catch (err) {
       console.error(err);

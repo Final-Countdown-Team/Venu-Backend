@@ -60,8 +60,7 @@ export const signup = (Model) =>
     const user = await Model.create(body);
 
     try {
-      // venu-frontend.onrender.com
-      const profileEditURL = `${req.protocol}://venu-frontend.onrender.com/me/editProfile`;
+      const profileEditURL = `${process.env.FRONTEND_URL}/me/editProfile`;
       await new Email(user, profileEditURL).sendWelcome();
     } catch (err) {
       throw new AppError("An error occured sending the email", 500);
@@ -168,8 +167,7 @@ export const forgotPassword = (Model) =>
     // const message = `Howdy! You forgot your password? Don't worry, use the link below to reset it. The link expires in 10 minutes. Submit a PATCH request with your new password and passwordConfirm to: \n\n${resetURL}\n\nIf you did't forget your password, please ignore this email! `;
 
     try {
-      // venu-frontend.onrender.com
-      const resetURL = `${req.protocol}://venu-frontend.onrender.com/${user.type}/resetPassword/${resetToken}`;
+      const resetURL = `${process.env.FRONTEND_URL}/${user.type}/resetPassword/${resetToken}`;
       await new Email(user, resetURL).sendPasswordReset();
     } catch (err) {
       user.passwordResetToken = undefined;
