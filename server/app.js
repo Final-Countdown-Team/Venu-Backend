@@ -25,14 +25,15 @@ const limiter = rateLimit({
 // GLOBAL MIDDLEWARE
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL,
+    // origin: process.env.FRONTEND_URL,
     // origin: "http://localhost:3000",
+    origin: "https://venu-frontend.onrender.com",
     methods: ["GET", "POST", "PATCH", "DELETE"],
     credentials: true,
   })
 );
 // Enable pre-flight
-// app.options("*", cors());
+app.options("*", cors());
 app.use(morgan("dev"));
 app.use(express.json({ limit: "60000kb" }));
 app.use(express.urlencoded({ extended: true, limit: "15000kb" }));
