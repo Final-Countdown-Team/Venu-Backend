@@ -25,7 +25,7 @@ The app includes all essential functionalities, like authentication and authoris
 
 To see the live version please visit:
 
-//https://final-URL-comes-here
+https://venu-frontend.onrender.com
 
 If you want to check out the frontend repository, please visit:
 
