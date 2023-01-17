@@ -25,7 +25,6 @@ export const uploadImages = upload.fields([
 ]);
 
 export const processImages = catchAsync(async (req, res, next) => {
-
   // if (!req?.files?.profileImage && !req?.files?.images) return next();
   if (req?.files?.profileImage) {
     console.log("Uploading profileImage...");
@@ -56,7 +55,7 @@ export const processImages = catchAsync(async (req, res, next) => {
         "An error occured uploading the profileImage",
         500
       );
-    req.body.profileImage = result.url;
+    req.body.profileImage = result.secure_url;
   }
 
   if (req?.files?.images) {
@@ -93,7 +92,7 @@ export const processImages = catchAsync(async (req, res, next) => {
               500
             );
           // Insert the uploaded image at the right position
-          req.body.images.splice(replaceAt, 1, result.url);
+          req.body.images.splice(replaceAt, 1, result.secure_url);
         }
       })
     );

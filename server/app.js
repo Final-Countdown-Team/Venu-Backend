@@ -9,7 +9,6 @@ import rateLimit from "express-rate-limit";
 import venueRouter from "./routes/venueRoutes.js";
 import artistRouter from "./routes/artistRoutes.js";
 import confirmedDateRouter from "./routes/confirmedDateRoutes.js";
-import adminRouter from "./routes/adminRoutes.js";
 import AppError from "./utils/appError.js";
 import { globalErrorHandler } from "./controllers/errorController.js";
 
@@ -24,46 +23,16 @@ const limiter = rateLimit({
 // app.use("/", limiter);
 
 // GLOBAL MIDDLEWARE
-const whitelist = [
-  "https://venu-frontend.onrender.com",
-  "https://venu-frontend.onrender.com/me",
-  "https://venu-frontend.onrender.com/me/editProfile",
-  "https://venu-frontend.onrender.com/signupLogin",
-  "https://venu-frontend.onrender.com/signupLogin",
-  "https://venu-frontend.onrender.com/artists",
-  "https://venu-frontend.onrender.com/artists/profile/*",
-  "https://venu-frontend.onrender.com/artists/resetPassword/*",
-  "https://venu-frontend.onrender.com/artists/reactivateAccount/*",
-  "https://venu-frontend.onrender.com/artists/confirmDate/*",
-  "https://venu-frontend.onrender.com/artists/login",
-  "https://venu-frontend.onrender.com/artists/signup",
-  "https://venu-frontend.onrender.com/venues",
-  "https://venu-frontend.onrender.com/venues/profile/*",
-  "https://venu-frontend.onrender.com/venues/resetPassword/*",
-  "https://venu-frontend.onrender.com/venues/reactivateAccount/*",
-  "https://venu-frontend.onrender.com/venues/confirmDate/*",
-  "https://venu-frontend.onrender.com/venues/login",
-  "https://venu-frontend.onrender.com/venues/signup",
-];
 app.use(
   cors({
-    origin: "https://venu-frontend.onrender.com",
-    // origin: function (origin, callback) {
-    //   if (
-    //     origin.startsWith("https://venu-frontend.onrender.com") ||
-    //     !origin
-    //   ) {
-    //     callback(null, true);
-    //   } else {
-    //     callback(new Error("Not allowed by CORS"));
-    //   }
-    // },
+    origin: process.env.FRONTEND_URL,
+    // origin: "http://localhost:3000",
     methods: ["GET", "POST", "PATCH", "DELETE"],
     credentials: true,
   })
 );
 // Enable pre-flight
-app.options("*", cors());
+// app.options("*", cors());
 app.use(morgan("dev"));
 app.use(express.json({ limit: "60000kb" }));
 app.use(express.urlencoded({ extended: true, limit: "15000kb" }));
