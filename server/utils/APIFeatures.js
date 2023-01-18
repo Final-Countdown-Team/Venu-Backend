@@ -45,7 +45,7 @@ class APIFeatures {
       const sortBy = this.queryString.sort.split(",").join(" ");
       this.mongoQuery = this.mongoQuery.sort(sortBy);
     } else {
-      this.mongoQuery = this.mongoQuery.sort("createdAt");
+      this.mongoQuery = this.mongoQuery.sort("_id");
     }
     return this;
   }
