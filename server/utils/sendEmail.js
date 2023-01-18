@@ -56,15 +56,18 @@ class Email {
   };
 
   sendFromUser = (from, sender, contactForm) => {
+    console.log("CONFIRM DATE ", contactForm.date);
     const replacements = {
       username: this.name,
       teamMember: from,
-      link: this.url,
+      link: !contactForm.date ? "" : this.url,
       buttonColor: this.buttonColor,
       senderName: sender.name,
       senderEmail: sender.email,
       firstname: contactForm.firstname,
-      date: new Date(contactForm.date).toDateString(),
+      date: !contactForm.date
+        ? "No specific date"
+        : new Date(contactForm.date).toDateString(),
       message: contactForm.message,
     };
     return replacements;
