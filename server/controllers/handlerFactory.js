@@ -69,10 +69,6 @@ export const updateArtist = (Model) =>
       req.body,
       options
     );
-    res.status(200).json({
-      status: "success",
-      data: updatedDoc,
-    });
 
     if (!updatedDoc) throw new AppError("No user found with that ID", 404);
 
@@ -90,7 +86,7 @@ export const deleteOne = (Model) =>
 
     res.status(204).json({
       status: "success",
-      message: "User deleted successfully",
+      message: "Deleted successfully",
       data: null,
     });
   });

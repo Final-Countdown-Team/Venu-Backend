@@ -5,6 +5,7 @@ import mongoSanitze from "express-mongo-sanitize";
 import cookieParser from "cookie-parser";
 import xss from "xss-clean";
 import rateLimit from "express-rate-limit";
+import monitor from "express-status-monitor";
 
 import venueRouter from "./routes/venueRoutes.js";
 import artistRouter from "./routes/artistRoutes.js";
@@ -42,6 +43,8 @@ app.use(cookieParser());
 // SECURITY
 app.use(mongoSanitze());
 app.use(xss());
+
+app.use(monitor());
 
 // ROUTES
 app.use("/venues", venueRouter);
