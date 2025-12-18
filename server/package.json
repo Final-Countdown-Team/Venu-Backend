@@ -9,7 +9,7 @@
     "start:prod": "NODE_ENV=production nodemon server.js"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=18 <20"
   },
   "author": "Hammed, Neetu, Nana, Moumita, Max",
   "license": "ISC",
