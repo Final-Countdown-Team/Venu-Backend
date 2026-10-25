@@ -5,7 +5,6 @@ import mongoSanitze from "express-mongo-sanitize";
 import cookieParser from "cookie-parser";
 import xss from "xss-clean";
 import rateLimit from "express-rate-limit";
-import monitor from "express-status-monitor";
 
 import venueRouter from "./routes/venueRoutes.js";
 import artistRouter from "./routes/artistRoutes.js";
@@ -26,9 +25,10 @@ const limiter = rateLimit({
 // GLOBAL MIDDLEWARE
 app.use(
   cors({
-    // origin: process.env.FRONTEND_URL,
-    // origin: "http://localhost:3000",
-    origin: "https://venu-frontend.onrender.com",
+    origin:
+      process.env.NODE_ENV === "production"
+        ? "https://venu-frontend.onrender.com"
+        : "http://localhost:3000",
     methods: ["GET", "POST", "PATCH", "DELETE"],
     credentials: true,
   })
@@ -43,8 +43,6 @@ app.use(cookieParser());
 // SECURITY
 app.use(mongoSanitze());
 app.use(xss());
-
-app.use(monitor());
 
 // ROUTES
 app.use("/venues", venueRouter);
