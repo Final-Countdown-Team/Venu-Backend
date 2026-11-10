@@ -30,8 +30,7 @@
     "multer": "^2.5.0",
     "nodemailer": "^10.3.1",
     "slugify": "^1.6.9",
-    "validator": "^13.7.0",
-    "xss-clean": "^0.1.4"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
