@@ -23,13 +23,12 @@ const confirmedDateSchema = mongoose.Schema(
   }
 );
 
-confirmedDateSchema.pre("save", function (next) {
-  if (!this.isModified("bookedDates")) return next();
+confirmedDateSchema.pre("save", function () {
+  if (!this.isModified("bookedDates")) return;
   this.confirmedAt = Date.now();
-  next();
 });
 
-confirmedDateSchema.pre(/^find/, function (next) {
+confirmedDateSchema.pre(/^find/, function () {
   this.populate({
     path: "artist",
     select: "name",
@@ -37,7 +36,6 @@ confirmedDateSchema.pre(/^find/, function (next) {
     path: "venue",
     select: "name",
   });
-  next();
 });
 
 const ConfirmedDate = mongoose.model("ConfirmedDate", confirmedDateSchema);

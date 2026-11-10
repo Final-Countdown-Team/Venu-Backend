@@ -59,17 +59,15 @@ const adminSchema = new mongoose.Schema(
 );
 
 // Encrypting password before saving admin
-adminSchema.pre("save", async function (next) {
-  if (!this.isModified("password")) next();
+adminSchema.pre("save", async function () {
+  if (!this.isModified("password")) return;
 
   await hashingPassword(this);
-  next();
 });
 // Updating passwordChanged at when password is modified
-adminSchema.pre("save", function (next) {
-  if (!this.isModified("password") || this.isNew) return next();
+adminSchema.pre("save", function () {
+  if (!this.isModified("password") || this.isNew) return;
   this.passwordChangedAt = Date.now() - 1000;
-  next();
 });
 
 // INSTANCE METHODS
