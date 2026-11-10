@@ -7,6 +7,10 @@ import {
   changedPasswordAfterUtil,
   correctPasswordUtil,
 } from "./modelMiddleware/instanceMethods.js";
+import {
+  socialTagValidator,
+  webUrlValidator,
+} from "../utils/mediaLinkValidators.js";
 
 const venueSchema = mongoose.Schema(
   {
@@ -95,15 +99,19 @@ const venueSchema = mongoose.Schema(
     mediaLinks: {
       facebookUrl: {
         type: String,
+        validate: webUrlValidator,
       },
       twitterTag: {
         type: String,
+        validate: socialTagValidator,
       },
       instagramTag: {
         type: String,
+        validate: socialTagValidator,
       },
       websiteUrl: {
         type: String,
+        validate: webUrlValidator,
       },
     },
     dates: [Date],

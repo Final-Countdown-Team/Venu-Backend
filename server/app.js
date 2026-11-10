@@ -1,15 +1,14 @@
 import express from "express";
 import morgan from "morgan";
 import cors from "cors";
-import mongoSanitze from "express-mongo-sanitize";
 import cookieParser from "cookie-parser";
-import xss from "xss-clean";
 import rateLimit from "express-rate-limit";
 
 import venueRouter from "./routes/venueRoutes.js";
 import artistRouter from "./routes/artistRoutes.js";
 import confirmedDateRouter from "./routes/confirmedDateRoutes.js";
 import AppError from "./utils/appError.js";
+import { sanitizeBody } from "./utils/sanitizeBody.js";
 import { globalErrorHandler } from "./controllers/errorController.js";
 
 const app = express();
@@ -33,16 +32,13 @@ app.use(
     credentials: true,
   })
 );
-// Enable pre-flight
-app.options("*", cors());
 app.use(morgan("dev"));
 app.use(express.json({ limit: "60000kb" }));
 app.use(express.urlencoded({ extended: true, limit: "15000kb" }));
 app.use(cookieParser());
 
 // SECURITY
-app.use(mongoSanitze());
-app.use(xss());
+app.use(sanitizeBody);
 
 // ROUTES
 app.use("/venues", venueRouter);
@@ -51,7 +47,7 @@ app.use("/confirmedDates", confirmedDateRouter);
 // app.use("/admins", adminRouter);
 
 // CREATING 404
-app.all("*", (req, res, next) => {
+app.all("/{*splat}", (req, res, next) => {
   next(
     new AppError(`Cannot find ${req.originalUrl} on this server!`, 404)
   );

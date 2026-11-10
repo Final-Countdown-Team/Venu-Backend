@@ -8,6 +8,10 @@ import {
   saveAndCreateTokenUtil,
 } from "./modelMiddleware/instanceMethods.js";
 import { hashingPassword } from "../utils/hashingPassword.js";
+import {
+  socialTagValidator,
+  webUrlValidator,
+} from "../utils/mediaLinkValidators.js";
 
 const artistSchema = mongoose.Schema(
   {
@@ -89,15 +93,19 @@ const artistSchema = mongoose.Schema(
     mediaLinks: {
       facebookUrl: {
         type: String,
+        validate: webUrlValidator,
       },
       twitterTag: {
         type: String,
+        validate: socialTagValidator,
       },
       instagramTag: {
         type: String,
+        validate: socialTagValidator,
       },
       youtubeUrl: {
         type: String,
+        validate: webUrlValidator,
       },
     },
     genre: {
