@@ -155,24 +155,21 @@ function checkCoordinates(val) {
 }
 
 // PRE HOOKS
-artistSchema.pre("save", async function (next) {
+artistSchema.pre("save", async function () {
   // Only run this function if password was actually modified
-  if (!this.isModified("password")) return next();
+  if (!this.isModified("password")) return;
   await hashingPassword(this);
-  next();
 });
 
 // Update passwordChangedAt property for the user
-artistSchema.pre("save", function (next) {
-  if (!this.isModified("password") || this.isNew) return next();
+artistSchema.pre("save", function () {
+  if (!this.isModified("password") || this.isNew) return;
   this.passwordChangedAt = Date.now() - 1000;
-  next();
 });
 
 // Create URL slug from name
-artistSchema.pre("save", function (next) {
+artistSchema.pre("save", function () {
   if (this.name) this.slug = slugify(this.name, { lower: true });
-  next();
 });
 
 // VIRTUAL PROPERTIES
@@ -211,10 +208,9 @@ artistSchema.methods.createConfirmDateToken = function () {
 };
 
 // Query middleware
-artistSchema.pre(/^find/, function (next) {
+artistSchema.pre(/^find/, function () {
   // this points to the current query
   this.find({ active: { $ne: false } });
-  next();
 });
 
 const Artist = mongoose.model("Artist", artistSchema);

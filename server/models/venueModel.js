@@ -145,21 +145,18 @@ function checkCoordinates(val) {
 
 // PRE HOOKS
 // Hashing password before saving to database
-venueSchema.pre("save", async function (next) {
-  if (!this.isModified("password")) return next();
+venueSchema.pre("save", async function () {
+  if (!this.isModified("password")) return;
   await hashingPassword(this);
-  next();
 });
 // Updating passwordChanged at when password is modified
-venueSchema.pre("save", function (next) {
-  if (!this.isModified("password") || this.isNew) return next();
+venueSchema.pre("save", function () {
+  if (!this.isModified("password") || this.isNew) return;
   this.passwordChangedAt = Date.now() - 1000;
-  next();
 });
 // Create URL slug from name
-venueSchema.pre("save", function (next) {
+venueSchema.pre("save", function () {
   if (this.name) this.slug = slugify(this.name, { lower: true });
-  next();
 });
 
 // VIRTUAL PROPERTIES
@@ -199,10 +196,9 @@ venueSchema.methods.createConfirmDateToken = function () {
 
 // Query middleware
 // Only show active venues
-venueSchema.pre(/^find/, function (next) {
+venueSchema.pre(/^find/, function () {
   // this points to the current query
   this.find({ active: { $ne: false } });
-  next();
 });
 
 const Venue = mongoose.model("Venue", venueSchema);
